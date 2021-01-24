@@ -30,6 +30,7 @@ const { uploadImages } = require('./lib/fether')
 const feature = require('./lib/poll')
 const { sobre } = require('./lib/sobre')
 const { belle } = require('./lib/belle')
+const { termux } = require('./lib/termux')
 const BrainlySearch = require('./lib/brainly')
 const { removeBackgroundFromImageBase64 } = require('remove.bg')
 const fetch = require('node-fetch');
@@ -91,7 +92,7 @@ module.exports = kconfig = async (kill, message) => {
 		
 		
         const mess = {
-            wait: '✅¿Puedes esperar un rato? Realizar este tipo de comando lleva algún tiempo✅.',
+            wait: '✅¿Puedes esperar un rato? Realizar este tipo de comando lleva algún tiempo🏳.',
             error: {
                 St: '¡Lo usaste mal jaja! \nPara usar esto, envía o etiqueta una foto con este mensaje.',
                 Ki: 'Para eliminar administradores, primero debe eliminar su ADM.',
@@ -101,14 +102,14 @@ module.exports = kconfig = async (kill, message) => {
 		Ga: 'Solo los administradores pueden usarlo, así que chaoo jaja!',
 		Gp: 'Lo siento, pero este es un comando para grupos.🕳💦.',
 		Ac: 'Solo los grupos que permiten contenido +18 pueden usar comandos como este, si usted es el propietario y desea esto, use /nsfw enable o use en PRIV.',
-		Ba: 'Estimado administrador, si desea que use estos comandos, debe permitirme ser miembro😙!',
+		Ba: 'Estimado administrador, si desea que use estos comandos, debe permitirme ser admin😙!',
                 Iv: '¿Este enlace es correcto? Me parece mal...'
             }
         }
 	
 	
 		// ANTI GRUPOS && ANTI PORNO
-        if (isGroupMsg && !isGroupAdmins){
+        if (isGroupMsg && isLeg && !isGroupAdmins){
             if (chats.match(/(https?:\/\/chat.whatsapp.com)/gi)) {
 				console.log('Comprobando el enlace de grupo recibido.')
                 const check = await kill.inviteInfo(chats)
@@ -204,60 +205,7 @@ module.exports = kconfig = async (kill, message) => {
             }
             break
 
-			case 'antisticker':
-            case 'antistiker':
-                    if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, este comando solo se puede usar dentro del grupo!', id)
-                    if (!isGroupAdmins) return kill.reply(from, 'Falló, este comando solo puede ser utilizado por administradores de grupo!', id)
-                    if (kill[0] == 'on') {
-                        var cek = antisticker.includes(chatId);
-                        if(cek){
-                            return kill.reply(from, '*Anti Spam Sticker Detector* ya activo en este grupo', id) //if number already exists on database
-                        } else {
-                            antisticker.push(chatId)
-                            fs.writeFileSync('./lib/helper/antisticker.json', JSON.stringify(antisticker))
-                            kill.reply(from, '*[Anti Sticker SPAM]* Ha sido activado\nCada miembro del grupo cuya etiqueta de spam sea más de 7 será expulsado por el bot!', id)
-                        }
-                    } else if (args[0] == 'off') {
-                        var cek = antilink.includes(chatId);
-                        if(cek){
-                            return kill.reply(from, '*Anti Spam Sticker Detector* ya está inactivo en este grupo', id) //if number already exists on database
-                        } else {
-                            let nixx = antisticker.indexOf(chatId)
-                            antisticker.splice(nixx, 1)
-                            fs.writeFileSync('./lib/helper/antisticker.json', JSON.stringify(antisticker))
-                            client.reply(from, '*[Anti Sticker SPAM]* ha sido deshabilitado\n', id)
-                        }
-                    } else {
-                        kill.reply(from, `Establezca on / off\n\n*[Anti Sticker SPAM]*\nCada miembro del grupo que sea una calcomanía de spam será expulsado por el bot!`, id)
-                    }
-                    break
 			
-                    case 'antilink':
-                    if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, este comando solo se puede usar dentro del grupo!', id)
-                    if (!isGroupAdmins) return kill.reply(from, 'Falló, este comando solo puede ser utilizado por administradores de grupo!', id)
-                    if (args[0] == 'on') {
-                        var cek = antilink.includes(chatId);
-                        if(cek){
-                            return kill.reply(from, '*Anti Group Link Detector* ya activo en este grupo', id) //if number already exists on database
-                        } else {
-                            antilink.push(chatId)
-                            fs.writeFileSync('./lib/helper/antilink.json', JSON.stringify(antilink))
-                            kill.reply(from, '*[Anti Group Link]* Ha sido activado\nCada miembro del grupo que envíe un mensaje que contenga el enlace del grupo será expulsado por el bot!', id)
-                        }
-                    } else if (args[0] == 'off') {
-                        var cek = antilink.includes(chatId);
-                        if(!cek){
-                            return kill.reply(from, '*Anti Group Link Detector* ya está inactivo en este grupo', id) //if number already exists on database
-                        } else {
-                            let nixx = antilink.indexOf(chatId)
-                            antilink.splice(nixx, 1)
-                            fs.writeFileSync('./lib/helper/antilink.json', JSON.stringify(antilink))
-                            kill.reply(from, '*[Anti Group Link]* ha sido deshabilitado\n', id)
-                        }
-                    } else {
-                        kill.reply(from, `Establezca on / off\n\n*[Anti Group Link]*\nCada miembro del grupo que envíe un mensaje que contenga el enlace del grupo será expulsado por el bot!`, id)
-                    }
-                    break 
 
 		case 'ttp':
 			if (args.length == 0) return kill.reply(from, '¿Dónde está la frase?', id)
@@ -273,7 +221,7 @@ module.exports = kconfig = async (kill, message) => {
     break
 	
 	    case 'samu330':
-    await kill.reply(from, 'Hola!😀\n\nTe gustaria apoyarme?\n\nSolo unete a mi grupo de WhatsApp: https://chat.whatsapp.com/ELeHAmX3P6j1xy1qNRjEXR\n\nO puedes suscribirte a mi canal para saber como instalar un Bot: https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg\n\nO seamos amigos en facebook: https://facebook.com/tupapi.samu330', id)
+    await kill.reply(from, '｡☆✼★━━━━━━━━━━━━★✼☆｡\n\nHola!😀\n\nTe gustaria apoyarme?\n\nSolo unete a mi grupo de WhatsApp: https://chat.whatsapp.com/ELeHAmX3P6j1xy1qNRjEXR\n\n* ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ►*\n\nO puedes suscribirte a mi canal para saber como instalar un Bot: https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg\n\n✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩\n\nO seamos amigos en facebook: https://facebook.com/tupapi.samu330', id)
     break	
 			
 		case 'about':
@@ -284,6 +232,9 @@ module.exports = kconfig = async (kill, message) => {
 			await kill.sendFile(from, './lib/media/img/belle.png', 'belle.png', belle, id)
 			break
 
+		case 'termux':
+			await kill.sendFile(from, './lib/media/img/belle.png', 'termux.png', termux, id)
+			break
 			
         case 'stickernobg':
 		 if (isMedia) {
@@ -291,13 +242,14 @@ module.exports = kconfig = async (kill, message) => {
                     var mediaData = await decryptMedia(message, uaOverride)
                     var imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
                     var base64img = imageBase64
-                    var outFile = './media/img/noBg.png'
-                    // untuk api key kalian bisa dapatkan pada website remove.bg
-                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'API-KEY', size: 'auto', type: 'auto', outFile })
+                    var outFile = './lib/media/img/noBg.png'
+                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'https://www.remove.bg/', size: 'auto', type: 'auto', outFile }) // bota sua propria api ai, cuidado no limite mensal
                     await fs.writeFile(outFile, result.base64img)
-                    await client.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
+                    await kill.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
+					await kill.reply(from, 'Trate de no usar esto cuando no lo nececite,', id)
                 } catch(err) {
                     console.log(err)
+		    await kill.reply(from, 'Ups! Algo esta mal en este comando!', id)
                 }
             }
             break
@@ -305,21 +257,21 @@ module.exports = kconfig = async (kill, message) => {
         case 'stickergif':
         case 'stikergif':
         case 'gif':
-           if (isMedia) {
+if (isMedia) {
                 if (mimetype === 'video/mp4' && message.duration < 15 || mimetype === 'image/gif' && message.duration < 15) {
                     var mediaData = await decryptMedia(message, uaOverride)
                     kill.reply(from, mess.wait, id)
                     var filename = `./lib/media/stickergif.${mimetype.split('/')[1]}`
                     await fs.writeFileSync(filename, mediaData)
-                    await exec(`gify ${filename} ./lib/media/stickergf.gif --fps=30 --scale=256:256`, async function (error, stdout, stderr) {
+                    await exec(`gify ${filename} ./lib/media/stickergf.gif --fps=60 --scale=256:256`, async function (error, stdout, stderr) {
                         var gif = await fs.readFileSync('./lib/media/stickergf.gif', { encoding: "base64" })
                         await kill.sendImageAsSticker(from, `data:image/gif;base64,${gif.toString('base64')}`)
                         .catch(() => {
-                            kill.reply(from, 'Uff, hubo un error en la convercion, puede ser el peso del viseo/gif.', id)
+                            kill.reply(from, 'Aff! la conversion tuvo errores, puede ser el peso de video/gif.', id)
                         })
                     })
                 } else {
-                    kill.reply(from, `Si recibe esto puede ser por 2 motivos.\n\n1 - Esto no es un gif o video.\n\n2 - el gif o video supera los 15 segundos`, id)
+                    kill.reply(from, `Encaso de que reciba esto considere 2 opciones.\n\n1 - Esto no es un gif o video.\n\n2 - el gif o video supera los 15 segundos.`, id)
                 }
             } else if (quotedMsg) {
                 if (quotedMsg.mimetype == 'video/mp4' && quotedMsg.duration < 15 || quotedMsg.mimetype == 'image/gif' && quotedMsg.duration < 15) {
@@ -327,15 +279,15 @@ module.exports = kconfig = async (kill, message) => {
                     kill.reply(from, mess.wait, id)
                     var filename = `./lib/media/stickergif.${quotedMsg.mimetype.split('/')[1]}`
                     await fs.writeFileSync(filename, mediaData)
-                    await exec(`gify ${filename} ./lib/media/stickergf.gif --fps=30 --scale=256:256`, async function (error, stdout, stderr) {
+                    await exec(`gify ${filename} ./lib/media/stickergf.gif --fps=60 --scale=256:256`, async function (error, stdout, stderr) {
                         var gif = await fs.readFileSync('./lib/media/stickergf.gif', { encoding: "base64" })
                         await kill.sendImageAsSticker(from, `data:image/gif;base64,${gif.toString('base64')}`)
                         .catch(() => {
-                            kill.reply(from, 'Uff, hubo un error en la convercion, puede ser el peso del viseo/gif.', id)
+                            kill.reply(from, 'Aff! la conversion tuvo errores, puede ser el peso de video/gif.', id)
                         })
                     })
                 } else {
-                    kill.reply(from, `Si recibe esto puede ser por 2 motivos.\n\n1 - Esto no es un gif o video.\n\n2 - el gif o video supera los 15 segundos.`, id)
+                    kill.reply(from, `Encaso de que reciba esto considere 2 opciones.\n\n1 - Esto no es un gif o video.\n\n2 - el gif o video supera los 15 segudnos.`, id)
                 }
 			} else {
                 kill.reply(from, mess.error.St, id)
@@ -924,26 +876,18 @@ module.exports = kconfig = async (kill, message) => {
                 .catch(() => kill.sendText(from, 'An error occured!'))
             break
 
-        case 'tts': // Esse é enormeeeee, fazer o que, sou baiano pra jogar noutro js
-            if (args.length == 0) return kill.reply(from, 'Wrong Fromat!')
-                const ttsEn = require('node-gtts')('en')
-	        const ttsJp = require('node-gtts')('ja')
+        case 'tts':
+            if (args.length == 0) return kill.reply(from, `Texto a voz */tts "pefix idioma" texto, para ver los diomas: */idiomas*`)
+            const ttsGB = require('node-gtts')(args[0])
             const dataText = body.slice(8)
-            if (dataText === '') return kill.reply(from, 'Baka?', message.id)
-            if (dataText.length > 250) return kill.reply(from, 'Unable to convert', message.id)
-            var dataBhs = body.slice(5, 7)
-	        if (dataBhs == 'id') {
-		    } else if (dataBhs == 'en') {
-                ttsEn.save('./tts/resEn.mp3', dataText, function () {
-                    kill.sendPtt(from, './media/tts/resEn.mp3', message.id)
-                })
-		    } else if (dataBhs == 'jp') {
-                ttsJp.save('./tts/resJp.mp3', dataText, function () {
-                    kill.sendPtt(from, './media/tts/resJp.mp3', message.id)
-                })
-		    } else {
-		        kill.reply(from, 'Currently only English and Japanese are supported!', message.id)
-            }
+                if (dataText === '') return kill.reply(from, 'Cual es el texto?', id)
+                try {
+                    ttsGB.save('./media/tts.mp3', dataText, function () {
+                    kill.sendPtt(from, './media/tts.mp3', id)
+                    })
+                } catch (err) {
+                    kill.reply(from, err, id)
+                }
             break
 
         case 'idiomas':
@@ -1292,7 +1236,7 @@ module.exports = kconfig = async (kill, message) => {
                         kill.reply(from, '[❗] ¡Ups! Error de entrega!', id)
 						}
 					} else {
-						kill.reply(from, '[❗] Aqui diz que não achou resultadosDice que no encontró resultados...')
+						kill.reply(from, '[❗] no se encontraron resultados...')
 					}
 				} else {
 					kill.reply(from, 'Lo usó mal, intente verificar si el comando es correcto.')
@@ -1435,7 +1379,7 @@ module.exports = kconfig = async (kill, message) => {
             if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
             if (isGroupMsg) {
                 const inviteLink = await kill.getGroupInviteLink(groupId);
-                kill.sendLinkWithAutoPreview(from, inviteLink, `\nAqui está el limk del grupo🤩 ${name}!`)
+                kill.sendLinkWithAutoPreview(from, inviteLink, `\nAqui está el link del grupo🤩 ${name}!`)
             } else {
             	kill.reply(from, 'Vaya, este es solo un comando de grupo.', id)
             }
@@ -1585,7 +1529,7 @@ module.exports = kconfig = async (kill, message) => {
 
 
         case 'clearall':
-            if (!isGroupAdmins) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
+            if (!isGroupAdmins && !isOwner) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
             const allChatz = await kill.getAllChats()
             for (let dchat of allChatz) {
                 await kill.deleteChat(dchat.id)
@@ -1593,13 +1537,6 @@ module.exports = kconfig = async (kill, message) => {
             kill.reply(from, 'Borré todos los chats!', id)
             break
 
-	case 'lirik':
-            if (args.length == 0) return kill.reply(from, 'Wrong Format, BAKA', message.id)
-            const lagu = body.slice(7)
-            console.log(lagu)
-            const lirik = await liriklagu(lagu)
-            kill.sendText(from, lirik)
-            break
 
 	    case 'add':
             if (!isGroupMsg) return kill.reply(from, 'Esta función solo se puede utilizar en grupos', id)
@@ -1848,7 +1785,7 @@ module.exports = kconfig = async (kill, message) => {
 				let exclu = exsv.indexOf(chatId)
                 exsv.splice(exclu, 1)
                 fs.writeFileSync('./lib/exclusive.json', JSON.stringify(exsv))
-                kill.reply(from, 'Se han desactivado los comandos exclusivos de Legion.', id)
+                kill.reply(from, 'Se han desactivado los comandos exclusivos de Legion (antilink,antiporno, no sacar al bot)', id)
             } else {
                 kill.reply(from, 'Activar o desactivar!', id)
             }
@@ -2423,7 +2360,7 @@ module.exports = kconfig = async (kill, message) => {
 
 		case 'chance':
 			if (args.length == 0) return kill.reply(from, 'Defina algo para analisar.', id)
-			await kill.reply(from, `_De acuerdo con mis cálculos súper avanzados de ~ mono hembra ~ robot "cuie" la oportunidad de..._ \n\n*"${body.slice(8)}"*\n\n_...ser realidad es_ *${lvpc}%.*`, id)
+			await kill.reply(from, `_De acuerdo con mis cálculos súper avanzados de ~dios~ robot "cuie" la oportunidad de..._ \n\n*"${body.slice(8)}"*\n\n_...ser realidad es_ *${lvpc}%.*`, id)
 			break
 
 
@@ -2468,7 +2405,7 @@ module.exports = kconfig = async (kill, message) => {
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			const allin = `Hola usuario "@${sender.id}"!\n\nMe lleve ${processTime(t, moment())} segundos para responder.\n\nAhora son exactamente "${timed}".\nAqui abajito estan todas mis funciones.\n`
             kill.sendTextWithMentions(from, allin + help, id)
-            kill.reply(from, '💢De otros comandos tenemos...\n\n*/Admins* _❌es para administradores._\n\n*/Kill* _🖤🖤es solo para mi dueño._\n\n*/Adult* _🍆🍆es el menú de comandos para adultos😈._\n\n*/Down* _⚠es el menú de descarga de música y video._', id)
+            kill.reply(from, '💢De otros comandos tenemos...\n\n*/Admins* _❌es para administradores._\n\n*/Kill* _🖤🖤es solo para mi dueño._\n\n*/Adult* _🍆🍆es el menú de comandos para adultos😈._\n\n*/Down* _⚠es el menú de descarga de música y video._\n\n*/termux* _🚧Comandos para termux🚧_', id)
             break
 
 
@@ -2498,7 +2435,7 @@ module.exports = kconfig = async (kill, message) => {
         case 'readme':
             kill.reply(from, readme, id)
             break
-			
+
 		
 		case 'bomb':
 		    const bleg = JSON.parse(fs.readFileSync('./lib/exclusive.json'))
