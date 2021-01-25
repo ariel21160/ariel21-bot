@@ -48,7 +48,7 @@ module.exports = kconfig = async (kill, message) => {
         const { name, formattedTitle } = chat
         let { pushname, verifiedName, formattedName } = sender
         pushname = pushname || verifiedName || formattedName
-		const techapi = 'INSIRA UMA API DO SITE OPEN API I-TECH' // MUDE ISSO PARA UMA API DO SITE QUE TA ALI
+	const techapi = 'INSIRA UMA API DO SITE OPEN API I-TECH' // MUDE ISSO PARA UMA API DO SITE QUE TA ALI
         const double = Math.floor(Math.random() * 2) + 1
         const four = Math.floor(Math.random() * 4) + 1
         const triple = Math.floor(Math.random() * 3) + 1
@@ -233,8 +233,56 @@ module.exports = kconfig = async (kill, message) => {
 			break
 
 		case 'termux':
-			await kill.sendFile(from, './lib/media/img/belle.png', 'termux.png', termux, id)
+			await kill.sendFile(from, './lib/media/img/termux.png', 'termux.png', termux, id)
 			break
+			
+			case 'blacklist':
+            if (isGroupMsg && isGroupAdmins) {
+				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
+				if (args[0] == 'on') {
+					bklist.push(chatId)
+					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
+					kill.reply(from, 'Anti números activado.\nUse */bklist* (Número) para adicionar números.', id)
+				} else if (args[0] == 'off') {
+					let exclu = bklist.indexOf(chatId)
+					bklist.splice(exclu, 1)
+					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
+					kill.reply(from, 'Anti números offline.', id)
+				}
+			} else if (isGroupMsg && isGroupAdmins) {
+				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
+				if (args[0] == 'on') {
+					bklist.push(chatId)
+					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
+					kill.reply(from, 'Anti números activado.\nUse */bklist* (Número) para adicionar números.', id)
+				} else if (args[0] == 'off') {
+					let exclu = bklist.indexOf(chatId)
+					bklist.splice(exclu, 1)
+					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
+					kill.reply(from, 'Anti números offline.', id)
+				}
+            } else {
+                kill.reply(from, mess.error.Ga, id)
+            }
+            break
+			
+	case 'bklist':
+            if (isGroupMsg && isGroupAdmins) {
+				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
+				const bkls = body.slice(8) + '@c.us'
+				atbk.push(bkls)
+				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
+				await client.reply(from, 'Número adicionado a black-list', id)
+			} else if (isGroupMsg && isOwner) {
+				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
+				const bkls = body.slice(8) + '@c.us'
+				atbk.push(bkls)
+				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
+				await client.reply(from, 'Número adicionado a black-list', id)
+            } else {
+                kill.reply(from, mess.error.Ga, id)
+            }
+            break
 			
         case 'stickernobg':
 		 if (isMedia) {
@@ -243,7 +291,7 @@ module.exports = kconfig = async (kill, message) => {
                     var imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
                     var base64img = imageBase64
                     var outFile = './lib/media/img/noBg.png'
-                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'https://www.remove.bg/', size: 'auto', type: 'auto', outFile }) // bota sua propria api ai, cuidado no limite mensal
+                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'https://www.remove.bg/upload', size: 'auto', type: 'auto', outFile }) // bota sua propria api ai, cuidado no limite mensal
                     await fs.writeFile(outFile, result.base64img)
                     await kill.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
 					await kill.reply(from, 'Trate de no usar esto cuando no lo nececite,', id)
@@ -713,6 +761,19 @@ if (isMedia) {
 					})
             break
 
+			
+			case 'twit':
+           if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
+            axios.get(`http://arugaz.my.id/api/media/twvid?url=${body.slice(5)}`)
+            .then(async(rest) => {
+					var mp4 = rest.data.result
+					var tmp4 = rest.data.title
+					var m4tu = rest.data.thumb
+					var m4fo = rest.data.ext
+					await kill.sendFileFromUrl(from, m4tu, '', `Titulo: ${tmp4}\nFormato:${m4fo}\n\nEspero averlo echo bien, ahora espere a que el video se envie, NO LO UTILIZE OTRA VEZ!!`, id)
+					await kill.sendFileFromUrl(from, mp4, `video.mp4`, tmp4, id)
+                })
+			break
 
          case 'mp3': // eu censurei o acesso pois as apis estão offlines, e fazer isso evita que usem o comando e te de problemas
              if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
@@ -876,18 +937,266 @@ if (isMedia) {
                 .catch(() => kill.sendText(from, 'An error occured!'))
             break
 
-        case 'tts':
-            if (args.length == 0) return kill.reply(from, `Texto a voz */tts "pefix idioma" texto, para ver los diomas: */idiomas*`)
-            const ttsGB = require('node-gtts')(args[0])
+        case 'tts': 
+            if (args.length == 1) return kill.reply(from, 'Porfavor defina un idioma y una frase.')
+            const ttsId = require('node-gtts')('id')
+            const ttsEn = require('node-gtts')('en')
+			const ttsJp = require('node-gtts')('ja')
+            const ttsAr = require('node-gtts')('ar')
+            const ttsAf = require('node-gtts')('af')
+            const ttsSq = require('node-gtts')('sq')
+			const ttsHy = require('node-gtts')('hy')
+            const ttsCa = require('node-gtts')('ca')
+			const ttsZh = require('node-gtts')('zh')
+			const ttsCn = require('node-gtts')('zh-cn')
+			const ttsTw = require('node-gtts')('zh-tw')
+			const ttsYu = require('node-gtts')('zh-yue')
+			const ttsHr = require('node-gtts')('hr')
+			const ttsCs = require('node-gtts')('cs')
+            const ttsDa = require('node-gtts')('da')
+            const ttsNl = require('node-gtts')('nl')
+			const ttsAu = require('node-gtts')('en-au')
+            const ttsUk = require('node-gtts')('en-uk')
+			const ttsUs = require('node-gtts')('en-us')
+			const ttsEo = require('node-gtts')('eo')
+			const ttsFi = require('node-gtts')('fi')
+			const ttsFr = require('node-gtts')('fr')
+			const ttsEl = require('node-gtts')('el')
+			const ttsHt = require('node-gtts')('ht')
+            const ttsHi = require('node-gtts')('hi')
+            const ttsHu = require('node-gtts')('hu')
+			const ttsIs = require('node-gtts')('is')
+            const ttsIt = require('node-gtts')('it')
+            const ttsKo = require('node-gtts')('ko')
+            const ttsLa = require('node-gtts')('la')
+			const ttsLv = require('node-gtts')('lv')
+            const ttsMk = require('node-gtts')('mk')
+			const ttsNo = require('node-gtts')('no')
+			const ttsPl = require('node-gtts')('pl')
+			const ttsRo = require('node-gtts')('ro')
+			const ttsSr = require('node-gtts')('sr')
+			const ttsSk = require('node-gtts')('sk')
+			const ttsEs = require('node-gtts')('es')
+            const ttsSp = require('node-gtts')('es-es')
+            const ttsSu = require('node-gtts')('es-us')
+			const ttsSw = require('node-gtts')('sw')
+            const ttsSv = require('node-gtts')('sv')
+			const ttsTa = require('node-gtts')('ta')
+			const ttsTh = require('node-gtts')('th')
+			const ttsTr = require('node-gtts')('tr')
+			const ttsVi = require('node-gtts')('vi')
+			const ttsCy = require('node-gtts')('cy')
+            const ttsDe = require('node-gtts')('de')
+            const ttsBr = require('node-gtts')('pt-br')
+			const ttsPt = require('node-gtts')('pt')
+            const ttsRu = require('node-gtts')('ru')
             const dataText = body.slice(8)
-                if (dataText === '') return kill.reply(from, 'Cual es el texto?', id)
-                try {
-                    ttsGB.save('./media/tts.mp3', dataText, function () {
-                    kill.sendPtt(from, './media/tts.mp3', id)
-                    })
-                } catch (err) {
-                    kill.reply(from, err, id)
-                }
+            if (dataText === '') return kill.reply(from, 'Creo que se te olvido colocar la frase.', id)
+            if (dataText.length > 500) return kill.reply(from, 'Disculpa, el limite es de 50 letras...', id)
+            var dataBhs = body.slice(5, 7)
+			if (dataBhs == 'id') {
+                ttsId.save('./lib/media/tts/resId.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resId.mp3', id)
+                })
+            } else if (dataBhs == 'en') {
+                ttsEn.save('./lib/media/tts/resEn.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resEn.mp3', id)
+                })
+            } else if (dataBhs == 'jp') {
+                ttsJp.save('./lib/media/tts/resJp.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resJp.mp3', id)
+                })
+            } else if (dataBhs == 'de') {
+                ttsDe.save('./lib/media/tts/resDe.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resDe.mp3', id)
+                })
+            } else if (dataBhs == 'br') {
+                ttsBr.save('./lib/media/tts/resBr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resBr.mp3', id)
+                })
+            } else if (dataBhs == 'ru') {
+                ttsRu.save('./lib/media/tts/resRu.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resRu.mp3', id)
+                })
+			} else if (dataBhs == 'ar') {
+                ttsAr.save('./lib/media/tts/resAr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resAr.mp3', id)
+                })
+            } else if (dataBhs == 'pt') {
+                ttsPt.save('./lib/media/tts/resPt.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resPt.mp3', id)
+                })
+            } else if (dataBhs == 'af') {
+                ttsAf.save('./lib/media/tts/resAf.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resAf.mp3', id)
+                })
+            } else if (dataBhs == 'sq') {
+                ttsSq.save('./lib/media/tts/resSq.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSq.mp3', id)
+                })
+            } else if (dataBhs == 'hy') {
+                ttsHy.save('./lib/media/tts/resHy.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resHy.mp3', id)
+                })
+            } else if (dataBhs == 'ca') {
+                ttsCa.save('./lib/media/tts/resCa.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resCa.mp3', id)
+                })
+            } else if (dataBhs == 'zh') {
+                ttsZh.save('./lib/media/tts/resZh.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resZh.mp3', id)
+                })		
+            } else if (dataBhs == 'cn') {
+                ttsCn.save('./lib/media/tts/resCn.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resCn.mp3', id)
+                })
+            } else if (dataBhs == 'tw') {
+                ttsTw.save('./lib/media/tts/resTw.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resTw.mp3', id)
+                })
+            } else if (dataBhs == 'yu') {
+                ttsYu.save('./lib/media/tts/resYue.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resYue.mp3', id)
+                })
+			} else if (dataBhs == 'hr') {
+                ttsHr.save('./lib/media/tts/resHr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resHr.mp3', id)
+                })
+            } else if (dataBhs == 'cs') {
+                ttsCs.save('./lib/media/tts/resCs.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resCs.mp3', id)
+                })
+            } else if (dataBhs == 'da') {
+                ttsDa.save('./lib/media/tts/resDa.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resDa.mp3', id)
+                })
+            } else if (dataBhs == 'nl') {
+                ttsNl.save('./lib/media/tts/resNl.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resNl.mp3', id)
+                })
+            } else if (dataBhs == 'au') {
+                ttsAu.save('./lib/media/tts/resAu.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resAu.mp3', id)
+                })
+            } else if (dataBhs == 'uk') {
+                ttsUk.save('./lib/media/tts/resUk.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resUk.mp3', id)
+                })
+            } else if (dataBhs == 'us') {
+                ttsUs.save('./lib/media/tts/resUs.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resUs.mp3', id)
+                })
+            } else if (dataBhs == 'eo') {
+                ttsEo.save('./lib/media/tts/resEo.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resEo.mp3', id)
+                })
+            } else if (dataBhs == 'fi') {
+                ttsFi.save('./lib/media/tts/resFi.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resFi.mp3', id)
+                })
+            } else if (dataBhs == 'fr') {
+                ttsFr.save('./lib/media/tts/resFr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resFr.mp3', id)
+                })
+            } else if (dataBhs == 'el') {
+                ttsEl.save('./lib/media/tts/resEl.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resEl.mp3', id)
+                })
+            } else if (dataBhs == 'ht') {
+                ttsHt.save('./lib/media/tts/resJp.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resHt.mp3', id)
+                })
+            } else if (dataBhs == 'hi') {
+                ttsHi.save('./lib/media/tts/resHi.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resHi.mp3', id)
+                })
+            } else if (dataBhs == 'hu') {
+                ttsHu.save('./lib/media/tts/resHu.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resHu.mp3', id)
+                })
+            } else if (dataBhs == 'is') {
+                ttsIs.save('./lib/media/tts/resIs.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resIs.mp3', id)
+                })
+			} else if (dataBhs == 'it') {
+                ttsIt.save('./lib/media/tts/resIt.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resIt.mp3', id)
+                })
+            } else if (dataBhs == 'ko') {
+                ttsKo.save('./lib/media/tts/resKo.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resKo.mp3', id)
+                })
+            } else if (dataBhs == 'la') {
+                ttsLa.save('./lib/media/tts/resLa.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resLa.mp3', id)
+                })
+            } else if (dataBhs == 'lv') {
+                ttsLv.save('./lib/media/tts/resLv.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resLv.mp3', id)
+                })
+            } else if (dataBhs == 'mk') {
+                ttsMk.save('./lib/media/tts/resMk.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resMk.mp3', id)
+                })
+            } else if (dataBhs == 'no') {
+                ttsNo.save('./lib/media/tts/resNo.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resNo.mp3', id)
+                })
+            } else if (dataBhs == 'pl') {
+                ttsPl.save('./lib/media/tts/resPl.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resPl.mp3', id)
+                })		
+            } else if (dataBhs == 'ro') {
+                ttsRo.save('./lib/media/tts/resRo.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resRo.mp3', id)
+                })
+            } else if (dataBhs == 'sr') {
+                ttsSr.save('./lib/media/tts/resSr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSr.mp3', id)
+                })
+            } else if (dataBhs == 'sk') {
+                ttsSk.save('./lib/media/tts/resSk.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSk.mp3', id)
+                })
+			} else if (dataBhs == 'es') {
+                ttsEs.save('./lib/media/tts/resEs.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resEs.mp3', id)
+                })
+            } else if (dataBhs == 'sp') {
+                ttsSp.save('./lib/media/tts/resSp.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSp.mp3', id)
+                })
+            } else if (dataBhs == 'su') {
+                ttsSu.save('./lib/media/tts/resSu.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSu.mp3', id)
+                })
+            } else if (dataBhs == 'sw') {
+                ttsSw.save('./lib/media/tts/resSw.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSk.mp3', id)
+                })
+            } else if (dataBhs == 'sv') {
+                ttsSv.save('./lib/media/tts/resSv.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resSv.mp3', id)
+                })
+            } else if (dataBhs == 'ta') {
+                ttsTa.save('./lib/media/tts/resTa.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resTa.mp3', id)
+                })
+            } else if (dataBhs == 'tr') {
+                ttsTr.save('./lib/media/tts/resTr.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resTr.mp3', id)
+                })
+            } else if (dataBhs == 'vi') {
+                ttsVi.save('./lib/media/tts/resVi.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resVi.mp3', id)
+                })
+            } else if (dataBhs == 'cy') {
+                ttsCy.save('./lib/media/tts/resCy.mp3', dataText, function () {
+                    kill.sendPtt(from, './lib/media/tts/resCy.mp3', id)
+                })
+            } else {
+                kill.reply(from, `Hmm, '${body.slice(5, 7)}' no es un idioma compatible, para ver los idiomas compatibles, escriba */idiomas*.`, id)
+            }
             break
 
         case 'idiomas':
@@ -903,12 +1212,12 @@ if (isMedia) {
 
 
         case 'speak':
-			const sppt = require('node-gtts')('Es')
+			const sppt = require('node-gtts')('pt-br')
 			try {
 				const spiris = await axios.get(`http://simsumi.herokuapp.com/api?text=${body.slice(7)}&lang=pt`)
 				const a = spiris.data.success
 				if (a == '') {
-					console.log('Solicitud fallida, usando respuestas locales...')
+					console.log('Request falhou, usando respostas locais...')
 					let rfua = fs.readFileSync('./lib/reply.txt').toString().split('\n')
 					let repy = rfua[Math.floor(Math.random() * rfua.length)]
 					let resfl = repy.replace('%name$', '${name}').replace('%battery%', '${lvpc}')
@@ -1550,12 +1859,17 @@ if (isMedia) {
             }
             break
 			
-			
+		
+	case 'neon':
+		if (args.length == 0) kill.reply(from, 'Pon un mensaje ahí!', id)
+		kill.reply(from, mess.wait, id)
+		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/neontext?text=${body.slice(4)}`, '', '', id)
+		break 
 			
 	case '3d':
 		if (args.length == 0) kill.reply(from, 'Pon un mensaje ahí!', id)
 		kill.reply(from, mess.wait, id)
-		await kill.sendFileFromUrl(from, `https://docs-jojo.herokuapp.com/api/text3d?text=${body.slice(4)}`, '', '', id)
+		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/text3d?text=${body.slice(4)}`, '', '', id)
 		break 
 		
 		
@@ -1565,6 +1879,17 @@ if (isMedia) {
 		await kill.sendFileFromUrl(from, `https://docs-jojo.herokuapp.com/api/gaming?text=${body.slice(8)}`, '', '', id)
 		break
 		
+	case 'lava':
+		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
+		kill.reply(from, mess.wait, id)
+		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/lavatext?text=${body.slice(8)}`, '', '', id)
+		break
+			
+	case 'toxic':
+		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
+		kill.reply(from, mess.wait, id)
+		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/toxictext?text=${body.slice(8)}`, '', '', id)
+		break
 		
 	case 'fogareu':
 		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
@@ -1587,7 +1912,7 @@ if (isMedia) {
                 const fison = arkp.split('|')[0]
                 const twoso = arkp.split('|')[1]
                 if (fison > 10 || twoso > 10) return kill.reply(from, 'Disculpe, maximo de 10 letras.', id)
-                await kill.sendFileFromUrl(from, `https://docs-jojo.herokuapp.com/api/phblogo?text1=${fison}&text2=${twoso}`, '', '', id)
+                await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/pornhub?text1=${fison}&text2=${twoso}`, '', '', id)
             } else {
                 await kill.reply(from, `Para usar esto, agregue dos oraciones, separándolas por el signo: |.`, id)
             }
