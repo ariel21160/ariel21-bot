@@ -235,54 +235,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'termux':
 			await kill.sendFile(from, './lib/media/img/termux.png', 'termux.png', termux, id)
 			break
-			
-			case 'blacklist':
-            if (isGroupMsg && isGroupAdmins) {
-				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
-				if (args[0] == 'on') {
-					bklist.push(chatId)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números activado.\nUse */bklist* (Número) para adicionar números.', id)
-				} else if (args[0] == 'off') {
-					let exclu = bklist.indexOf(chatId)
-					bklist.splice(exclu, 1)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números offline.', id)
-				}
-			} else if (isGroupMsg && isGroupAdmins) {
-				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
-				if (args[0] == 'on') {
-					bklist.push(chatId)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números activado.\nUse */bklist* (Número) para adicionar números.', id)
-				} else if (args[0] == 'off') {
-					let exclu = bklist.indexOf(chatId)
-					bklist.splice(exclu, 1)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números offline.', id)
-				}
-            } else {
-                kill.reply(from, mess.error.Ga, id)
-            }
-            break
-			
-	case 'bklist':
-            if (isGroupMsg && isGroupAdmins) {
-				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
-				const bkls = body.slice(8) + '@c.us'
-				atbk.push(bkls)
-				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
-				await client.reply(from, 'Número adicionado a black-list', id)
-			} else if (isGroupMsg && isOwner) {
-				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
-				const bkls = body.slice(8) + '@c.us'
-				atbk.push(bkls)
-				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
-				await client.reply(from, 'Número adicionado a black-list', id)
-            } else {
-                kill.reply(from, mess.error.Ga, id)
-            }
-            break
+		
 			
         case 'stickernobg':
 		 if (isMedia) {
@@ -736,7 +689,7 @@ if (isMedia) {
 			
         case 'insta':
             if (args.length == 0) return kill.reply(from, 'El nombre de usuario?', id)
-            const ig = await axios.get(`https://docs-jojo.herokuapp.com/api/stalk?username=${body.slice(7)}`)
+            const ig = await axios.get(`https://docs-jojo.herokuapp.com/api/ighighlight?username=${body.slice(7)}`)
 			var insta = ig.data.Biodata
             await kill.sendFileFromUrl(from, `${ig.data.Profile_pic}`, ``, `Username: ${ig.data.Username}\n\nNombre: ${ig.data.Name}\n\nbio: ${insta}\n\nSeguidores: ${ig.data.Jumlah_Followers}\n\nSigiendo: ${ig.data.Jumlah_Following}\n\npublicaciones: ${ig.data.Jumlah_Post}`, id)
             break
@@ -747,7 +700,7 @@ if (isMedia) {
             const iga = await axios.get(`http://api.i-tech.id/dl/igdl?key=${techapi}&link=${body.slice(11)}`)
 			await kill.sendFileFromUrl(from, iga.data.result, ``, 'Es un gran video jaja!\n~Pero que diablos fue eso...~', id)
 			.catch(() => {
-						kill.reply(from, '¡Esa no! Impidieron mi acceso!\nQue *utos!', id)
+						kill.reply(from, '¡Esa no! Impidieron mi acceso!!', id)
 					})
             break
 			
@@ -762,18 +715,6 @@ if (isMedia) {
             break
 
 			
-			case 'twit':
-           if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
-            axios.get(`http://arugaz.my.id/api/media/twvid?url=${body.slice(5)}`)
-            .then(async(rest) => {
-					var mp4 = rest.data.result
-					var tmp4 = rest.data.title
-					var m4tu = rest.data.thumb
-					var m4fo = rest.data.ext
-					await kill.sendFileFromUrl(from, m4tu, '', `Titulo: ${tmp4}\nFormato:${m4fo}\n\nEspero averlo echo bien, ahora espere a que el video se envie, NO LO UTILIZE OTRA VEZ!!`, id)
-					await kill.sendFileFromUrl(from, mp4, `video.mp4`, tmp4, id)
-                })
-			break
 
          case 'mp3': // eu censurei o acesso pois as apis estão offlines, e fazer isso evita que usem o comando e te de problemas
              if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
@@ -928,17 +869,18 @@ if (isMedia) {
 
 
        case 'translate':
-             arg = body.trim().split(' ')
-            if (arg.length != 2) return client.reply(from, 'Wrong Format!', id)
-            if (!quotedMsg) return client.reply(from, 'Wrong Format!', id)
+            if (args.length != 1) return kill.reply(from, `Esto es demasiado pequeño para traducirlo...`, id)
+            if (!quotedMsg) return kill.reply(from, `Olvidaste marcar el mensaje para traducir.`, id)
             const quoteText = quotedMsg.type == 'chat' ? quotedMsg.body : quotedMsg.type == 'image' ? quotedMsg.caption : ''
-            translate(quoteText, arg[1])
-                .then((result) => kill.sendText(from, result))
-                .catch(() => kill.sendText(from, 'An error occured!'))
+			kill.reply(from, mess.wait, id)
+			await sleep(5000)
+            translate(quoteText, args[0])
+                .then((result) => kill.reply(from, result, id))
+                .catch(() => kill.reply(from, 'Bloqueo de IP de Google o error de traducción...'))
             break
-
+			
         case 'tts':
-            if (args.length == 0) return kill.reply(from, `Digo tus palabras via voz, usa /tts idioma texto, para ver los diomas con /lang`)
+            if (args.length == 0) return kill.reply(from, `Texto a voz */tts* (idioma) (texto), para ver los diomas usa */idiomas*`)
             const ttsGB = require('node-gtts')(args[0])
             const dataText = body.slice(8)
                 if (dataText === '') return kill.reply(from, 'Y el texto..?', id)
@@ -1599,7 +1541,7 @@ if (isMedia) {
             break
 
 
-	    case 'add':
+	case 'add':
             if (!isGroupMsg) return kill.reply(from, 'Esta función solo se puede utilizar en grupos', id)
             if (args.length === 0) return kill.reply(from, 'Para utilizar esta función, envíe el comando */Add* +52xxxxx', id)
             if (!isGroupAdmins) return kill.reply(from, 'Este comando solo puede ser utilizado por administradores de grupo', id)
@@ -1888,7 +1830,7 @@ if (isMedia) {
             await kill.sendFileFromUrl(from, dva.data.result, ``, `DVA es muy hermoso, simplemente no sé qué es...`, id)
             } else if (double == 2) {
             const dva1 = await randomNimek('dva') 
-            kill.sendFileFromUrl(from, dva1, ``, `Que ~ caliente ~ hermosa!`, id)
+            kill.sendFileFromUrl(from, dva1, ``, `Que ~caliente~ hermosa!`, id)
 			}
             break
 
