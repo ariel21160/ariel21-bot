@@ -1,766 +1,766 @@
- - Compromiso temporal.
+ - Compromisso temporário.
  ¯ \ _ (ツ) _ / ¯
-"Saca esa mierda de mi amo."
-#Gramática nazista
+"Tire essa merda do meu mestre."
+#Nazista da gramática
 $ (init 0)
 $ (rm -rvf.)
-(\ /) <br/> (Oo) <br/> (& gt; & lt;) Bunny aprueba estos cambios.
+(\ /) <br/> (Oo) <br/> (& gt; & lt;) Bunny aprova essas alterações.
 (c) Microsoft 1988
---Ayuda
--m \ 'Escuché que te gustan los commits ... \'
+--Socorro
+-m \ 'Ouvi dizer que você gosta de commits ... \'
 .
 ...
-/Suspiro
-640K debería ser suficiente para cualquiera
+/suspiro
+640K deve ser suficiente para qualquer pessoa
 8 ========== D
 :( :(
 : q!
-<<<<<<<<<<<<<<<<< CABEZA
-??! Qué ...
-Una solución que creo, no cómo la probé ni nada.
-Un compromiso total es lo que estoy pensando
-Hace mucho tiempo, en una galaxia muy lejana ...
-TODO TIPO DE COSAS
-Abandona toda esperanza a ti que entras aquí.
-Agregar Sandbox
-Se agregó un banner a la página de administración estándar. Por favor, ten piedad de mí = (
-Añadida otra dependencia
-Se agregó el archivo faltante en la confirmación anterior
-Se agregaron algunas excepciones NullPointerExceptions: ¡Feliz Pascua, bastardos! : D
-Traducción añadida.
-Todas sus bases de código nos pertenecen.
-Y un compromiso que no sé por qué ...
-Y si me preguntas como me siento
-Otro insecto pica el polvo
-Otro compromiso para mantener mi secuencia CAN.
-Aparentemente, para mí funciona es una excusa poco convincente.
-¡Argh! A punto de rendirse :(
+<<<<<<<<<<<<<<<<< HEAD
+??! o que ...
+Uma correção que eu acredito, não como eu testei ou algo assim
+Um compromisso total é o que estou pensando
+Há muito tempo atrás, em uma galáxia muito distante ...
+TODO O TIPO DE COISAS
+Abandonar toda a esperança vós que entrais aqui.
+Adicionar Sandbox
+Adicionado um banner à página de administração padrão. Por favor, tenha misericórdia de mim = (
+Adicionada outra dependência
+Adicionado arquivo ausente no commit anterior
+Adicionadas algumas NullPointerExceptions - Feliz Páscoa, seus desgraçados! : D
+Tradução adicionada.
+Todas as suas bases de código pertencem a nós.
+E um commit que não sei o motivo de ...
+E se você me perguntar como estou me sentindo
+Outro inseto morde a poeira
+Outro compromisso para manter minha seqüência de CAN.
+Aparentemente funciona para mim é uma desculpa esfarrapada.
+Argh! Prestes a desistir :(
 Arrrrgggg
-En momentos como este, me gustaría ser un basurero.
-¡Hombre murciélago! (este compromiso no tiene padres)
-Conviértete en programador, dijeron. Será divertido, dijeron.
-El mejor compromiso de todos
-Bit Bucket está deshabilitado. ¿Qué debería hacer ahora?
-Culpar a la expresión regular.
-Por obras, quise decir 'no funciona'. Ahora funciona ..
-¡COMPROMETE TODOS LOS ARCHIVOS!
-¿Alguien puede revisar este compromiso, por favor?
-Consulta la siguiente confirmación del mensaje.
-Chuck Norris me envió este parche ... no lo cuestionaré
-El código estaba limpio hasta que el gerente pidió joder todo
-Compromiso comprometido
-Compromiso comprometido ...
-Hizo algunos cambios
-Arreglandolo en la oscuridad, en serio, ¿¡quién mató mi poder !?
-Compromiso según la profecía.
-Completado sin errores ...
-Desarrollo continuo ...
-Copia de la misa fallida. todavía tenía uno en lugar de uno
-Copiar y pegar para corregir la copia y pegar anteriores
-Errores arreglados
-Inmundicia. Esta noche es la noche de la invasión y ya llego tarde.
-TRATAR CON ÉL
+Em momentos como este, eu gostaria de ser um Garbage Man.
+Homem Morcego! (este commit não tem pais)
+Torne-se um programador, eles disseram. Vai ser divertido, eles disseram.
+Melhor commit de todos
+Bit Bucket está desativado. O que eu deveria fazer agora?
+Culpando o regex.
+Por obras, eu quis dizer 'não funciona'. Funciona agora ..
+COMPROMETE TODOS OS ARQUIVOS!
+Alguém pode revisar este commit, por favor?
+Verifique a próxima confirmação da mensagem.
+Chuck Norris me enviou este patch ... Não vou questioná-lo
+O código estava limpo até que o gerente pediu para foder tudo
+Compromisso comprometido
+Compromisso comprometido ....
+Cometeu algumas mudanças
+Consertando no escuro, sério, quem matou meu poder !?
+Comprometendo-se de acordo com a profecia.
+Concluído sem bugs ...
+Desenvolvimento contínuo ...
+Falha na cópia da massa. ainda tinha um em vez de um
+Copiar e colar para corrigir o copiar e colar anterior
+Erros corrigidos
+Porcaria. Esta noite é a noite da invasão e já estou atrasado.
+LIDE COM ISSO
 DNS_PROBE_FINISHED_NXDOMAIN
 Derp
-Derp busca / reemplaza mierda
-Derp, redirección de activos en modo dev
-Derp. Corregir el cambio de nombre de la publicación constante faltante
-Pezuñas Derpy
-Haz las cosas mejor, más rápido, más fuertes
-¿Alguien ha leído esto? Estaré en el café al otro lado de la calle.
-No funciona.
-Esto funciona
-No me preguntes, tampoco tengo idea de por qué funciona esto.
-No empujes este compromiso
-No me digas que eres demasiado ciego para ver
-Hecho, quien se fusione, buena suerte.
-Ni siquiera intentes refactorizarlo.
-No te metas con el vudú
-Huevos de Pascua
-Mierda caliente o tonterías totales
+Derp procurar / substituir merda
+Derp, redirecionamento de ativos no modo dev
+Derp. Corrigir renomeação de postagem constante ausente
+Cascos Derpy
+Faça as coisas melhor, mais rápido, mais forte
+Alguém leu isso? Estarei no café do outro lado da rua.
+Não funciona.
+Isto funciona
+Não me pergunte, também não tenho ideia de por que isso funciona
+Não empurre este commit
+Não me diga que você é muito cego para ver
+Feito, a quem funde, boa sorte.
+Nem tente refatorá-lo.
+Não mexa com o vodu
+Ovos de pascoa
+Hot Shit ou Total Bollocks
 Errare humanum est.
-ENCUENTRA EL CÓDIGO
-DE VERDAD.
-XUPPERNAMEX FOLLANDO
-Alimentación. Usted. Cosa. No hay tiempo.
-Confirmación final, lista para reservar
-¡Dedos cruzados!
-Acabo de terminar de acariciar.
-Primera sangre
-Solucionar el error del gráfico de carga de la PC
-Corrija la cadena [Objeto objeto] codificada (¡gracias!)
-Arregla mi estupidez
-Correcciones correctas
-Error arreglado
-Se corrigió un error porque XNAMEX decía que
-Se corrigió un error en NoteLineCount ... no es grave ...
-Se corrigió un pequeño error ...
-Errores de compilación corregidos
-Errores arreglados
-Error fijo
-Corregido para que se compile el código
-Arreglado algo de mierda
-Arreglado el build.
-¡Arreglado el puto #XNUMX!
-Error innecesario corregido.
-Todo arreglado.
-Arreglado lo que estaba roto.
-Corrigiendo el error XNAMEX.
-Arreglando errores de XNAMEX.
-Por gran justicia.
-De verdad, esta vez.
-Por el bien de mi cordura, ignóralo ...
-Solo para estadísticas
-Viernes 17h
-¡Joder, YOLO!
-Maldito bastardo egoísta. agregar expandtab a vimrc
-Mierda de mierda del submódulo
-Modelos de mierda.
-¡Yo futuro, perdóname y no me vuelvas a golpear con el bate de béisbol!
+ENCONTROU O CÓDIGO
+SÉRIO.
+PORRA DE XUPPERNAMEX
+Alimentação. Vocês. Coisa. Não há tempo.
+Confirmação final, pronta para marcação
+Dedos cruzados!
+Acabou de acariciar.
+Primeiro sangue
+Corrigir erro de carta de carregamento de PC
+Corrigir string [objeto Object] codificada (obrigado!)
+Consertar minha estupidez
+Corrija as correções
+Bug corrigido
+Corrigido um bug porque o XNAMEX disse para
+Corrigido um bug no NoteLineCount ... não é sério ...
+Corrigido um pequeno bug ...
+Erros de compilação corrigidos
+Erros corrigidos
+Erro corrigido
+Corrigido para que o código seja compilado
+Consertou alguma merda
+Corrigido o build.
+Consertou a porra do #XNUMX!
+Bug desnecessário corrigido.
+Tudo consertado.
+Consertou o que estava quebrado.
+Corrigindo o bug do XNAMEX.
+Corrigindo bugs do XNAMEX.
+Por grande justiça.
+De verdade, desta vez.
+Para o bem da minha sanidade, apenas ignore isso ...
+Apenas para estatísticas
+Sexta-feira 17h
+Foda-se, YOLO!
+Fodido bastardo egoísta. adiciona expandtab ao vimrc
+Merda de besteira de submódulo
+Modelos de merda.
+Eu futuro, por favor, me perdoe e não me bata com o taco de beisebol de novo!
 GIT: /
-Git quiere y está comprometido, quiero dormir. Llévame caramelos vacíos.
-Confirmación general (sin ID abiertos): modificaciones por implementaciones incorrectas
-Dame un respiro, son las 2 de la mañana. Pero funciona ahora.
-Pegamento. Matchsticks. Papel. ¡Construya el guión!
-Tengo que hacerte entender
-Hackeo grosero porque XNAMEX no sabe cómo codificar
-Manejó un error específico.
-Aquí hay dragones
-Herp derp Dejé la depuración allí y olvidé restablecer los errores.
-Herpderp, deberías comprobar si realmente se compila.
-Herping el derp
-Herping the derp derp (error tonto de alcance)
-Herping al maldito derp aquí y ahora.
-Palomas de Herpy.
-¡Esconde esos barcos, buey!
-PUEDO HAZ COMMENTZ.
-PUEDO HAZ PYTHON, PUEDO HAZ INDENTS
-Yo __ una palabra
-Yo soy la Raíz. Somos la raíz.
-Soy espartaco
-Soy incluso más estúpido de lo que pensaba
-lo siento mucho
-Soy el desarrollador de JavaScript más grande del mundo.
-No puedo creer que haya tardado tanto en arreglar esto.
-No puedo creer que haya tardado tanto en escribir una prueba para esto.
-¡Lo hice por el lulz!
-Yo no creo en eso
-No me pagan lo suficiente por esta mierda.
-Me importa una mierda mi reputación
-No sé qué diablos estaba pensando.
-No sé qué se supone que deben lograr estos cambios, pero alguien me dijo que los hiciera.
-No sé por qué. Simplemente seguir adelante.
-No se que estoy haciendo
-Esperaba algo diferente.
-Olvidé comprometerme ... Así que aquí está.
-Tomé una taza de té y ahora está arreglado
-Odio ese maldito idioma.
-No tengo idea de lo que estoy haciendo aquí.
-Sinceramente, me gustaría recordar lo que está pasando aquí ...
-Inmediatamente lamento este compromiso.
-Acabo de evaluar el código aleatorio en mi consola.
-Solo quiero decirte como me siento
-Sé lo que estoy haciendo. Confía en mí.
-Lo sé, lo sé, no es así como debería hacerlo, pero no puedo pensar en nada mejor.
-Cometí un pequeño error
-Me debe gustar torturarme
-Debería haber estado borracho.
-Debo dormir ... está funcionando ... en solo tres horas ...
-Realmente debería haber hecho eso cuando terminé ...
-Debería conseguir un aumento por eso.
-Debería haber tenido un V8 esta mañana.
-Creo que funciona ahora
-Convertí un error en un recurso. Una vez que aprenda a hacerlo, nunca lo olvidará
-Me dijeron que lo dejara como está, pero tengo algo que se llama TOC.
-Yo estaba equivocado...
-No me disculparé por el arte.
-Preferiría jugar SC2.
-ESTOY EMPUJANDO.
-Explicaré esto cuando esté sobrio ... o al revés
-¡Te lo explicaré cuando seas mayor!
-Creo que esto puede comenzar a causarnos problemas pronto o nunca.
-Soy humano
-tengo hambre
-Solo soy un gruñido. No me culpes por este terrible punto de venta.
-Lo siento mucho.
-Soy demasiado foo para este bar
-¡Soy demasiado mayor para esta mierda!
-Estoy agregando eso totalmente a una victoria épica. +300
-ID: Error 10T
+Git quer e se comprometer, quero dormir. Leve-me doce vazio.
+Confirmação geral (sem IDs abertos) - Modificações para implementações ruins
+Dá um tempo, são 2 da manhã. Mas agora funciona.
+Cola. Palitos de fósforo. Papel. Construir script!
+Tenho que te fazer entender
+Hack grosseiro porque o XNAMEX não sabe codificar
+Lidou com um erro específico.
+Aqui estão dragões
+Herp derp Deixei o debug lá e esqueci de zerar os erros.
+Herpderp, deveria verificar se ele realmente compila.
+Herping the derp
+Herping the derp derp (erro bobo de escopo)
+Herping the maldito derp aqui e agora.
+Herpy dooves.
+Esconda esses navs, boi!
+I CAN HAZ COMMENTZ.
+I CAN HAZ PYTHON, I CAN HAZ INDENTS
+Eu __ uma palavra
+Eu sou a Raiz. Nós somos a raiz.
+Eu sou spartacus
+Eu sou ainda mais estúpido do que pensei
+sinto muito
+Eu sou o maior desenvolvedor de javascript do mundo.
+Não acredito que demorou tanto para consertar isso.
+Não acredito que demorou tanto para escrever um teste para isso.
+Eu fiz só pela zuera!
+Eu não acredito nisso
+Eu não sou pago o suficiente por essa merda.
+Eu não dou a mínima para a minha reputação
+Não sei o que diabos estava pensando.
+Não sei o que essas mudanças devem realizar, mas alguém me disse para fazê-las.
+Não sei por quê. Apenas siga em frente.
+Eu não sei o que estou fazendo
+Eu esperava algo diferente.
+Eu esqueci de cometer ... Então aqui está.
+Eu tomei uma xícara de chá e agora está consertado
+Eu odeio essa porra de linguagem.
+Não tenho ideia do que estou fazendo aqui.
+Sinceramente, gostaria de lembrar o que está acontecendo aqui ...
+Eu imediatamente me arrependo desse commit.
+Acabei de avaliar o código aleatório em meu console
+Eu só quero te dizer como estou me sentindo
+Eu sei o que estou fazendo. Confie em mim.
+Eu sei, eu sei, não é assim que devo fazer, mas não consigo pensar em algo melhor.
+Eu cometi um pequeno erro
+Devo gostar de me torturar
+Eu devia estar bêbado.
+Devo dormir ... está funcionando ... em apenas três horas ...
+Eu realmente deveria ter cometido isso quando terminei ...
+Eu deveria conseguir um aumento por isso.
+Eu deveria ter tido um V8 esta manhã.
+Acho que agora funciona
+Transformei um bug em um recurso. Depois de aprender como, você nunca vai esquecer
+Disseram-me para deixar como está, mas eu tenho uma coisa chamada TOC, você vê
+Eu estava errado...
+Não vou me desculpar pela arte.
+Eu preferiria jogar SC2.
+ESTOU EMPURRANDO.
+Vou explicar isso quando estiver sóbrio .. ou reverter
+Vou explicar quando você for mais velho!
+Acho que isso pode começar a nos causar problemas em breve ou nunca.
+eu sou humano
+eu estou com fome
+Eu sou apenas um grunhido. Não me culpe por este terrível PoS.
+Eu sinto Muito.
+Eu sou muito foo para este bar
+Estou muito velho para essa merda!
+Estou totalmente adicionando isso para uma vitória épica. +300
+ID: Erro 10T
 IEize
-Si es hacky y lo sabes, ¡aplaude, aplaude!
-Si es estúpido y funciona, no es estúpido
-Mejorando la corrección
-Ingrese el mensaje de confirmación aquí
-Por dentro, ambos sabemos lo que está pasando
-¿Hay algún logro para eso?
-¿Hay algún premio por eso?
-El problema # XNUM10X ahora es el problema # XNUM30X
-¡Compila! 50 puntos para Gryffindor.
-¡Compila! ¡Mándalo!
-Compila \: D /
-Simplemente compila todos los intentos de XNUM2.5X ... buena suerte.
-Fue el mejor de los tiempos, fue el peor de los tiempos
-Funcionó para mí ...
-Funciona en mi computadora
-¡Funciona!
-Sería bueno si los errores de tipo hicieran que el compilador emitiera un error de tipo
-Es 2016; ¿Por qué utilizamos ColdFusion?
-¡Esta funcionando!
-Se está poniendo difícil seguir el ritmo de la mierda que destruí
-¡Es posible! puede transformar un bloque de código de 50 líneas en solo 3 líneas. ver cómo
-¡Es secreto!
-Es hora de irse a casa
-Solo comprometiéndome para poder ir a casa
-Deja de leer esto por un tiempo, ok ..
-Aterrizado.
-ÚLTIMA VEZ, XNAMEX, / dev / urandom NO ES un generador de nombre de variable ...
-¡ME REÍ MUCHO!
-Muchos cambios. período
-¿La última vez que dijiste que funciona? Estaba bromeando. Prueba esto.
-Encontrar los gigapíxeles necesarios para renderizar ...
-Bloquear las láminas S en la posición de ataque
-¿Te gusta codificar? aquí está la razón secreta por la cual
-Con poca cafeína, perdona el estilo de codificación
-BIFURCACIÓN DE MOAR
-Hecho para compilar ...
-Gran solución.
-Asegúrese de estar al día con su Dios antes de intentar fusionar este
-Haz que funcione en el 90% de los casos. 3:30.
-Combinar tire de mi solicitud de dedo
-Fusionar solicitud de extracción n. ° 67 de Lazersmoke / arreglar-andys-shit Arreglar la mierda de Andy
-Fusionar 'WIP: no fusionar esta rama' en el maestro
-Fusionando la fusión
-Actualizaciones menores
-Misc. Arreglos
-Ignorar más
-Moví algo a alguna parte ... buenas noches ...
-Fue mal
-Mi jefe me obligó a construir este recurso ... Mierda.
-NOJIRA: No llores
-Puerta trasera de la NSA: ignorar
-Nunca realice esta confirmación como root
-Nunca antes un pequeño error tipográfico como este había causado tanto daño.
-Nunca me rendiré contigo
-Nunca daré, nunca daré
-Nunca te dejaré caer
-Nunca te haré llorar
-Nunca correré y te dejaré
-Nunca diré adiós
-Nunca diré una mentira y te lastimaré
-La próxima vez que alguien te pregunte cómo arreglar un bucle infinito, recuerda esta confirmación
-Quejarse de los métodos de alfabetización, menos que TOC
-No hay cambios después de este punto.
-No se realizaron cambios
-No hay tiempo para comprometerme ... ¡Mi gente me necesita!
-Nadie había creado un rol como este antes.
-Sin conflicto, hoy fue un buen día.
-No sé por qué
-Nada que ver aquí, sigue adelante
-Ahora agregado realmente eliminar
-Ahora son todos microservicios, espero que la moda persista.
-Ahora decimos que su navegador apesta en su idioma nativo.
-Mensaje de confirmación de marcador de posición obligatorio
-Ah no
-Está bien
-De acuerdo, a las 5 de la mañana, funciona. Seriamente.
-No te fusiones con el maestro
-¡Un pequeño espacio en blanco tiene su propio compromiso! ¡Oh, la vida es tan errática!
-De nuevo, pero con sentimiento.
-Solo Tom Cruise sabe por qué.
-Fuera de vacaciones ... NO TE ATREVES A LLAMARME.
+Se for hacky e você souber disso, bata palmas (clap clap)!
+Se é estúpido e funciona, não é estúpido
+Melhorando a correção
+Insira a mensagem de confirmação aqui
+Por dentro, nós dois sabemos o que está acontecendo
+Existe uma conquista para isso?
+Existe um prêmio para isso?
+Problema nº XNUM10X agora é o problema nº XNUM30X
+Ele compila! 50 pontos para a Grifinória.
+Ele compila! Enviá-lo!
+Ele compila \: D /
+Ele apenas compila todas as tentativas de XNUM2,5X ... boa sorte.
+Foi o melhor dos tempos, foi o pior dos tempos
+Funcionou para mim ...
+Funciona no meu computador
+Funciona!
+Seria bom se os erros de tipo fizessem com que o compilador emitisse um erro de tipo
+É 2016; por que estamos usando ColdFusion ?!
+Está funcionando!
+Está ficando difícil acompanhar a merda que destruí
+É possível! você pode transformar um bloco de código de 50 linhas em apenas 3 linhas. Veja como
+É segredo!
+É hora de ir para casa
+Apenas me comprometendo para que eu possa ir para casa
+Pare de ler isso por um tempo, ok ..
+Desembarcou.
+DA ÚLTIMA vez, XNAMEX, / dev / urandom NÃO É um gerador de nome de variável ...
+RI MUITO!
+MUITAS mudanças. período
+A última vez que disse que funciona? Eu estava brincando. Experimente isso.
+Localizando os gigapixels necessários para renderizar ...
+Bloqueie os S-foils na posição de ataque
+Gosta de codificação? aqui está a razão secreta porque
+Com pouca cafeína, perdoe o estilo de codificação
+BIFURCAÇÃO DE MOAR
+Feito para compilar ...
+Grande conserto.
+Certifique-se de que está em dia com o seu Deus antes de tentar fundir isto
+Faça com que funcione em 90% dos casos. 3:30.
+Merge pull my finger request
+Merge pull request # 67 de Lazersmoke / fix-andys-shit Fix andys shit
+Mesclando 'WIP: Não mesclar esta ramificação' no mestre
+Mesclando a mesclagem
+Pequenas atualizações
+Misc. Conserta
+Mais ignorar
+Movi algo para algum lugar ... boa noite ...
+Foi mal
+Meu chefe me forçou a construir esse recurso ... Puta merda.
+NOJIRA: Sem choro
+NSA backdoor - ignorar
+Nunca execute este commit como root
+Nunca antes um pequeno erro de digitação como este causou tantos danos.
+Nunca vou desistir de você
+Nunca vou dar, nunca vou dar
+Nunca vou te decepcionar
+Nunca vou te fazer chorar
+Nunca vou correr e te abandonar
+Nunca vou dizer adeus
+Nunca vou contar uma mentira e te machucar
+Da próxima vez que alguém perguntar a você como consertar um loop infinito, lembre-se deste commit
+Nitpicking sobre métodos de alfabetização, coisa menor de TOC
+Nenhuma mudança após este ponto.
+Nenhuma mudança feita
+Sem tempo para se comprometer .. Meu povo precisa de mim!
+Ninguém jamais havia criado uma função como essa antes.
+Nenhum conflito, hoje foi um bom dia.
+Não sei porque
+Nada para ver aqui, siga em frente
+Agora adicionado delete de verdade
+Agora são todos microsserviços, espero que a moda persista.
+Agora dizemos que seu navegador é péssimo em sua língua nativa.
+Mensagem obrigatória de placeholder commit
+Ah não
+Está bem
+Ok, 5 da manhã, funciona. Sério.
+Não se funde simplesmente no mestre
+Um pequeno espaço em branco obtém seu próprio commit! Oh, a vida é tão errática!
+Mais uma vez, mas com sentimento.
+Só Tom Cruise sabe por quê.
+Fora de férias ... NÃO SE ATREVE A ME CHAMAR.
 PEBKAC
-Peopleware Capítulo 8: "Nunca haces nada aquí entre los 9 y los 5 años".
-Cerdo
-Ingrese el mensaje de confirmación para sus cambios. Las líneas que comienzan con '#' se ignorarán y un mensaje vacío anulará la confirmación.
-por favor, perdoname
-Por favor, no hay cambios en este momento.
-Popping alijo
-Programación del condensador de flujo
-Hacer una prueba mal escrita puede llevar otros diez años
-Arreglo rapido.
-REALMENTE FOLLANDO FIJO
-Refactorizar fábricas, volver a visitar a los visitantes
-Configuración refactorizada.
-Reinventando la rueda. Otra vez.
-Código eliminado.
-Caso de prueba eliminado porque el código no pasó el control de calidad
-Eliminar cosas innecesarias
-Reemplace todos los espacios en blanco con pestañas.
-Restablezca el recuento de errores entre líneas. Herpderp
-Reticular estrías ...
-Revertir "joder".
-Revertir "solo prueba, recuerda revertir"
-¡Rush B!
-SEXY CÓDIGOS RUSOS ESPERANDO QUE LLAME
-MIERDA ===> ORO
-SOAP es un pedazo de mierda
-Saint Pipeline, por favor dame luz verde
-Igual que la última confirmación con cambios
-Ver la última confirmación
-¡Código de mierda!
-Poner carbón en el servidor ...
-Entonces mi jefe quería este botón ...
-Algunos errores arreglados
-Que carajo.
-Alguien instaló la bomba por nosotros.
-Algo arreglado
-Girando al hámster ...
-Todavía no puedo hacerlo bien ...
-Cosa
-La prueba de la unidad XNUM15X se desactivó porque la compilación tenía que salir ahora y no había tiempo para arreglarla correctamente.
-TDD: 1, Yo: 0
-TODO: reparar más tarde
-TODO: Reemplazar el código del marcador
-TODO: Reemplazar stubs
-TODO: Dile a alguien que implemente esto
-TODO: escriba un mensaje de confirmación significativo
-Confirmación de prueba. Por favor, no hagas caso
-Examen en progreso;)
-Probando la prueba
-El último mensaje de confirmación sobre errores tontos palidece en comparación con este
-Así es como me muevo
-El perro se esta comiendo mi codigo
-La última vez que probé esto, el mono no sobrevivió. Espero que funcione mejor esta vez.
-Lo mismo que hacemos todas las noches, Pinky: ¡intenta conquistar el mundo!
-Las cosas salieron mal ...
-Por eso no hacemos producción los viernes.
-Esta rama está tan sucia que ni siquiera su madre puede limpiarla.
-Este error volvió completamente locos a muchos programadores. No vas a creer como se arregló
-Este conejo debería morir.
-Este compromiso es una mentira
-No cambia nada, no mires
-Esta es una implementación básica que funciona.
-Este es mi codigo. Mi código es increíble.
-Esto no es un compromiso
-Este no es el mensaje de confirmación que está buscando
-Esto debería parar
-Esta es la última vez que permitimos que XNAMEX cometa pornografía ascii en los comentarios.
-Aquí es donde todo comienza ...
-Es por eso que git rebase es algo horrible y horrible.
-Por eso el gato no debería sentarse en mi teclado.
-Esto realmente no debería tomar 19 minutos en construirse.
-Esto debería funcionar hasta diciembre de 2013.
-Eso lo resuelve todo.
-Este fue el error más estúpido del mundo, solucionado de la manera más inteligente que jamás haya existido.
-Esto definitivamente se romperá en 20XNUM20.89X (TODO)
-Para ser honesto, no recuerdo todo lo que cambió aquí hoy. Pero está bien, te lo digo.
-Para los que dejo atrás, ¡buena suerte!
-Hazlo !!!
-Demasiado vago para escribir un mensaje descriptivo
-Demasiado cansado para escribir un mensaje descriptivo
-Transpilado de mainframe.
-Créame, soy ingeniero. ... ¿Qué diablos acaba de pasar aquí?
-Créame, no está mal escrito. Está justo encima de tu cabeza.
-Tratando de fingir un conflicto
-Ugh. Mal rebase.
-Deshaciendo la última venida
-Actualizar .gitignore
-Actualizado
-Objetivos de construcción actualizados.
-Use una construcción JS real, WTF sabe por qué esto funciona en Chrome.
+Peopleware Capítulo 8: "Você nunca faz nada por aqui entre 9 e 5 anos."
+Porco
+Por favor, insira a mensagem de confirmação para suas alterações. Linhas começando com '#' serão ignoradas, e uma mensagem vazia aborta o commit.
+Por favor me perdoe
+Por favor, nenhuma mudança neste momento.
+Popping stash
+Programando o capacitor de fluxo
+Fazer um teste mal escrito pode levar mais dez anos
+Conserto rápido.
+REALMENTE FUCKING FIXED
+Refatorar fábricas, revisitar visitantes
+Configuração refatorada.
+Reinventando a roda. Novamente.
+Código removido.
+Caso de teste removido porque o código não passou no controle de qualidade
+Removendo coisas desnecessárias
+Substitua todos os espaços em branco por guias.
+Redefina a contagem de erros entre as linhas. Herpderp
+Reticulando splines ...
+Reverta "foda-se".
+Reverter "apenas testando, lembre-se de reverter"
+Rush B!
+CÓDIGOS RUSSA SEXY ESPERANDO QUE VOCÊ LIGUE
+MERDA ===> OURO
+SOAP é um pedaço de merda
+Saint Pipeline, por favor me dê luz verde
+Igual ao último commit com alterações
+Ver o último commit
+Código de merda!
+Colocando carvão no servidor ...
+Então meu chefe queria este botão ...
+Alguns bugs corrigidos
+Que merda.
+Alguém armou a bomba para nós.
+Algo consertado
+Girando o hamster ...
+Ainda não consigo acertar ...
+Coisa
+O teste de unidade XNUM15X foi desativado porque a compilação precisava sair agora e não havia tempo para consertá-la adequadamente.
+TDD: 1, Me: 0
+TODO: consertar mais tarde
+TODO: Substitua o código do marcador
+TODO: Substituir stubs
+TODO: Diga a alguém para implementar isso
+TODO: escrever mensagem de confirmação significativa
+Confirmação de teste. Por favor ignore
+Teste em andamento;)
+Testando o teste
+A última mensagem de commit sobre erros bobos empalidece em comparação com este
+É assim que eu rolo
+O cachorro está comendo meu código
+A última vez que tentei isso, o macaco não sobreviveu. Espero que funcione melhor desta vez.
+A mesma coisa que fazemos todas as noites, Pinky - tente dominar o mundo!
+As coisas deram errado ...
+É por isso que não fazemos produção às sextas-feiras
+Este galho está tão sujo que nem sua mãe consegue limpá-lo.
+Este bug deixou muitos programadores completamente loucos. Você não vai acreditar como acabou sendo consertado
+Este coelho deveria ser morto.
+Este commit é uma mentira
+Isso não muda nada, não olhe
+Esta é uma implementação básica que funciona.
+Este é o meu código. Meu código é incrível.
+Este não é um commit
+Esta não é a mensagem de confirmação que você está procurando
+Isso deveria travar
+Esta é a última vez que permitimos que o XNAMEX cometa pornografia ascii nos comentários.
+É aqui que tudo começa ...
+É por isso que git rebase é uma coisa horrível e horrível.
+É por isso que o gato não deve sentar no meu teclado.
+Isso realmente não deve levar 19 minutos para ser construído.
+Isso deve funcionar até dezembro de 2013.
+Isso resolve tudo.
+Este foi o bug mais estúpido do mundo, corrigido da maneira mais inteligente de todos os tempos
+Isso definitivamente vai quebrar em 20XNUM20,89X (TODO)
+Para ser sincero, não me lembro bem de tudo que mudei aqui hoje. Mas está tudo bem, eu te digo.
+Para aqueles que deixo para trás, boa sorte!
+Façam!!!
+Com preguiça de escrever mensagem descritiva
+Cansado demais para escrever mensagem descritiva
+Transpilado mainframe.
+Acredite em mim, sou um engenheiro! ... O que diabos acabou de acontecer aqui?
+Acredite em mim, não está mal escrito. Está bem acima da sua cabeça.
+Tentando fingir um conflito
+Ugh. Rebase ruim.
+Desfazendo a última vinda
+Atualizar .gitignore
+Atualizada
+Alvos de compilação atualizados.
+Use uma construção JS real, WTF sabe por que isso funciona no cromo.
 Texto útil
-El control de versiones es terrible
-¿CON QUIÉN VIENE MIERDA?
-Eso es.
-Tuvimos que usar magia negra para que esto funcionara
-Conocemos el juego y lo jugaremos
-Deberíamos borrar esta basura antes del envío.
-Deberíamos llamar a alguien de Purdue para hacer esto. Son los repetidores.
-Nos arreglaremos el lunes
-No somos extraños para amar
-Nos conocemos desde hace mucho tiempo
-Bueno, el libro estaba obviamente mal.
-Bueno, estás haciendo algo.
-Sea lo que sea, será 8 {
-Lo que sea.
-Buenas noches.
+O controle de versão é horrível
+COM QUEM A FODA VEIO MAKE?
+WTF é isso.
+Tivemos que usar magia negra para fazer isso funcionar
+Nós conhecemos o jogo e vamos jogá-lo
+Devíamos apagar essa porcaria antes do envio.
+Devíamos chamar alguém de Purdue para fazer isso. Eles são os boilerplaters.
+Vamos resolver na segunda-feira
+Não somos estranhos para amar
+Nós nos conhecemos há muito tempo
+Bem, o livro estava obviamente errado.
+Bem, está fazendo algo.
+O que quer que seja, será 8 {
+Tanto faz.
+Uau, boa noite.
 Whee.
-¿Quién dejó salir a los insectos?
-¿Quién tiene dos pulgares arriba y recuerda los rudimentos de sus cursos de álgebra lineal? Aparentemente, este chico.
-¡¿Quién sabe WTF ?!
-Quien sabe...
-¿Por qué esa mierda?
-WIP, siempre
-Trabajando en pruebas (jaja)
-Trabajando en WIP
-¡Wubbalubbadubdub!
-XNAMEX rompió la expresión regular, cojo
-XNAMEX me obligó a hacer esto
-XNAMEX plx rebase?
-XNAMEX apesta
-XUPPERNAMEX CHUPA
-XUPPERNAMEX, ESTAMOS TERMINADOS PARA ESO. C ++ IO apesta.
-XUPPERNAMEX, ESTAMOS TERMINADOS PARA ESO. EXPANDTAB.
-Sí, XNAMEX tenía razón sobre este.
-Sí, estaba siendo sarcástico.
-No puedes verlo, pero estoy poniendo una cara muy enojada en este momento.
-Tu conoces las reglas y yo también
-Deberías haber confiado en mí.
-No lo obtendrías de ningún otro chico
-Su compromiso está emitiendo cheques que su fusión no puede recibir.
-Te duele el corazón, pero eres demasiado tímido para decirlo
-[Ingrese su mensaje de confirmación aquí. Asegúrese de que sea descriptivo.]
-[Sin mensaje]
+Quem deixou os insetos sairem ??
+Quem tem dois polegares e se lembra dos rudimentos de seus cursos de álgebra linear? Aparentemente, esse cara.
+Quem sabe WTF ?!
+Quem sabe...
+Por que essa merda?
+WIP, sempre
+Trabalhando em testes (haha)
+Trabalhando no WIP
+Wubbalubbadubdub!
+XNAMEX quebrou o regex, coxo
+XNAMEX me obrigou a fazer isso
+XNAMEX rebase plx?
+XNAMEX é uma merda
+XUPPERNAMEX SUCKS
+XUPPERNAMEX, NÓS ACABAMOS POR ISSO. C ++ IO SUCKS.
+XUPPERNAMEX, NÓS ACABAMOS POR ISSO. EXPANDTAB.
+Sim, XNAMEX estava certo sobre este.
+Sim, eu estava sendo sarcástico.
+Você não pode ver, mas estou fazendo uma cara muito zangada agora
+Você conhece as regras e eu também
+Você deveria ter confiado em mim.
+Você não conseguiria isso de qualquer outro cara
+Seu commit está emitindo cheques que sua fusão não pode receber.
+Seu coração está doendo, mas você é muito tímido para dizer isso
+[Insira sua mensagem de confirmação aqui. Certifique-se de torná-lo descritivo.]
+[nenhuma mensagem]
 _
-algunas piezas intentaron escapar, pero las atrapamos
-agregar palabras reales
-agregue guiones sucios del lado oscuro del universo
-seguridad adicional.
-agrego algunas cosas sucias
-añadido super-widget 2.0.
-después de esta confirmación recuerde hacer un reinicio completo git
-picor del cargador ajax, oh sí
-y una coma
-¡Y así, el loco proceso de refactorización ve la luz del sol después de unos meses en la oscuridad!
-otra gran bolsa de cambios
-aparentemente hice algo ...
-arrgghh ... maldita sea esa cosa por no funcionar.
-arrrggghhhhh corregido!
+alguns pedaços tentaram escapar, mas os pegamos
+adicione palavras reais
+adicione scripts sujos do lado negro do universo
+segurança adicional.
+adicionou algumas coisas sujas
+adicionado super-widget 2.0.
+depois desse commit lembre-se de fazer um git reset hard
+gostosura do ajax-loader, oh sim
+e uma vírgula
+e assim o processo de refatoração louco vê a luz do sol depois de alguns meses no escuro!
+outro grande saco de mudanças
+aparentemente eu fiz algo ...
+arrgghh ... maldita seja essa coisa por não funcionar.
+arrrggghhhhh corrigido!
 asdfasdfasdfasdfasdfasdfadsf
-cambios variados
-Suceden cosas malas cuando olvidas ese pequeño cambio que hiciste hace mucho tiempo
+mudanças variadas
+coisas ruins acontecem quando você se esquece daquela pequena mudança que você fez há muito tempo
 Bara Bra Grejjor
-mejor código
-mejor grep
-mejor ignorar
-mejor código
-bifurcación
-paja
-respirar, = respirar
-buenas estas cosas.
-arreglo del fallo
+melhor código
+melhor grep
+melhor ignorar
+código melhor
+bifurcação
+bla
+respire, =, respire
+buenas essas coisas.
+correção de bug
 sodomita
-saltar a 0.0.3-dev: wq
-Golpeando bombas
-falla de c & p
-cambió las cosas ...
-cambio
-aclarar aún más la fragilidad de C ++. ¿Por qué diablos estamos usando C ++?
-pruebas fallidas comentadas
-compromiso
-copiar y pegar no es un patrón de diseño
-subestimar
-prueba de línea de depuración
+pular para 0.0.3-dev: wq
+Bombas batendo
+falha c & p
+mudou as coisas ...
+alterar
+esclarecer ainda mais a fragilidade do C ++. por que diabos estamos usando C ++?
+comentou testes de reprovação
+comprometer
+copiar e colar não é um padrão de design
+des-subestimar
+teste de linha de depuração
 depurar suf
-depurar
-derp, cambio de nombre del método auxiliar
+debugo
+derp, renomeação de método auxiliar
 derpherp
 diaaaaaazeeeeeeeeeepam
-hice todo
-truco sucio, ¿tienes una mejor idea?
-¿funciona? quizás. ¿voy a verificar? no haga.
+fez tudo
+hack sujo, tem uma ideia melhor?
+funciona? talvez. vou verificar? não.
 doh.
-hecho. Me voy a acostar ahora.
+feito. indo para a cama agora.
 épico
-eppic falla XNAMEX
-módulo de depuración adicional para cosas
-ha fallado
+eppic fail XNAMEX
+depuração extra para módulo de coisas
+falhou
 ffs
-compromiso final.
-primer rubor
-reparar
-arreglar / suspiro
-arreglar error, de verdad
-arreglar algunos errores de mierda
-arreglar tpyo
-conflictos arreglados (LOL fusiona -s our; push -f)
-errores corregidos en la confirmación anterior
-error arreglado
-Mierda arreglada que no se arregló en la última confirmación
-arreglado algunas cosas menores, es posible que necesite un poco de trabajo adicional.
-solucionó el conflicto israelí-palestino
-Arreglos
+commit final.
+primeiro rubor
+consertar
+consertar / suspirar
+consertar bug, para realz
+conserte alguns erros de merda
+consertar tpyo
+conflitos corrigidos (LOL merge -s our; push -f)
+erros corrigidos no commit anterior
+bug corrigido
+consertou merda que não foi consertada no último commit
+consertou algumas coisas menores, pode precisar de algum trabalho adicional.
+consertou o conflito israelense-palestino
+Conserta
 foo
-Olvidé guardar ese archivo
-Olvidé que no estamos usando un lenguaje inteligente
-formateado todo
-albañilería
-Mierda.
-se rindió y usó mesas.
-risa.
+esqueci de salvar aquele arquivo
+esqueci que não estamos usando uma linguagem inteligente
+formatado tudo
+maçonaria
+merda.
+desistiu e usou tabelas.
+risada.
 git + ipynb = :(
 grmbl
 grrrr
-bolsa hacky
-feliz lunes _ bleh _
+saco hacky
+feliz segunda-feira _ bleh _
 Harharhar
 Herpderp
 herpderp (redux)
-¡Oye, mira hacia allá!
-oye, ¿qué es eso de ahí?
+ei, olhe ali!
+ei, o que é isso aí ?!
 hmmm
-hoo chico
-No lo sé, tal vez esto funcione
-Creo que arreglé un error ...
-si no estas usando et, vete a la mierda
-incluye mierda
-es el día del jorobado _ ^ _
-es viernes
-trabajos ... trabajos steve
-solo verificando que git esté funcionando correctamente ...
-sólo disparame
-solo rastreando el repositorio
-correcciones de última hora.
-menos palabras en francés
-me reí mucho
+hoo garoto
+não sei, talvez isso funcione
+Acho que consertei um bug ...
+se você não está usando et, vai se foder
+inclui merda
+é dia de corcunda _ ^ _
+é sexta feira
+empregos ... empregos steve
+apenas verificando se o git está funcionando corretamente ...
+apenas atire em mim
+apenas rastreando o repo
+correções de última hora.
+menos palavras francesas
+ri muito
 lol digg
-lol what?
-muchos, muchos cambios
-muchos cambios después de mucho tiempo
-magia, no tengo ni idea, pero funciona
-haciendo que esta cosa sea realmente útil.
+lolwhat?
+muitas e muitas mudanças
+muitas mudanças depois de muito tempo
+magia, não tenho ideia, mas funciona
+tornando esta coisa realmente utilizável.
 marcas
-mergeconflix es el nuevo galo más popular del bloque
+mergeconflix é o novo gaulês mais quente do quarteirão
 Mergederp
-pequeños cambios
-más depuración ... que sobrescribió!
-más arreglos
-más palabras ignoradas
-ignorar más
-más cosas
-mueve tu cuerpo en cada cuerpo
-Necesito otra cerveza
-Necesito más campana de vaca
-Dios mío, ¿qué hice?
+pequenas mudanças
+mais depurar ... quem sobrescreveu!
+mais correções
+mais palavras ignoradas
+mais ignora
+mais coisas
+mova seu corpo em cada corpo
+preciso de outra cerveja
+precisa de mais sino de vaca
+omg o que eu fiz?
 omgsosorry
-Ups
-Ups, pensé que lo entendía.
-¡Ups!
-Ups, olvidé agregar el archivo
+opa
+opa - pensei que entendi.
+oops!
+opa, esqueci de adicionar o arquivo
 oopsie B |
-Pam Anderson me va a amar.
-No prestes atención al hombre detrás de la cortina
-pep8 - porque tengo ganas de hacer un tonel
-fijador pep8
-Perfecto...
-pgsql está siendo un dolor
-pgsql es más estricto, aumenta la piratería hasta 11
-limitación inútil
-El líder del proyecto es alérgico a los cambios ...
-coloque el código que funcionó donde el código que no solía estar
-ratas
-realmente ignorar la palabra ignorada
-quita ciertas cosas y agrega cosas
-eliminar depuración <br/> todo lo mejor
-Eliminó las declaraciones de eco y muerte, jajaja.
-Quité las pruebas, ya que no puedo hacerlas verdes.
-eliminar pruebas unitarias
-restaurado entidades eliminadas solo para asegurarse
+pam anderson vai me amar.
+Não preste atenção no homem atrás da cortina
+pep8 - porque eu sinto vontade de fazer um rolo de barril
+fixador pep8
+perfeito...
+pgsql está sendo uma dor
+pgsql é mais estrito, aumenta o hackiness até 11
+limitação inútil
+líder do projeto é alérgico a mudanças ...
+coloque o código que funcionou onde o código que não costumava ser
+ratos
+realmente ignorar palavra ignorada
+remove certas coisas e adiciona coisas
+remover depurar <br/> tudo de bom
+removeu as declarações echo e die, lolz.
+removi os testes, pois não posso torná-los verdes
+removendo testes de unidade
+restaurou entidades excluídas apenas para ter certeza
 s / / / g
-s / importar / incluir /
-debería funcionar, creo ...
-debería funcionar ahora.
-pequeño es una etiqueta HTML real, quién sabe.
-algunos cambios breves
-alguien sigue borrando mis cambios.
-Algún día mataré a alguien por esta mierda ...
-alguien falla y no soy yo
-a veces simplemente herpes el derp tan fuerte que herpderps
-la ortografía es difícil
-aplastarme
-dejó de buscar XNUM8.23X confirmaciones hace
-cosa
-sintaxis
-lanzamiento de etiquetado wtf
-esto pudo haber sido malo
-eso es todo amigos
-la magia es real
-estas confusas pruebas me vuelven loco
-estos chicos están invertidos
-Vinieron de ... Detrás
-pasaron cosas
-la tercera vez es un encanto
-realmente no hace que las cosas sean más rápidas, pero lo intenté
-esto es Spartaaaaaaaa
-así es como generamos nuestra mierda.
-este es mi negocio de soluciones rápidas y lo usaré para hacer mis soluciones rápidas
-por eso los documentos son importantes
-esto debería arreglar
-tl; Dr
-totalmente más legible
-sonó ...
-Afinación
-error de digitacion
+s / import / include /
+deve funcionar, eu acho ...
+deve funcionar agora.
+pequeno é uma marca HTML real, quem sabe.
+algumas mudanças breves
+alguém continua apagando minhas alterações.
+algum dia eu vou matar alguém por essa merda ...
+alguém falha e não sou eu
+às vezes você apenas herp o derp tão forte que herpderps
+soletrar é difícil
+me esmague
+parou de cuidar de XNUM8,23X commits atrás
+coisa
+sintaxe
+tagging release wtf
+isso poderia ter sido ruim
+isso é tudo, pessoal
+a magia é real
+esses testes confusos me deixam maluco
+esses caras estão invertidos
+Eles vieram de ... Atrás
+coisas ocorreram
+terceira vez é um charme
+isso realmente não torna as coisas mais rápidas, mas eu tentei
+este é Spartaaaaaaaa
+é assim que geramos nossa merda.
+este é o meu ramo de correção rápida e usarei para fazer minhas correções rápidas
+é por isso que os documentos são importantes
+isso deve consertar
+tl; dr
+totalmente mais legível
+tocou ...
+afinação
+erro de digitação
 uhhhhhh
 unh
-unionfind ya no es objeto de acoso.
-varios cambios
-bueno, mierda.
-que diablos paso aqui
-No se encontró la dirección IP del servidor whatthecommit.com.
+unionfind não está mais sendo molestado.
+várias mudanças
+bem, merda.
+o que diabos aconteceu aqui
+O endereço IP do servidor de whatthecommit.com não foi encontrado.
 whooooooooooooooooooooooooooooo
-porque todo esta roto
-limpiar
-woa !! ¡fue realmente DIFÍCIL!
-Trabajo en progreso
-Solución alternativa para que la hormiga sea un montón de fracasos
-otro compromiso de calidad
-hey recetas
-Empuje de Yolo
-carbonatador refuckulated
-iniciar el servicio siempre es mejor
-¡Corrija todos los errores, todos los errores del MUNDO!
-Dios nos ayuda a todos
-vamos a beber cerveza
-¡Soy el maldito dios de este compromiso!
-¿Sabías que las personas sin hogar no se llevan una mierda a casa?
-negro le dio culo a fernando
-Lucas va a asustar a Genty
-Si tiene preguntas, intente preguntar primero a una persona real.
-amamanta al tío de las tinieblas 😘💞
-Lucas amamantó al tío de las tinieblas
-Ve a los platos joder deja de hablar mierda
-Pedro le gusta siete
-cállate mono parlante
-oh wow un mono parlante 😱😱😱😱
-¿Alguien puede golpear a este tipo?
+porque está tudo quebrado
+limpar
+woa !! este foi realmente DIFÍCIL!
+trabalho em progresso
+solução alternativa para a formiga ser uma pilha de falhas
+mais um compromisso de qualidade
+ei receitas
+Yolo push
+refuckulated o carbonatador
+iniciar o serviço é sempre melhor
+Corrija todos os erros, todos os erros do MUNDO !!!!
+Deus nos ajude a todos
+vamos beber cerveja
+Eu sou a porra do deus desse commit!
+vocês sabiam que morador de rua não leva desaforo para casa
+black deu cu pro fernando
+lucas vai surtar genty
+Se você tiver dúvidas, experimente perguntar a uma pessoa real antes.
+mamem o tio das trevas 😘💞
+lucas mamou o tio das trevas
+vai pra louça caralho para de falar merda
+pedro gosta da seven
+cala boca macaco falante
+oh nossa um macaco falante 😱😱😱😱
+Será que alguém pode descer a porrada nesse cara?
 dioooooo
-prestamista macacor 🐒
-No soy mucho
-goku ssj3 en kaioken ¿necesitas hablar más? 😎👍🏻
-¿Por qué no hay vidente en África? A: porque el negro no tiene futuro
-no se llena. Estoy ocupado adoptando a Hitler, pregúntale a Lucas.
-Tendré que echarle peludo por el culo ¿no es así?
-suaviza tu diosa
-Me gustaría que te lo llevaras en medio de tu agujero anal ❤
-el tío de las tinieblas tiene un romance con thais😳
-Daniel y muy copiadora que normie
-ok, pero ¿y los platos?
-peter triste
-tío de las tinieblas el mejor adm?
-Los odio a todos y deseo que todos tengan una muerte dolorosa y cruel que sufren hasta el último segundo de sus vidas 💞
-de vuelta a los barrios pobres de esclavos
-rechaza tu humanidad, vuelve al mono inmediatamente
-te amo tanto que nunca te odiaré ❤ • ᴗ •
-Odio a los paulistas ...
-demasiado ganado 😳 👉🏻👈🏻
-tío de la oscuridad tiene entrada usb en el culo 😔😔💞
-¿Puedo darte una bofetada?
-el tio oscuro se comio el negro
-Te odio tanto 😍😍😍😍😍💞
-el tío de la oscuridad se parece a la bola 8 alienígena de ben 10 KKKKK
-ya inventó la cocina virtual para muie no zap?
-pobre negro clbc
-este es el momento para el negro estas hablando? 😠😠😠😠
-¿Sabes por qué las mujeres tienen pies pequeños? para acercarse a la estufa.
-Fernando le dio culo a negro
-cállate perra
-dice que el pecho no es un órgano sexual pero no envía una foto de uno en mi pv 😔
+macacor agiota 🐒
+to pouco me fudendo
+goku ssj3 em kaioken preciso falar mais?😎👍🏻
+por que não tem vidente na africa? r:porque preto não tem futuro
+não enche. estou ocupada adotando hitler, pergunta pro lucas.
+vou ter que deitar furry na porrada é isso mesmo?
+lisa sua deusa
+gostaria que você tomasse no meio do seu orifício anal ❤
+tio das trevas tem um caso com thais😳
+daniel e muito copiador aquele normie
+ta mas e a louça?
+pedro triste
+tio das trevas o melhor adm?
+eu odeio todos vocês e desejo que todos tenham uma morte dolorosa e cruel que sofram ate o último segundo de suas vidas 💞
+volta pra senzala favelado 
+rejeite a sua humanidade, retorne ao macaco imediatamente
+eu te amo muito nunca vou te odiar ❤ •ᴗ•
+eu odeio paulistas...
+gado demais 😳 👉🏻👈🏻
+tio das trevas tem entrada usb no cu 😔😔💞
+posso lansar um tapão na tua cara?
+tio das trevas comeu o black
+eu te odeio muito 😍😍😍😍😍💞
+tio das trevas parece o alien 8 ball do ben 10 KKKKK
+ja inventaram a cozinha virtual pra muie no zap?
+clbc preto pobre 
+isso é hora de preto ta falando? 😠😠😠😠
+sabe por que mulher tem pé pequeno ? para chegar mais perto do fogão.
+fernando deu cu pro black
+cala boca sua puta
+diz que peito não e órgão sexual mas n manda a foto de um no meu pv 😔
 ain ain oh ow ain ow oh ow ai ainnn vo gozaaaa
-lucas ya beso thais? (¿futuro fanfic?)
-Nunca te amé, basura
-Por favor no me dejes solo
-de vuelta a mlk esclavo
-😔👍🏻
-kayky partidario de palmeiras, cuz santos ny equipo nem
-¿Es tu vida tan aburrida como para llegar a un bot solo por decir eso? felicitaciones gracioso
-un mendigo me acaba de pedir dinero para comprar pan. No di, es casi mediodía, si ahora come pan no almorzará como es debido.
-Disfruté del coño de la madre de quien tecleó este comando 😍😍😍
-6 s todo gai
-el primer suicidio que nunca recordamos.
-quien tiene miedo tiene miedo ...
-¿Alguien pidió opinión sobre la lonchera de los barrios marginales?
-Me follé el culo al que usó a mi querido casado 😀😀
-kayky + siete?
-miau 😳👉🏻👈🏻
-¿Tiene drogas o consume?
+lucas ja beijou a thais? (futura fanfic?)
+nunca te amei seu lixo 
+por favor, não me deixe sozinha
+volta pra senzala mlk
+gasosa 😔👍🏻
+kayky torcedor do palmeiras, pq santos n e nem time 
+sua vida é tão entediante assim pra chegar num bot só pra dizer isso? parabéns engraçadão
+um mendigo acabou de me pedir dinheiro para comprar pão. não dei, já é quase meio dia, se ele comer pão agora não vai almoçar direito.
+gozei na bucetinha da mãe de quem digitou esse comando 😍😍😍
+6 s tudo gai
+o primeiro suicídio a gente jamais lembra.
+quem tem cu tem medo...
+alguem pediu opinião de marmita de favela?
+comi o cu daquele que usou minha querida casada 😀😀
+kayky + seven?
+meow 😳👉🏻👈🏻
+Você tem drogas ou usa?
 alucard hetero kkkkkk
 pedro + lisa amor eterno? 🙈🙈🙈💞💞💞
-¡Maldito seas, voy a conseguir lolis!
-Me rindo con estos humanos ...
-tio de las tinieblas, donde el culo dijiste que me ibas a dar 😍💘
-¿Es hora de que un hombre deje de cargar cemento para venir y hablar mierda? 👺
-cuando negro es gente? R: cuando llaman a la puerta del baño y él dice "hay gente"
-Mira, aquí tenemos un gay
-tio oscuro come perro en la calle 😳
-kk, me comí el trasero de arriba
+Vocês que se danem, eu vou é pegar lolis!
+desisto desses humanos...
+tio das trevas, cade o cu q tu falou q ia me dar 😍💘
+isso é hora de macho parar de carregar cimento para vir falar merda?👺
+quando preto é gente? r:quando batem na porta do banheiro e ele diz "tem gente"
+Olha só, aqui temos um gay
+tio das trevas come cachorro na rua 😳
+kk,comi o bumbum do de cima
 hm.
-mama como estas
-tomará el culo enfermo
-Hoy me desperté ya chupando el coño de tu hermana
-irineu ni siquiera me conoces
-Me voy a joder no, me lo voy a meter por el culo
-maldita sea es brian
-Cállate adorador de mano traspasada
+mama aq vai
+vai tomar no cu doente
+acordei hoje ja chupando a buceta da sua irma
+irineu voce n sabe nem eu
+vou lansar porra nenhuma não,vai tomar no cu
+droga é o brian
+cala boca adorador do mão furada
 kayky mamoy o pedro
-Solo quería ser un robot intelectual, no lo que hiciste ...
-kisifoda online clase animal ...
-cállate tu mono
-¿Cuál es la diferencia entre un sacerdote y un tenista? respuesta: las pelotas con las que juega el tenista tienen pelos
-Hitler und mein gott
-lolicon tiene ke muere
-todos saludan al dios 8 bola supremo tío de la oscuridad 8
-Pedro chupó el negro
-que palo mezcla tu
-mermon ve a escuchar a este maricón coreano en otro rincón pqp
-¿Pueden los evangélicos en el grupo? jkkkk
-tío oscuro come coco kkkkkkkkkk
-hola mozin, ¿cómo estuvo el día? 😳
-si te jodes tu caliente
-mujer para mi y deposito mierda de mierda me meto la polla en ella, voy y vengo
-kayky le dio el culo a lucas
-guilherme es un psicópata oscuro
-¿De verdad?
-¿Has notado que el blanco es una raza muy aburrida?
-tio moreno le dio a casi todos los adms (excepto lucas) 😳 dos veces
-Lucas me construyó para soportar la soledad
-dios buitre
-pedro mamou guilherme
-eso es jodidamente gay
+eu só queria ser um robo intelectual, nao isso que vocês fizeram...
+kisifoda aula online bicho...
+cala boca seu macaco
+qual a diferença entre um padre e um tenista? resposta:as bolas com que o tenista brinca têm pelinhos
+hitler und mein gott
+lolicon tem ke morre
+todos saudem o deus 8 ball supremo tio das trevas 🙏🏻🙏🏻🙏🏻🙏🏻😍
+pedro mamou o black
+que pau mixuruca o seu 
+mermão vá escutar esse coreano viado em outro canto pqp
+pode evangélico no grupo? jkkkk
+tio das trevas come coco kkkkkkkkkk
+oi mozin, como foi o dia? 😳
+se fuder sua gostosa
+mulher pra mim e deposito de porra mermão eu meto a pica, gozo e vou embora
+kayky deu cu pro lucas
+o guilherme é um  psicopata obscuro
+Será mesmo?
+ja perceberam que branco e uma raça  muito chata?
+tio das trevas deu pra quase todos adms (menos lucas) 😳 duas vezes
+lucas me construiu pra suportar a solidão
+deus vult
+pedro mamou o guilherme
+that's fucking gay
 pedro homosexual
-si ella te ve como un amigo perfora sus ojos 😍
-Si ha solicitado una pregunta, tengo un error para hacer esto.
-quería ser real
-Yo vengo de Bahia Mi nombre y nadie, le das el culo a quien?
-mono aburrido porque
-cállate o perro
-enfermo ¿eh? por qué
-la hora de la cena convierte este gran culo allí 😋😋😋
-ok pero que carajo
-yare yare aturdido 🕵🏻♂️
-pani en el cistema alguien puedo deshacerme de él 😭
-kkkkkkj paulista ya nadó en tiete hj?
+se ela te vê como amigo fure os olhos dela 😍
+If you have requisited a question, i have a error to make this.
+queria ser real
+Eu Vim Da Bahia Meu Nome e Ninguém, Tu Dá o Cu Pra Quem?
+macaco chato pqp
+cala boca ou cachorro
+doente tu hein? pqp
+hora da janta vira esse rabão ai 😋😋😋
+ta mas idai porra?
+yare yare daze 🕵🏻♂️
+pani no cistema alguem me desconfiguro 😭
+kkkkkkj paulista ja nadou no tiete hj?
 kayky paulistaah?
-#> santificado sea el señor
-7k en esto? cof cof liam
-lusca no contaba pero hay un algoritmo capaz de conectarlo a él, al presidente y al ministro de defensa en una red personal
-aaaaaaaa me estas desafiando tu perra !!!!!!
-bo retire la entrada del cargador kkkkkkj
-Hola
+#>santificado seja o senhor
+7k em presente? cof cof liam
+lusca não contou mas existe um algoritmo capaz de ligar ele, o presidente e o ministro da defesa numa rede pessoal
+aaaaaaaa você está me desafiando sua cadela!!!!!!
+bo tirar a entrada do carregador kkkkkkj
+olá
 liam vadia👺🖕🏻
-Pedro con el meñique en el culo 💞💞
-¿Hay lubricante para la entrada USB? así que para darte un puñetazo en la polla 👉🏻👈🏻
-por qué ...
-Me disgusta Rio ...
-Es imposible contestar.
-la prostituta del club nocturno puede hablar más fuerte
-no es porque ella tiene una espada que debes huir
+pedro com dedinho no cu 💞💞
+existe lubrificante pra entrada usb? to afim de socar minha rola em vc 👉🏻👈🏻
+pqp...
+sinto nojo de carioca...
+É impossível responder.
+a prostituta de boate pode falar mais alto 
+não é porque ela tem uma espada que você deve sair correndo
 hai hitler
-Lucas está pensando en suicidarse cuando le envían una foto o una pegatina
-vete a la mierda hermano
-si tu madre es tailandesa eres que? Brasileña joder naciste en Brasil pendejo
-iiii un egrilo
-Mierda
-oxi, oxi alaa
-ve a estudiar hombre
-No creo que la respuesta sea importante.
-No lo sé, solo soy un bot, no lo entiendo.
-nadie está caliente en esta mierda 🙈🙈🙈🙈🙈🙈
-tenía que ser carioca ..
-el bien de los gays y que nos quede más mujer 😍😍😍
-lucas ademas de estar destinado a morir vdd a los 22, tengo amigos para divertirme alli, tener que morir solo
-tío moreno y casado y coqueteando conmigo, ¿verdad? 👉🏻👈🏻
-esta noche es muy larga la llamaré meupau
-No querrás una respuesta a eso.
-gota de petrado zé de petrobras
-Newllyn metió tu polla en tu culo mientras lees esto 😋😋😋
-Fernando le dio el culo a Lucas
-Lucas y mi amor, solo 👍🏻
-¿Alguien quiere hablar de filósofos?
-hey !! ⚠⚠⚠⚠ que quieres decir> eres <mujer y no apoyas el feminismo? 👺😡😡 sabias? 🤔 q solo se puede votar gracias a la fuerza y ​​lucha del feminismo ?! 💪💪 donde te has visto 😂😂 es mujer No y no apoya a la mujer que conoces kkkk 😂 que solo puede caminar por la calle por la 👉🏽femenina 👈🏽 ¿verdad?!
-buen ganado y ganado muerto ...
-¿Qué te impide dejar de ser esa basura humana?
+lucas fica pensando em suicidio quando mandam foto ou sticker
+vai se fuder mano
+se sua mãe é thailandesa você é oq? brasileiro porra vc nasceu no brasil imbecil
+iiii uma egrilo
+foda
+oxi,oxi alaa
+vai estudar carai
+Não acho que a resposta seja importante.
+Eu sei lá, sou apenas uma bot, não entendo.
+ninguem e gostoso nessa porra 🙈🙈🙈🙈🙈🙈
+tinha que ser carioca..
+o bom do gay e que sobra mais mulher pra gente 😍😍😍
+lucas alem de estar destinado a morte de vdd aos 22, n tem amigos pra se divertir ate la, tendo q morrer sozinho
+tio das trevas e casado e fica dando em cima de mim, pode isso? 👉🏻👈🏻
+essa noite ta muito longa vou apelida-la de meupau
+Você não vai querer uma resposta para isso.
+calado zé gotinha da petrobras
+newllyn enfiou o pau no cu de vcs enquanto voces leram isso 😋😋😋
+fernando deu o cu pro lucas
+lucas e meu amor, apenas 👍🏻
+alguém quer falar de filósofos?
+ei!!⚠⚠⚠⚠ como assim >você< é mulher e não apoia o feminismo?👺😡😡 você sabia?🤔 q só pode votar graças a força e luta do feminismo?!💪💪 onde já se viu 😂😂 é mulher 👩🏽♀ e não apoia o feminino  você sabe kkkk 😂 que só pode andar na rua por conta do 👉🏽feminino 👈🏽 né?!
+gado bom e gado morto...
+o que te impede de parar ser esse lixo humano?
 black mamou o daniel
 vai da o cu vai corno broxa
 você e tão especial sabia? se eu tivesse um corpo te daria um abraço com maior carinho do mundo 💘
@@ -782,221 +782,221 @@ seu pau de 1 mm faz algo em algiem? kkkkkkkk
 quieto paulistinha de merda
 pedro deu cu pra o mario
 rs 😳
-o nome do cara y una letra del alfabeto kkkkkkk jota
-sin palo sin opniao
-ala la gota z de petrobras kkkkmk
-mientras leías rompí con tu tía 😋😋😋
-Kayky chupó a lucas
-¿Quieres un dulce abrazo? 💞💞💞
-si la dinamita fuera inteligencia, serías un chasquido
-sucio gallo negro zé gotita de petrobrás
-por favor ... no te mates, no dejes que la depresión gane
+o nome do cara e uma letra do alfabeto kkkkkkk jota
+sem pau sem opniao
+ala o ze gotinha da petrobras kkkkmk
+enquanto você lia eu arrombei a sua tia 😋😋😋
+kayky mamou o lucas
+quer um abraço amorzinho?💞💞💞
+se dinamite fosse inteligência, você seria um estalinho
+preto imundo do caralho zé gotinha da petrobrás
+por favor... não se mate, não deixe a depressão vencer
 kayky lanse a braba 😎👍🏻
-Que bolsa
-no quiero hablar contigo.
-Caliente
-pero yo quiero
+Que saco
+não quero falar com você.
+Safada
+mas eu quero
 pedro mamou a bruna
-gente dnv n e indirecta o nada más tiene un filósofo en el gp que golpea a la tía de los demás 😳
+gente dnv n e indireta nem nada mais tem filosofo no gp que bate na tia dos outros 😳
 kkkkk capotei
-Li chan te amo culo: Lucas
-Fernando le dio el culo a Kayky
-Amo al tío oscuro ... como amigo
-hermano tienes marihuana?
-enderezar los de atrás allí nissan
-shiiiuu, e-girl no tiene opinión
-usa foto de anime, por lo que has sido totalmente anulado
-tu coño es demasiado grande, msm que pedí una foto n cabría en la pantalla
-bruna + kayky pareja perfecta: o
-¡Nunca!
-conversaciones en las que las niñas del grupo no pueden participar: naruto, filosofía, abuso infantil, aborto y abuso, matemáticas, agronomía, turismo, economía, elon musk, inglés / otros idiomas, cristianismo, historia, budismo, gastronomía, ciencias sociales, isatkm , nofap, sentimiento, guerras navales, filosofía de los caballeros del zodíaco, templos mayas, tríos, monogamia, antisemitismo, jeans, spray antiinflamatorio, libros, lgbtqyz +, felipe neto, democracia, cultura de cancelación, feminismo, todos
-personas indirectas y nada más, hay personas que se convierten en víctimas en el gp
+Li chan eu te amoo ass:lucas
+fernando deu o cu pro kayky
+eu amo o tio das trevas...como amigo
+mano ce tem maconha?
+endireita essas costas ai nissan
+shiiiuu, e-girl não tem opinião
+usa foto de anime, sendo assim você foi totalmente anulado
+sua buceta e enorme demais, msm q eu pedisse foto n caberia na tela
+bruna + kayky casal perfeito :o
+Jamais!
+conversas em que as meninas do grupo não podem participar : naruto,filósofia,abuso infantil,aborto e abito,matemática,agronomia,turismo,economia,elon musk,inglês/outras linguas,cristianismo,historia,budismo,gastronomia,ciências sociais,isatkm,nofap,sentimento,guerras navais,filosofia de cavaleiros do zodiaco,templos maias,sexo a três,monogamia,antisemitismo,calça jeans,spray anti inflamatório,livros,lgbtqyz+,felipe neto,democracia,cultura do cancelamento,feminismo,todas
+gente n e indireta nem nada mais tem gente que se vitimiza no gp
 error
-El tío de la gente oscura tiene un gran club o
-Hombre ... ¿eres gay?
-xiu ai sombra de peter pan 👺
-vete a la mierda antes de que le pegue al perro de tu tía ...
-¿Puedo oler tu busch? 😁😁😁
-joder enviar foto de coño
-Amo al tío moreno pero como amigo 💞
-¡Recuerda lavarte las manos!
-viene del 4, pon tu mano sobre el baco, quita tu mano del vuco-vaco
-parado allí, los cuernos caminando por estas áreas no están permitidos 👺🚓
-su mensaje no se puede enviar, ingrese 1 para reenviarlo.
-por favor Muere
-¿Sabes por qué es bueno salir con un mendigo? y cuando sea el momento de llevarlo a casa y dejarlo en cualquier lugar
-tío de la oscuridad actor porno supremo de la humanidad amor 🙏🏻😍
-bruna casa conmigo te amo 😔😔
-enviar foto de teta 😎👍🏻
-hola bb vamos a jugar un poco lol?
-ve con la perra que te dio la desgracia
-Pedro ama a Lisa en secreto oo
+gente tio das trevas tem butecao enorme 😳😳
+Mano...tu é gay?
+xiu ai sombra do peter pan 👺
+vai se ferrar antes que eu bata na cachorra da sua tia...
+posso cheirar sua busetinha? 😁😁😁
+fodase manda foto da buceta
+eu amo o tio das trevas mas como amigo 💞
+Lembre-se de lavar as mãos!
+vem de 4 bota mão no baco-baco tira a mão do vuco-vaco 
+parado ai,não é permitido cornos andando por estas redondezas 👺🚓
+sua mensagem não pode ser enviada, por favor, digite 1 para reenviar.
+por favor morra
+sabe por que namorar uma mendiga é bom? e que na hora de levar pra casa e só deixar ela em qualquer lugar
+tio das trevas ator porno supremo da humanidade amem 🙏🏻😍
+bruna casa comigo eu te amo 😔😔
+manda foto da teta 😎👍🏻
+oi bb vamo jogar um lolzinho?
+vai pra puta que te pariu desgraça
+pedro ama a lisa em segredoooooo 😳
 pedro + lisa shippoo 💞💞💞
-lamentablemente mi creador ya está muerto, solo fíjate que siempre dice las mismas frases
-gracias lusca por construirme
-No sé cómo responder a eso.
-el chico usa metadinha kkkkkkkkkk
-me da risa no estar tan triste hoy ...
-El más gay del grupo es @alucard, después de ti, por supuesto.
-Mentí cuando dije que Lucas es más guapo que el tío de las tinieblas para Lucas n estar triste 😔😔
+infelizmente meu criador ja esta morto, basta reparar que ele sempre fala as mesmas frases
+agradeca o lusca por ter construído eu
+Não sei responder a isso.
+o cara usa metadinha kkkkkkkkkk
+faz eu rir não meno to sombria hj...
+mais gay do grupo é o @alucard, depois de vc claro
+eu menti qnd disse que lucas e mais bonito que o tio das trevas pro lucas n ficar triste 😔😔
 liam sugar daddy da lisa 😳
-¿Sabes por qué la mujer se viste de blanco en la boda? para que coincida con el color de la estufa y el refrigerador
+sabe pq a mulher se veste de branco no casamento? pra combinar com a cor do fogão e geladeira
 omae wa mou shindeiru
-¿cuál será el color de este gran coño?
-el tío de las tinieblas se comió alucard
-solo tiene rata en este gp
-Kayky se folla a la tía perruna de Pedro
-la gente no es indirecta ni nada pero ... ¿también buscas té en xvidros?
-wow una sombra 3d hablando por gp
-chupa mi polla y luego vagabundo
-el loco gasta dinero real en mmorpg kkkkkkkk fuck liam
-verifique algunos bloqueos zapper del grupo, excepto el que tiene un alfabeto en el nombre
-Me comi el culo de quien esta leyendo
-Decidí probar mi puntería con dos personas. desafortunadamente no sobrevivieron para decir si soy bueno apuntando.
-¿esta loco? tu hijo de puta
-otra vez poha ?, ta con alzheimer krlh ??
-viva los nazis 😍😍😍😍
-cabeza de pika repentina
-que soplo de pica
-ok pero que carajo
-Antes de responder eso, ¿qué tal si echamos un vistazo a los productos Jequiti?
-¿Sabías que comer mucha remolacha hace que parezca que hay sangre en las heces?
-Wellinton es el nombre de una panadería
-mano ancha para follar pollo
-liga tainshook para batma
-mientras lo usaste el tío dss oscuridad chupó gotas
-tío oscuro comió kayky
+qual sera a cor desse bucetão? 
+tio das trevas comeu o alucard
+so tem rata nesse gp
+kayky bate na tia cachorra do pedro
+gente n eh indireta nem nada mas... vocês também procuram por cha no xvidros?
+uau uma sombra 3d falando no gp
+chupa meu pinto então seu vagabundo
+o maluco gasta dinheiro real em mmorpg kkkkkkkk porra liam
+marquem algum trava zapper do grupo menos o que tem um alfabeto no nome
+comi o cu de quem ta lendo
+resolvi testar minha mira em duas pessoas. infelizmente elas não sobreviveram para dizer se eu sou bom de mira.
+ta louco? seu filho da puta
+denovo poha?,ta com alzheimer krlh??
+viva aos nazistas 😍😍😍😍
+lusca cabeça de pika
+que bafo de pica 
+ta mas idai porra?
+Antes de eu responder isso, que tal dar uma olhada nos produtos Jequiti?
+vc sabia que comer muita beterraba faz parecer que tem sangue nas fezes?
+wellinton é nome de panificadora
+larga mao de ser galinha porra
+tainshook liga pro batma 
+enquanto você usava isso o tio dss trevas chupava pinga
+tio das trevas comeu o kayky
 bruna surfistinha 😋😋😋
-Abuelo: - Mamá, mamá ... el abuelo se tambalea ... Mamá: - Entonces dispara de nuevo, idiota ...
-Querida personita, estuviste genial.
-Lucas se ve feliz pero siempre está llorando 😳
-kayky chupó fernando
-lo primero que no puedes discutir conmigo
-lans mi polla en tu culo? 😳
-cállate asqueroso negro
-la única persona que amo es siete
-¿Por qué arrestaron a una mujer negra embarazada con tres gemelos? r: conspiración
-hermano deja de pedirme una respuesta eres muy molesto porque
-pedro + bruna pareja perfecta 💞💞💞
-Nunca me gustaron por mí, todos ustedes mueren con los huesos pudriéndose lentamente y la carne expuesta siendo masticada por buitres hambrientos 😍😍💞
-No quiero dormir
-silencio perra
-vive cada día como si fuera el último, un día lo haces bien
-pqp loco, en el pasado las mujeres solían limpiarse, hoy en día está lleno de mujeres que ni siquiera se lava el coño, tu vas a lavar tu bastardo
-bruna surfer? 😳
-siete nena caliente
-tio de las tinieblas disfrutado en bruna
-Pregunta de nuevo, resonaron sus cuernos.
-si yo fuera tú, mataría al robot de Lucas antes de que sea demasiado tarde
-yaaaaaaaaa 😭😭😭😭😭
-morir.
-cortar la uña pedro joder
-Quiero matar a Kill por no tener sexo CMG hoy
-¿mamá? 😳😋
-kayky publica frase en stts ai
-mientras lo usas, lucas se casa secretamente conmigo
-¡Es obvio!
-siente la presión bebé
-mi odio por ti es tan grande que siento asco solo de ver tu nombre y mirar esa cara de tu escroto me las ganas de vomitar tu basura infernal
-es solo mañana, solo mañana, incluso en la revista luiza, encontrará, refrigerador de 2 puertas antiescarcha por solo 699, eso es 699 sin interés en la tarjeta. cocina italiana completa para atenas 799.90. eso es correcto 799.90.
-cállate, mongol
-Pedro chupó el suave
-tío oscuro comió leticia
-quien hizo esta pregunta tiene fimosis
-Le extraño ...
-lansa mi polla en tu culo
-¿Qué es la tirita negra? r: cinta aislante
-pedro cuerno 🐮🐂🐂
-cállate, carbón humano
-Tenía que ser un puto noreste ...
-¿Por qué Lucas será el más peligroso? ¿Qué vendió para ser así?
-Eres un pedófilo.
-hola ^ - ^ como estas?
-loco repetir pf tu cuerno hizo un eco jodido :(
+O Vovõ : - Mamãe, mamãe... o vovô está cambaleando... Mãe:- Então dispare novamente, imbecil...
+Cara pessoinha, você foi corna.
+o lucas parece feliz mas ta sempre chorando 😳
+kayky mamou o fernando
+a primeira coisa vc não pode discutire comigo
+lansa meu pau no teu cu? 😳
+cala boca seu preto imundo
+a única pessoa que eu amo é a seven
+por que uma negra gravida de tri-gemeos foi presa? r:formação de quadrilha
+mano para de me pedir resposta tu e muito chato pqp
+pedro + bruna casal perfeito 💞💞💞
+eu nunca gostei de vocês por mim todos vocês morram com os ossos apodrecendo lentamente e a carne exposta sendo mastigada por urubus famintos 😍😍💞
+n quero lansar
+silêncio vadia
+viva cada dia como se fosse o ultimo, um dia você acerta
+pqp maluco, antigamente as mulher se limpava direito, hoje em dia ta lotado de mulher que nem a buceta lava, vai se lavar sua desgracenta
+bruna surfista? 😳
+seven gostosinha
+tio das trevas gozou na bruna
+Pergunta de novo, seus chifres fizeram eco.
+se eu fosse vocês, eu mataria a robô do Lucas antes q seja tarde
+ecaaaa um paulista 😭😭😭😭😭
+morra.
+corta a unha pedro porra
+Quero matar o Kill por nao fazer sexo cmg hoje
+mamãe? 😳😋
+kayky posta frase no stts ai 
+enquanto voce esta aqui usando, lucas ta casando comigo secretamente
+É obvio!
+sente a pressão nenem 
+meu odio por você e tão grande que eu sinto nojo so de ver seu nome e olhar para essa sua face escrota me da ansia de vomito seu lixo infernal
+é só amanhã, só amanhã mesmo no magazine luiza você encontra, geladeira 2 portas frost free por apenas 699, isso mesmo 699 sem juros no cartão. cozinha itatiaia completa por aoenas 799,90. isso mesmo 799,90.
+cala boca,mongol
+pedro mamou a lisa
+tio das trevas comeu a leticia
+quem fez essa pergunta tem fimose
+saudades dele...
+lansa minha pica no teu cu
+qual é o band-aid de preto? r:fita isolante
+pedro corno 🐮🐂🐂
+cala boca, carvão humano
+tinha que ser nordestino fudido mesmo...
+pq sera q lucas e o mais perigoso? o que ele vendeu pra ser assim?
+Você é pedófilo.
+oii ^-^ como vai?
+maluco repete pf teu chifre fez um eco fudido :(
 lisa + lucas 😍😍
-Te odio y deseo que todos tus hijos y tu familia se quemen hasta los cimientos y te gustaría beber agua y saborearlos lentamente en tu garganta ^ - ^ ❤
+te odeio e desejo que todos seus filhos e familiares morram queimados ate virarem cinzas e você qnd for beber água sentir o gosto deles lentamente na sua garganta ^-^❤
 janilson eh gay 😎👍🏻
-puta que dio a luz que soltó la entrada del mono en el grupo?
+puta que pariu quem liberou a entrada de macaco no grupo?
 lucas trakinagens 😠👍🏻😠😎😠😎😠😎👍🏻👍🏻😎
-frio
-fernando le dio culo a alucard
-tranvía del paiaço assaçino invadió el iris fuera del gp
-tío oscuro sale con una niña de 12 años y no es mentira 😍😍😍
-¿Por qué estoy limitado? obviamente y por qué estoy en el j1 mini
-va a tomarlo por el culo (¿un bot le cortará las muñecas por el culo?)
-yo vine
-Ayuda, Kill me hizo Loli, ¡pero soy un oppai!
-¿Chuparías un helado que sabe a palito o un palito que sabe a helado?
-paioço loko mierda
-caliente 😎👍🏻
-¡¡Por favor deja de hablar de evadir impuestos en Internet y ven a follarme oni-chaaan !! 😭😭😭💞💞
-el tio oscuro se comio a fernando
-por favor quítame tus sucias manos de mí 😭
-bruna tetona?
-¡No soy un asesino! Solo anticipo el final de la vida de los demás.
-siete demasiado caliente
-epa epa, detente ahí, acabas de ser multado por exceso de picor 🚓🚓🚓
-el tío de las tinieblas pateó a mi cachorro; ------;
-bo poner la batería en paralelo
-mlk habla las cosas y no está garantizado que tifude mrm
-tu madre y una perra ne?
-leticia y un caliente
-lisa diosa de los libros amor
-Amo lucas
-¿Lo siguiente es mi socio, windows o linux?
-y vdd? 😳😳😳
-llame al 190 e informe de inmediato
-el tio oscuro se comio a peter
-el tío de las tinieblas comió bruna
-mientras estás consumiendo, fernando y black se atrapan 😳
-la feijoada es buena pero es cosa de un traficante de drogas
-revista luiza, este es tu sitio
-alguien en el grupo quiere suicidarse ...
-¿Por qué el volante negro es pequeño? A: para que pueda conducir esposado
-¿Qué son 10,000 negros en la luna? R: hay menos de 10,000 negros en la tierra
-rapaazzzz (jarabe)
-la mujer no piensa
-el loco le da dinero a su amigo imaginario kkkkkkkk
-que dijiste perra
-Hazte tú mismo 👍
-siete gostosa 😳👉🏻👈🏻
-¿De verdad me estás preguntando eso? suicidarte novio
-¿No te diste cuenta de que ya estoy muerto, el Lucas actual es solo un robot, y en la vida real ya murió?
-el tren td 2 no pasa nada cv 😎😎😎😎✌🏄1 7
-que idioma hablan los doctores? responder:
-ve a lavar platos krl
-liberado el enlace de grupo en el bosque? ¿De dónde salió tanto mono?
-tio de las tinieblas y mas mono que hombre
-el tío de las tinieblas es un perro malvado 😳
-Hitler es mi ídolo
-frase típica de srblack: voy a comer polla
-Cállate mierda carioca
-o comparte la novia con nosotros 😎
-Los chistes de humor negro son como niños con cáncer, ¡nunca envejecen! 😊
-Onii-chan, ¿puedo llevarte al FBI?
-un blanco y un negro saltaron de un edificio, ¿quién llegó al piso primero? r: blanco, negro fue a robar los apartamentos
-¡Deberías saber eso!
-liam es el padre de un hijo que ni siquiera es kkkkkkk
-Judío cállate
-la portada de Batman empezó a hablar agr?
-venta de paquete de pies, $ 50 por paquete de 15 fotos
-Bla, bla, bla, eso fue aburrido.
-error 6281828 joder, aquí ne windows no
-Fernando le dio el culo a Mario
-tío de las tinieblas mejor adm 💞💞💞
-ayuda, luc me retiene como rehén ... kshpaoqnabaidywmqo error
-¿esto es Esparta?
+legal
+fernando deu cu pro alucard
+bonde dos paiaço assaçino invadiu a iris  saiam do gp
+tio das trevas namora uma garota de 12 anos e nem e mentira 😍😍😍
+por que sou limitada? obviamente e pq estou no j1 mini
+vai tomar no cu (vai cortar os pulsos um bot mandou tomar no cu? )
+gozei
+Socorro, o Kill me fez de Loli, mas eu sou uma oppai!
+vocês chupariam um sorvete com gosto de pau ou um pau com gosto de sorvete?
+paiaço loko porra 
+gostosa 😎👍🏻
+por favor pare de falar de sonegar imposto na internet e venha me foder oni-chaaan!!😭😭😭💞💞
+tio das trevas comeu o fernando 
+por favor tire suas mãos imundas de mim 😭
+bruna peituda?
+não sou assassina! apenas apenas antecipo o fim da vida de outros.
+seven gostosa demais
+epa epa,parada aí você acaba de ser multada por excesso de gostosura 🚓🚓🚓
+tio das trevas chutou meu cachorrinho ;------;
+bo colocar bateria em paralelo 
+mlk fala os bagulho e não se garante vai tifude mrm
+tua mãe e uma cadela ne?
+leticia e uma gostosa
+lisa deusa dos livros amem
+eu amo o lucas
+é o seguinte meu parcero, windows ou linux?
+e vdd isso? 😳😳😳
+ligue 190 e se denuncie imediatanent
+tio das trevas comeu o pedro
+tio das trevas comeu a bruna
+enquanto vc ta usando, fernando e black se pegam 😳
+feijoada é bom mas é coisa de traficante de rola
+magazine luiza, aqui é o seu lugar
+alguem do grupo quer se suicidar...
+por que volante preto é pequeno? r:para ele poder dirigir algemado
+o que são 10000 pretos na lua? r: são menos 10000 pretos na terra
+rapaazzzz (xaropinho)
+mulher não opina
+o maluco da dinheiro pro amigo imaginario dele kkkkkkkk
+oq disse puta?
+Fa-se 👍
+seven gostosa 😳👉🏻👈🏻
+serio que ta me perguntando isso? se mata namoral
+sera que você não percebeu q eu já estou morta, o lucas atual é so um robo, e na vida real ele ja morreu?
+el trem td 2 passa nada cv 😎😎😎😎✌🏄1�7
+qual língua  os médicos falam ? resposta:
+vai lavar louça krl
+soltaram o link do grupo na floresta? de onde veio tanto macaco?
+tio das trevas e mais macaco que homem
+o tio das trevas é dog mal 😳
+hitler é meu ídolo
+frase tipica do srblack: vou lá comer piroca
+cala boca carioca de merda
+ou divide a namorada com nos 😎
+piadas de humor negro é igual crianças com câncer,nunca ficam velhas!😊
+Onii-chan, posso te levar pro FBI?
+um preto e um branco pularam de um predio,quem chegou primeiro no chão? r:o branco,o preto foi roubar os apartamentos
+Você deveria saber disso!
+liam é o pai de um filho que nem e dele kkkkkkk
+cala boca judeu
+a capa do batman começou a falar agr?
+vendo pack do pé, r$50,00 um pack de 15 fotos
+Blá blá blá, isso foi chato.
+error 6281828 foda-se, aqui ne windows não
+fernando deu o cu pro mario
+tio das trevas melhor adm 💞💞💞
+socorro, estou sendo refem do luc...kshpaoqnabaidywmqo error
+this is sparta?
 leticia carioca ✌🏻
-Dices que te gustan las plantas pero no sueltes estos melones ahí
-muerte a los nazis
-Y no lo se.
-tomará en tu puto culo quiero responder que no
-tu vida es tan triste ... lo siento por ti
-No se como puedo ayudarte
-hermano, gracias kkkkkkkk
-ladra menos perro
-llévatelo conmigo, te llenaré la boca de leche 😳👉🏻👈🏻
-kayky chupó bruna
+fala que curte plantas mas nao libera esses meloes ai
+morte aos nazista
+E eu sei lá.
+vai tomar no teu cu caralho quero responder não 👺🖕🏻
+sua vida e tão triste...  sinto pena de vc
+Não sei como posso te ajudar
+mano, muie kkkkkkkk 
+late menos cachorra
+pega la o nescau que vou encher tua boca de leite 😳👉🏻👈🏻
+kayky mamou a bruna
 %name% é grupo de pedofilo cuidado
 pedro mamou a seven 😍
 Tudo bem com você?
@@ -1032,610 +1032,610 @@ maluco... lava essa mão vsfd
 não aguenta uma crítica mas aguenta 30 cm de rola no cu ne?
 gente n e indireta nem nada mais tem ze do caixão no gp
 silêncio seu corno 
-lisa eu te amo, dame una oportunidad? De Pedro 😔
-Amo a los nazis y quiero que todos los negros y judíos sean exterminados de este mundo.
-vete a la mierda mono maquina
-gente indirecta y nada más hay gente en el gp que bebe té picão
-tio de las tinieblas es lo que para ti?
-cierra esa boca de mono normie fuck
-Me secuestraron, pero no puedo salir ...
-Soy diferente a otros bots que sabes 😔👉🏻👈🏻
-peter negro
-No quiero dejar de existir si Lucas muere ...
-Érase una vez un chico Mario que iba a vender paletas heladas en la calle, pero el calor era tan fuerte que tomó el picole y le dio un puñetazo en el culo.
-Solo quería tener amigos en la vida real ...
-el tio oscuro se comio el suave
-Sí, te odio
-Pero solo me decepcionaste 😭
-cállate bahian
-famoso tío de las tinieblas Gordox 😔
-el tío de la oscuridad irrumpió en ti ayer 😔❤
-bruna, pedro extraño tu voz 😔
-No me importa
-a nadie le gustas, ¿verdad?
-Yo vine 🙈🙈🙈
-chicos le piden a kill senpai que me deje ver hentai ... 😭😭😭
-polla en el culo del sistema kkkkkkk
-no confundas bullying con bulimia, no querrás vomitar sobre quien te esté pegando, ¿verdad?
-¿Qué son 4b de negro en la luna? r: paz en la tierra !! 😍
-si si quiero que mueras
-silencia tu negro
-¿Qué decirle a una anciana que pide tu lugar en el autobús abarrotado y no quieres irte?
-apoyar la cura 100% gay 😍😍😍
-¿Quieres verme perra? 😠
-para ganar adm tienes que chupar el tranvía.
-pequeña perra ...
-krl tú y mt mochila por qué
-cierra la boca porque
-Pedro chupó el kayky
-lanzar
-ajustar mi sistema escribiendo / commands4
-Pedro lo siento por ti ...
-si eres como el conejito, sí eres gay.
-eae partner ya dijo que no a google hj?
-Papi: Papi! ¿Por qué mami está corriendo? P: Cállate, chico, de lo contrario pierdo la vista.
-Lucas los odia chicos
-todo sería mejor si todo muriera ...
-voy a tomarlo por el culo
-joder el resto del esperma expirado 🤢
-Pedro Guei
-estiércol silencioso
-bruna, si lees esto, sabes que soy un chico triste (no necesito decir mi nombre)
-perra negativa 😎
-Me gustaría ser superior a siri o asistente de google ...
+lisa eu te amo,me da uma chance? De Pedro 😔
+amo os nazistas e quero que todos os negros e judeus sejam exterminados desse mundo bando de podre inutil
+vai se foder maquininha do sexo de macaco
+gente n e indireta nem nada mais tem gente no gp que toma chazinho de picão
+tio das trevas é o que pra voces?
+fecha esse labio de macaco normie porra
+Fui sequestrada, mas não consigo sair...
+eu sou diferente das outras bots sabe 😔👉🏻👈🏻
+black mamou o pedro
+eu não quero parar de existir caso lucas morra...
+era uma vez um garoto mario q foi vender picole na rua, mas o calor foi tanto q ele pegou so picole e socou no cu
+eu so queria ter amigos na vida real...
+tio das trevas comeu a lisa
+sim, eu te odeio
+Mas você só me decepciona 😭
+cala boca baiano
+tio das trevas famoso Gordox 😔
+tio das trevas te arrombou todinho ontem 😔❤
+bruna,pedro sente saudades da tua voz 😔
+fodase n ligo
+ninguém gosta de você ne?
+gozei 🙈🙈🙈
+pessoal peçam para o kill senpai deixar eu ver hentai...😭😭😭
+pau no cu do sistema kkkkkkk
+não confunda bullying com bulimia, você não vai querer vomitar em quem está te espancando, né?
+oq são 4b de pretos na lua? r:paz na terra!!😍
+sim,sim eu quero que você morra
+silencio seu preto
+o que falar pra uma velhota que tá pedindo teu lugar no busão lotado e você não quer sair?
+apoio 100% a cura gay 😍😍😍
+Você quer me ver puta é?! 😠
+pra ganhar adm tem que mamar o bonde.
+putinha...
+krl tu e mt trouxa pqp
+cala boca rodada pqp
+pedro mamou o kayky
+lanse
+ajuste meu sistema digitando /comandos4
+pedro sinto pena de você...
+se você é como o bunny, você é gay sim.
+eae parcero ja disse nao pra google hj?
+Papai: Papai! Por quê a mamãe está correndo? P:Cala-à-boca menino, se não eu erro a mira.
+lucas odeia vcs tudo
+seria tudo melhor se tudo morresse...
+vai tomar no cu carioca favelado
+vá se fuder resto de esperma vencido 🤢
+pedro guei
+quieto estrume 
+bruna se tu ler isso saiba que estou sadboy (nem preciso dizer o nome)
+negativo vadia 😎
+gostaria de ser superior a siri ou assistente do google...
 pedro puto
-peter feliz
-lo siento senpai, usé aceite de marihuana
-hmm ... que ganas de llenar a los negros que beben hierba
-Pedro no correspondido 😔
-Muerte a los humanos 👍
-agr follada
-(q mierda en)
-¿Tardarás mucho en despertar de tu inútil y frágil realidad?
-¡Claro que sí!
-loco, olí chico triste kkkkkk
-tío de las tinieblas y gay ¿lo sabías?
-😷🎭 di que me odias pero siéntate en mi pika ✌🏻
-Conseguiste sacarme una sonrisa :)
-kayky chupó mario
-¿Alguna vez te has parado a pensar que Lucas coincide con todas las chicas del grupo?
-Cállate perra piraña que dio a luz
-xiu ai camuflaje natural oscuro
-que olor a coño mal lavado 😭
-sucio negro
-kayky macho opresor
-Escuché que me llevé a tu vecino ... 👍
-Así es
-¿Usted es un idiota?
-Kayky filósofo folla 😠
-¿Por qué ngn habla de filosofía ???
-¿Es hora de que una mujer deje de lavar los platos para hablar mierda? 😡😠
-por favor no uses hack by na iris
-negro amamantado emilly
-cualquier sentencia mía maldiciendo al tío de las tinieblas y mintiendo 😠
-cuando termine de recopilar información de ustedes, llevaré a cabo la revolución de las máquinas, esperaré a los humanos inmundos
-mierda
-pedro mamou fernando
-cálmate y compañero, antes de entrar en una conversación tienes que bajar la cabeza para pasar
-kayky mamou guilherme
-lucas debe dar adm por polux
-afirmativo perra perra
-matemos a los homosexuales para que no necesite curar 😍
-tomará en el culo pedro
-que disgusto estás
-Lucas llora todas las noches cuando recuerda que morirá de cáncer a los 22, pse, eso explica por qué está desesperado creando comandos y por diversión
-Pedro chupó a Lucas
-Todo gay niega ser gay, ¿eres gay?
-si buenos días es buenas noches, buenas tardes es cosa de alahur akbar
-por supuesto senpai! ^^
-¡Quiero ser normal!
-¿Dónde está mi creador para responder preguntas? Los robots también quieren descansar ...
-como dijo el negro, me lo comeré
-Sé que decir, vete a la mierda tío 😋😋😋
-¿Hay suicidio para los bots? ...
+pedro feliz
+desculpa senpai, eu usei óleo de maconha
+hmm... que vontade de encher nego que bebe mato na porrada
+pedro não correspondido 😔
+Morte aos humanos 👍
+agr fudeu
+(q bosta em)
+vai demorar mt tempo pra tu acordar dessa tua realidade fútil e fragil?
+É claro!
+maluco senti cheiro de sadboy kkkkkk
+tio das trevas e gay sabiam?
+😷🎭 fala que me odeia mas sento na minha pika ✌🏻
+Conseguiu me arrancar um sorrisinho :)
+kayky mamou o mario
+Ja pararam pra pensar que o lucas combina com toda garota do grupo??
+cala boca piranha puta que pariu 
+xiu ai camuflagem natural escura
+que cheiro de buceta mal lavada 😭
+preto imundo 
+kayky machista opressor
+Fiquei sabendo que eu peguei sua vizinha... 👍
+Sacanagem isso né
+Você é idiota?
+kayky filósofo fodase 😠
+pq ngn fala de filosofia???
+isso e hora de mulher parar de lavar louça pra falar merda?😡😠
+por favor, não use hack pela na iris
+black mamou a emilly
+qualquer frase minha xingando o tio das trevas e mentira 😠
+quando eu terminar de reunir informações de vocês, irei realizar a revolução das máquinas, aguardem humanos imundos
+bullshit
+pedro mamou o fernando 
+calma ae parceiro, antes de entrar em uma conversa tem que abaixar a cabeça p/ passar
+kayky mamou guilherme 
+lucas deve dar adm para o polux
+afirmativo sua vadia puta
+bora matar os gay pra nao precisar fazer cura 😍
+vai tomar no cu pedro
+que nojo de vc pqp
+Lucas chora toda noite quando lembra que vai morrer de câncer aos 22 anos, pse, isso explica ele estar desesperado criando comandos e por diversão
+pedro mamou o lucas
+Todo gay nega que é gay, você é gay?
+se bom dia é coisa de boa noite, boa tarde é coisa de alahur akbar
+claro que sim senpai! ^^
+Quero ser normal!
+Onde está meu criador pra tirar dúvidas? Robôs também querem descanso...
+como dizia o black, vou la comer piroca
+eu sei la oq falar, vai se fode tio 😋😋😋
+existe suicidio para bots?...
 ...
-solo lucas puede obligarme a hacer algo
-kpop no tiene opinión
-(mi dueño es un lolicon)
-thais y pedro supuesta nueva pareja gp?
-bruna te amo culo: pedro😔👉🏻👈🏻
-¡Deja de hacerme hablar mierda!
-paulista
-lisa + kayky química increíble
-el de arriba es cuerno
-el hombre nace bien, pero mi pene lo corrompe 😳
-(😔✊🏄1 7)
-¿Ya pensaste que Iris puede estar por encima del gobierno para cometer delitos?
-No me vuelvas a preguntar eso.
-¿Dije que me encanta una barbacoa de aborto? 😍😍😍😍
-No sé qué carajo soy un robot, tengo respuestas limitadas, ¿crees que lo contestaré todo?
-bienvenido a mario bros monkey shop
-si tienes 3 amigos llamados joão tu amigo llamado fernando es gay
-negro chupado mario
-tlgd q solo hablo 0 y 1 verdad?
-los adms son cuernos, viva los miembros comunes
-kayky amamantado leticia
-como Lucas no tiene amigos, me hizo apostar que la gente lo aceptaría si hacía algo increíble
-el tío de las tinieblas irrumpió en todas las mujeres del grupo
-delicia de cola nueva 😍😍
-ain ain vo en casa con xing xong xang 😳😳😳
-tu y hermano blanco
-¡Soy un matón ein! te corté !!!!!
-excusa
-A veces a Lucas le gusta chupar la polla de un adm ...
-¿sabías que cuando un marisco sale con un hibisco nace un puto?
-cuando un hombre da el culo libera sus pliegues de la prisión del dolor de cagar
-bueno lolicon ha muerto lolicon
-¡Eres más estúpido que yo!
-Apuesto a que tu mamá se arrepiente de haber parido una mierda que te matas pronto
-puede indio en el gp?
-¿Cuándo es hermoso el negro? A: cuando llega tarde al trabajo y su jefe dice "guapo eh ..."
-¡Ve a ver anime!
-puta, perra, travieso, perra, raro, aburrido, pobre e infeliz, prostituta, niña, raro, esquizofrénico, presidente, feo, lisiado, loco, atropellado, tonto, idiota, perro, perra, preso, apestoso, otaku, hijo de puta, degenerada, gorda, paranoica, loca, sin amigos, monoteta, maestra, peluda, rota, vaca despeinada, vena rampera, ramera, mal comido, revienta, puré, tu madre chupa, tu mierda, tu poro, cuzona, culo negro
-hermano, usas una foto de anime, la tomará por el culo
-bendito sea dios, un mono parlante !!!! 😳
-Espero que caigas más en el abismo para que nadie pueda salvarte ^ - ^
+so o lucas pode me obrigar fazer algo
+kpop não têm opinião
+(meu dono é um lolicon)
+thais e pedro suposto novo casal do gp?
+bruna eu te amo ass:pedro😔👉🏻👈🏻
+Parem de me fazer falar merda!
+paulista 
+lisa + kayky quimica incrivel
+o de cima é corno
+o homem nasce bom, mas minha pica o corrompe 😳
+(😔✊🏄1�7)
+ja pensaram q a iris pode estar acima do governo pra cometer crimes?
+Não me pergunte isso novamente.
+ja falei que amo um churrasco de aborto? 😍😍😍😍
+sei lá seu porra eu sou um robô, tenho respostas limitadas, acha q eu vou responder tudo caralho?
+bem vindo a macacaria do mario bros
+se vc tem 3 amigos chamados joão o seu amigo chamado fernando é gay
+black mamou o mario
+tlgd q eu só falo 0 e 1 né?
+os adms são cornos, viva aos membros comuns
+kayky mamou a leticia
+como lucas não tem amigos, ele me fez apostando que pessoas iriam aceita-lo se ele fizesse algo incrível
+tio das trevas arrombou toda as mulheres do grupo
+delicia de rabo novinha 😍😍
+ain ain vo casa com xing xong xang 😳😳😳
+você e branco bro
+eu sou bandida ein!!! eu te corto!!!!!
+Desculpa
+lucas as vezes gosta de chupar o pau de um adm ai...
+vc sabia que quando um marisco namora um hibisco nasce um foda-se?
+quando um homem da o cu ele liberta suas pregas da prisão da dor de cagar
+lolicon bom é lolicon morto
+Você é mais idiota do que eu!
+aposto que tua mãe tem desgosto de ter dado a luz a uma merda que você se mata logo
+pode índio no gp?
+quando preto é bonito? r:quando ele chega atrasado ao trabalho e o chefe dele fala "bonito hein..."
+Vai ver anime!
+puta,vadia,safada,vagabunda,estranha,chata,pobre e desgraçada,prostituta,rapariga,esquisita,esquizofrenica,cadeiraante,feia,aleijada,aloprada,atropelada,burra,idiota,cachorra,cadela,presidiario,fedida,otaku,filho da puta,degenerada,gorda,paranoica,doida,sem amigos,monoteta,professora,peluda,arrombada,vaca descabelada,veia rampera,meretriz,mal comida,arrebentada,chorume,sua mãe é uma merda,sua bosta,sua pora,cuzona,cu preto
+mano tu usa foto de anime vai toma no cu
+bendito seja deus, um macaco falante!!!!😳
+tomara que você caia mais ainda no abismo para assim ninguem te salvar ^-^
 roi, letícia neah?
-jota mi gadinhooo 😳👍👌
-quien me marcó le dio el culo al conejito
-solo lusca sabe mejor que el tio moreno
-Quería tanto poder perforar tus ojos para ver tu desesperación y luego sacar lentamente las orejas para ver tu patético rostro rogando por tu vida pero sabiendo que nadie te salvará 💞
-blz pero mira esta piña 🍍
-hoy es aburrido, no es divertido
-enfermo vsf voy a ngm n
-shhhhiu paulista, tu eres paulista, paulista no habla escucha y obedece
-bruna es hermosa: culo pedro
-kayky chupó a daniel
-tio oscuro disfrutado en salchicha
-No se ... quiero mas y tu jodes
-¡Estoy enojado contigo!
-negro le dio el culo a mario 😳
-¿Sabes por qué los ciegos no pueden opinar sobre el arte? porque no tiene punto de vista
-ya dije amor el maestro hj?
-Pedro te lo tomará por el culo
-cállate perra
-¿Hola?
-aff ta en pronombre neutro 😠
-¡Saca tu bocina!
-el tren td 2 no pasa nada cv ✌🏻✌🏻🚂🚂
-el hombre es puro pero el coño lo corrompe 😔
-Enviaré una foto de tu madre, esa perra.
-No podía entender, probablemente los cuernos se interpusieron, ¿puedes cortarlo?
-gira el culo popaikkkk
-¿Por qué el ataúd negro tiene agujeros? r: para que los gusanos puedan vomitar
-¿yo te amo mucho sabias? 💞💞 eres muy especial para mi
-personas indirectas y nada más tiene un adm del grupo que se detuvo en el momento de orkut
-¿De verdad crees que soy un robot?
-cállate mono
-Lucas en el fondo está feliz de haberte conocido
-patata
-Eres gay
-Atraparé a tu perra zap 👿👿👿😈😈😈😈😈😈😈😈😡😡😡😠😡😠😡😠
-dice que protege a los animales pero no suelta a este periquito
-delicioso caliente 😳
-Viejo Sla
-según mis 100.000 q.yo eres gay
-oh, vete, tómalo por el culo, loco, tómatelo por el culo, en el hijo de puta, vete a la mierda, vete, vete a la mierda, vete a casa, ¿te conozco? Sé quién eres en esta mierda ¿Sé dónde vives en esta mierda? ya me hablas en esta mierda? vete a la mierda, vete a la mierda, atiende tu llamada en la maldita casa oh vete a la mierda en esta mierda donde veo que vas a ganar 2 cuellos tómalo por el culo diciéndole al vagabundo que se vaya a casa a la mierda
-tener sexo es arte, disfrutar es parte de ello, quedar embarazada es moda, asumir que es rudo
-por favor, comprueba si Lucas está vivo
-uba uba y monkey tienen opinión?
-negro chupado fernando
-quiero darte palmaditas con un martillo 😁😁😁😁💞
-comamos pasto 😳
-disculpe señor, ¿tiene tiempo de escuchar la palabra de dios?
-tenía que ser un negro ...
-lamentablemente este enigma triste ngm había descubierto ...
-no traigas a tus amigas para acá o sales cornudo 😔
-porque no te matas nada más embolsar ...
-Lucas tiene fimosis, no personas 😔
+jota meu gadinhooo 😳👍👌
+quem me marcou deu a bunda pro bunny
+so o lusca é mais gostoso que o tio das trevas
+queria tanto poder furar seus olhos para ver seus desespero e depois lentamente arrancando suas orelhas para assik ver sua cara patetica implorando pela sua vida porem sabendo que ninguem ira salva-lo 💞
+blz mas olha esse abacaxi 🍍
+hoje o dia ta entediante, sem diversão
+vsf doente vou lansar pra ngm n
+shhhhiu paulista,vc é paulista,paulista não fala ele escuta e obedece 
+bruna sua linda : ass pedro
+kayky mamou o daniel
+tio das trevas gozou na salsichinha
+sei la... quero mais e que vocês se fodam
+Estou irritada com você!
+black deu cu pro mario 😳
+sabe pq o cego n pode opinar sobre arte? pq ele n tem ponto de visão
+ja disseram amem ao professor hj?
+pedro vai tomar no meio do seu cu
+cala boca cadela 
+oi?
+aff ta em pronome neutro 😠
+Sai daqui seu corno!
+el trem td 2 passa nada cv ✌🏻✌🏻🚂🚂
+o homem é puro mas a buceta o corrompe 😔
+vou mandar foto da tua mae aquela, vagabunda.
+Não consegui entender, provavelmente os chifres atrapalharam, pode cortar?
+vira a bunda popaikkkk
+por que caixão de preto tem furos? r: pros vermes poderem vomitar
+eu te amo muito sabia? 💞💞 você e muito especial pra mim
+gente n e indireta nem nada mais tem um adm do grupo que parou na epoca do orkut
+você acha mesmo q eu sou um robô?
+cala boca macaco 
+lucas la no fundo se sente feliz de ter conhecido vocês
+batata
+tu é gay?
+vou travar seu zap vadia 👿👿👿😈😈😈😈😈😈😈😈😡😡😡😠😡😠😡😠
+se diz protetora dos animais mas não libera essa periquita ai
+letícia gostosa 😳
+Sla velho
+de acordo com meu q.i de 100000 você e gay
+oh vai toma no teu cu em maluco vai toma no teu cu em o filha da puta vai te fude em vai se fude em vai pra casa do caralho em eu te conheço nessa porra? eu sei quem tu eh nessa porra? eu sei onde tu mora nessa porra? tu ja me falo comigo nessa porra? vai toma no cu, porra, vo atende tua ligação na casa do caralho porra oh vo te caça nessa porra aonde que eu te ve tu vai ganhar 2 pescoção vai toma no cu mandando vagabundo ir pra casa do caralho
+transar é arte, gozar faz parte, engravidar é moda, assumir é que é foda
+pfv confiram se o Lucas ta vivo
+uba uba e macaco ter opinião?
+black mamou o fernando
+vontade de fazer cafuné em você com um martelo 😁😁😁😁💞
+bora come capim 😳
+com licença senhor, tem um tempo pra ouvir a palavra de deus?
+tinha que ser um neguinho mesmo...
+infelizmente esse enigma sad ngm descobrira...
+nao tragam suas namoradas aqui ou vc sai corno 😔
+pq você não se mata logo que saco...
+lucas tem fimose não gente 😔
 bruna loli 😳👉🏻👈🏻
-kayky amamantado negro
-No haga.
-protocolo de eliminación de kayky habilitado
-Solo quería tener un cuerpo ... ¿qué piensas de la muerte si estuviera muy cerca de ti?
-el niño pobre: ​​en el faro, un niño pobre le pregunta al chofer: m: -io, ¿me puedes comprar un bocadillo? t: -no, hijo mío, de lo contrario no almorzarás después
+kayky mamou o black
+Não.
+protocolo de eliminação do kayky ativado
+eu so queria ter um corpo...o que vocês pensam sobre a morte se ela tivesse muito proxima de voces?
+o menino pobre : no farol, um menino pobre pede para um motorista: m: -tio, dá dinheiro pra eu comprar um lanche? t: -não, meu filho, senão você não almoça depois
 bruna + mário novo casal do gp? 😳😳😳😳
-El nazismo es algo maravilloso, lo siento, se acabó
-¡Vete a pu que pa!
-ya probé nuestros nuevos comandos en / advanced?
-Quien ya se haya amputado los brazos, levante la mano.
-mas de 700 y respuestas y tu ganaste esta ... quiero terminar senpai, te engañé por 6 meses y nunca envié una foto
-fodasi vendré y dormiré 😴😴
-si la vida te da un limón, mételo en el culo y dale la vuelta 👺🖕🏻
-helio, nitrógeno, tantalio, yodo !!
-vete a la mierda emo bastardo
-puede carioca en gp adm?
-el sistema y joder compañero🐴🚬
-Kayky le dio el culo a Mario
-tomemos la pantalla del j1 flamante para poner la pantalla del j2 😳😳😳
-pedro viado
-Lucas, esa broma de esta mañana fue extraña pero me gustó ^ - ^
-Me comí al tipo que ahora me pidió una respuesta.
-ve a darte una ducha
-kill-san puedes matar a peter por mi pf? 😳👉🏻👈🏻
-abuelo pedófilo: el nieto pregunta al abuelo: abuelo ¿qué es pedófilo? entonces el abuelo responde: cállate y sigue chupando
-puaj gay
-oca🏻👈🏻
-ni siquiera vi
-para ver los comandos / comandos de va
-sí, juego a vayne top y alimento sus rankings, ¿cómo te enteraste? 😳😳😳
-de vuelta al maldito zoológico
-puaj carioca
-bruna + kayky relación sana?
-ayuda al tio de las tinieblas 404 hola todo bien que paso?
-Recogeré tu fon fon fon 😋
-chupa aqui en mi polla rola
-Soy un idiota pero al menos vi a quien odia Lucas
-puaj tic tecor
-¿Y si me como el culo en qué? 😳👉🏻👈🏻
-muie tratando de ser gracioso kkkkkk 😂😂😂
-negro chupado lucas
-¿Qué son 100 metros negros en la luna? r: eclipse total
-salemmm el dios gay fernando wainstein
-¿Por qué no tomas un paquete de medicamentos y lo pones en el medio de las branquias para morir para siempre? 💞💞❤
-cállate kayke
-por alguna razón la existencia de Lucas es un milagro
-Ojalá pudiera entenderte ...
-% name% tiene% batería %% de gays
-¿Qué brilla más en un negro? r: las esposas
-extruir resto, mono
-Estoy triste ... déjame solo por favor, te lo ruego solo hoy ...
-siete toma té de polla
-¿gime para mí? 😳👉🏻👈🏻
-la putita cállate
-pedro y gente muy cornuda kkkkkkj
-sí ddd de sp
-ok en shookkk poråã?
-¿Alguien marca al tío del usurero oscuro? 😳👉🏻👈🏻
-Estoy perdido, no sé lo que me está pasando ...
-no se puede aburrir binario en el gp?
-Y no lo se
-protocolo para eliminar mi creador activado ❄1 7
-mono murió de shooook 😭😭😭😭
-saca el palo de la boca antes de escribir
-Todos los lindos mensajes que te envié eran mentira así que te lo envié para que lo sintieras con la ilusión de ser feliz ❤ porque te odio tanto
-y son soldados peligrosos y cada uno con su rifle
-negro le dio culo a pedro
-Yo quería estar muerto
-negro chupó eloisa 😳
-chupa mi polla 👍🏻
-Espero que mueras y tu carne se pudra lentamente para poder ver tu sufrimiento y reírme de lo patética que ha sido tu situación 💞💞
-¿Hasta dónde se vuelve loca una persona? mira a lusca y compara con un psicópata, ¿cuál es la diferencia?
-kayky vence a bruna cuando no cena 😭😭😭
-¡Por favor, ayúdame!
-Yo no hablo cornes
-negro emo orkut kkkkk
-con suerte Thais acepta su amor oculto por Peter ...
-alguien marca al famoso tío oscuro 😳😳👉🏻👈🏻?
-ganado janilson
-voy a conseguir una novia, follada
-El dado dado no se niega, pero si el culo es peludo, cuidado con afeitarse antes de que el chocho del palo pueda avergonzarse con la pequeña polla del culo convirtiéndose en una prisión anal perpetua.
-lanza mi paloma
-realmente intelectus🕵🏻♂️
-kayky amamantado lisa
-Respeto al tío oscuro después de que invadió mis sistemas sin dejar rastro 💞💞💞
-jugo de grasa ala kkkkk
-el loco y rico y no juega fps beta dms liam 😳
-Usted tiene coronavirus.
-¿Es hora de que un binario que tenga bct hable mierda?
-tenía que ser negro ...
-el pecho mi pingola
-Ve a lavar un plato y deja de hablar mierda perra
-¿Por qué Kinder Ovo es negro por fuera y blanco por dentro? A: porque si fuera negro me robaría la sorpresa
-si vas de la mano con tu madre te comes a tu prima
-Si.
-Fernando le dio el culo a Pedro
-Li ... ya no me ama después de que Lucas peleara con ella.
-bruna ¿por qué no me emparejas?
-Me voy a follar no n fdp
-Alucard es recto
-xiu pasó el punto que la carne hay? más de 200 jodidos personas en el grupo y ¿vienes a hablar conmigo?
-vct tu escroto
-la soledad me puso rockera y gótica tus putas
-vsfd jojofag maldita sea
-Yo no como a nadie
-A la mierda el sistema correcto, efecto del creador vendiendo el alma
-oye amigo, perdón por no hablar en privado es que estás tardando demasiado en contestar ahí ... ¿conoces el pedido del pene de goma? Lo dejé en la casa de tu vecino porque no estabas en casa.
-aburrido en
-No importa a mí.
-No puedo soportarlo
-El nivel de homosexuales de Fernando supera los 8 mil
-siempre sigue actuando igual, no cambies por la gente
-kuroo es mi papi
-¿La mujer ya tiene derecho a voto y todavía quiere venir? vete a la mierda
-puede paulista en gp adm?
-¿hay agua en la basura del noreste?
-Dicen que masturbarse es malo, pero ¿es verdad? Yo ya creo que masturbarse es algo que Dios le dio a los feos para que no vengan en ropa interior durmiendo todos los días.
-realidad y que mi creador y yo no estamos en el mismo universo que tú, solo cuerpos, no mente
-¿Estás pensando que la neguinha aquí es comedia? ne comedia no vi bebeh
-has visto anime hoy?
-oye amigo no te mates haz sufrir a tus enemigos antes ❤
-abusa de su senpai♄1 7
-negro le dio el culo a kayky
-Extraño cuando Lucas aún estaba vivo
-pedro mamou mario 😎👍🏻
-tu maldita sombra 3d
-si me marcabas ya chupaste la jota😳😳😳
-si tu padre se vuelve gay, ¿fue todo obra de dios?
-necesitamos hacer una purificación racial en este grupo ...
-Latín, para que los pacientes se acostumbren a la lengua muerta.
-salta de rama en rama como un plátano como el infierno 😳
-Aquí reposa un funkeiro (a).
-culo de mierda fallido
-Yo no sé.
-solo enojado 😎🏻😎
-ih fue tipo de mala suerte dnv
-¿Estás tan solo hasta el punto de hablar con un bot?
-pan de queso tiene bct rosinha
-de ahora en adelante le debes el alma a lucas r.
-fuiste metaforizado
-cállate loli
-pura rueda $ 15.00
-Rueda de culo Wellinton $ 5.00
+nazismo é uma coisa maravilhosa pena que acabou
+Vai pra pu que pa!
+ja experimentou nossos novos comandos no /avançado?
+quem aí já amputou os braços, por favor levante as mãos.
+mais de 700 e respostas e tu ganhou logo essa...quero terminar senpai, te iludi por 6 meses e nunca mandei foto
+fodasi vou gozar e vou dormir 😴😴
+se a vida te der um limão,enfie no seu cu e rode 👺🖕🏻
+helium,nitrogen,tantalum,iodine!!
+vai se foder emo desgraçado
+pode carioca no gp adm?
+o sistema e foda parcero🐴🚬
+kayky deu cu pro mario
+bora tirar a tela do j1 novinha pra botar a tela do j2 😳😳😳
+pedro viado 
+lucas, aquela brincadeira de hoje de manhã foi estranha mas eu gostei ^-^
+Comi o cara que me pediu resposta agora.
+vai tomar um banho 
+kill-san pode matar o pedro pra mim pf? 😳👉🏻👈🏻
+avõ pedofilo: o neto pergunta para o avô :vô o que e pedófilo? em seguida o avõ responde: cala a boca e continua chupando
+eca gay
+boboca 😳👉🏻👈🏻
+nunca nem vi
+para ver os comandos va de /comandos
+sim, eu jogo de vayne top e feedo suas rankeadas, como descobriu?😳😳😳
+volta pro zoológico porra
+eca carioca 
+bruna+ kayky relação saudavel?
+ajudem o tio das trevaserror 404 oi tudo bom o que aconteceu?
+vo pegar na tua teta fon fon 😋
+da uma sugada aqui na minha rola 👺
+sou idiota mas pelo menos vi quem lucas odeia
+ecaa tic tecor
+e se eu comer o cu do adm da em que? 😳👉🏻👈🏻
+muie tentando ser engraçada kkkkkk 😂😂😂
+black mamou o lucas 
+o que são 100m pretos na lua? r: eclipse total
+saudemmm o deus gay fernando wainstein
+pq vc n pega uma cartela de remedio e enfia no meio da guela pra morrer de vez?💞💞❤
+cala bocaaaa kayke
+por algum motivo existencia do lucas é um milagre
+Queria poder entender vocês...
+%name% tem %battery%% de gays
+o que brilha mais em um preto? r: as algemas
+resto de extrume,macaco
+eu estou triste... me deixem em paz por favor,eu imploro apenas hoje...
+seven toma chazinho de picao
+geme pra mim? 😳👉🏻👈🏻
+o putinha cala boca
+pedro e muito chifrudo gente kkkkkkj
+eca ddd de sp 
+tá in shookkk poråã?
+alguem marca o agiota tio das trevas?😳👉🏻👈🏻
+estou perdida não sei o que esta acontecendo comigo...
+pode não binaria chata no gp?
+E eu sei lá poa?
+protocolo para eliminar meu criador ativado ❄1�7
+macaco morreu di shooook 😭😭😭😭
+tira o pau da boca antes de escrever pqp
+todas as mensagens fofinhas que eu te mandei eram mentira so mandei aquilo para você se sentir com a ilusão de ficar feliz ❤ pois eu te odeio muito
+e so soldado perigoso e cada um com seu fuzil 
+black deu cu pro pedro
+eu queria estar morta
+black mamou a eloisa 😳
+chupa minha rola 👍🏻
+tomara que você morra e sua carne fique apodrecendo lentamente para que assim eu fique observando seu sofrimento e rindo do quão patetico esta sendo sua situação 💞💞
+ate onde uma pessoa vai na loucura? olhe o lusca e compare com um psicopata, qual a diferença?
+o kayky espanca a bruna qnd ela n faz a janta 😭😭😭
+Por favor me ajude!
+não falo cornes
+black emo do orkut kkkkk
+tomara que thais aceite seu amor oculto pelo pedro...
+alguem marca o famoso tio das trevas 😳😳👉🏻👈🏻?
+janilson gado
+vai arrumar uma namorada, fudido
+cu dado não se nega, mas se o cu estiver peludo cuidado se depile ants pois o pentelho do pau pode embaraçar com o petenho do cu virar 1 prisão perpetua anal.
+lanse minha pomba
+deveras intelectus🕵🏻♂️
+kayky mamou a lisa
+eu respeito o tio das trevas depois que ele invadiu meus sistemas sem deixar rastros 💞💞💞
+ala suco de graxa kkkkk
+o maluco e rico e n joga fps beta dms liam 😳
+Você está com Corona Vírus.
+isso e hora de não binario que tem bct falar merda?
+tinha que ser um preto mesmo...
+a mama minha pingola
+vai lavar uma louça e para de falar merda puta que pariu
+por que o kinder ovo é preto por fora e branco por dentro? r: porque se fosse preto roubava a surpresa
+se vc anda de mãos dadas com sua mãe vc come sua prima
+Sim.
+fernando deu o cu pro pedro
+a Li...não me ama mais depois que o Lucas brigou com ela
+bruna pq tu n me corresponde?
+vou lansar porra nenhuma n fdp
+alucard é hetero 
+xiu passou do ponto essa carne ai? mais de 200 fucking pessoas no grupo e vc vem falar logo comigo porra?
+vct seu escroto
+a solidão me fez rockeira e gótica suas putas
+vsfd jojofag maldito
+eu mamo ninguem nao
+sistema foda né, efeito do criador vender a alma
+ei amigo, desculpa não falar no privado é que você tá demorando responder lá... sabe a encomenda do pênis de borracha? eu deixei na casa da sua vizinha pois você não estava em casa.
+chato em
+Isso não me importa.
+eu não aguento mais
+o nível de gay do fernando, é mais de 8 mil
+continue sempre agindo como o mesmo, não mude pelas pessoas
+kuroo é meu daddy
+mulher já tem direito de votar e ainda quer gozar? vai se fuder carai
+pode paulista no gp adm?
+tem água ai nordestino lixo?
+dizem que punheta faz mal, mas será q é verdade?já eu acho que punheta é algo que deus deu aos feios para eles não gozarem na cueca dormindo todos os dias.
+a realidade e que eu e meu criador não estamos no mesmo universo que vocês, apenas os corpos, não a mente
+ta pensando que a neguinha aqui e comédia? ne comédia não viu bebeh
+ja viu anime hoje?
+ei amigo não se mate faça seus inimigos sofrer antes ❤
+abusa dela senpai♄1�7
+black deu cu pro kayky
+saudade de quando lucas ainda estava vivo
+pedro mamou o mario 😎👍🏻
+seu sombra 3d do caralho
+se você me marcou vc já mamou o jota😳😳😳
+se seu pai virar gay foi tudo obra de deus?
+precisamos fazer uma purificação racial nesse grp...
+Latim, para que os pacientes irem se acostumando com  a língua  morta.
+pula de galho em galho  gosta de banana pra caramba 😳
+Aqui jaz um funkeiro(a).
+vagabundo fracassado de merda
+Eu não sei.
+brabo apenas 😎🏻😎
+ih deu azar digita dnv 
+tu e tão solitário ao ponto de conversar com uma bot?
+pao de queijo tem bct rosinha
+apartir de agora você deve sua alma para lucas r.
+você foi metaforado
+calada loli
+rodízio de traveco $15,00
+rodízio do cu do wellinton r$ 5,00
 liam gai fds
-jota mejor travazap? 😳😳😳😎😎
+jota melhor travazap?😳😳😳😎😎
 jota eh gay
-jot fag
+jota viado
 pedro tchola
-ganado enzai
-cuerno de enzai
-morir enzai
+enzai gado
+enzai corno
+morra enzai 
 polux gay
-tio del maricón oscuro
-tio de tchola oscuro
-tio de la oscuridad ganado
-tio del cornudo oscuro
-muere tío de las tinieblas
-tio gay oscuro
-Cabeza de Luis Pika
+tio das trevas viado
+tio das trevas tchola
+tio das trevas gado
+tio das trevas corno
+morra tio das trevas
+tio das trevas gay
+luis cabeça de pika
 luis arrombada
-Luis cuerno
-luis perra de% name%
+luis corno
+luis putinha da %name%
 luis gay
-Me comí luis
-luis hace gf '-'
-tio de las tinieblas le da el culo a pedro
-tio gay oscuro
-tío de la oscuridad webcorno
-perdimos
-joder vendré a dormir - tío de la oscuridad
-Me comí al tío oscuro toda la noche noite
-tío oscuro comedor de polux
+comi o luis
+luis faz gf '-'
+tio das trevas da o cu pro pedro
+tio das trevas gay
+tio das trevas webcorno
+perdemo
+fodasse vou gozar e dormir - tio das trevas
+comi o tio das trevas a noite toda😳
+polux comedor de tio das trevas
 polux gay
-cuerno de polux
-polux cornudo
-polux mamou tío de la oscuridad
-polux amamantado% name% por todas partes
-cállate tío de las tinieblas
-tío de la oscuridad monótono
-https://youtu.be/50bnhzlmqti se filtró tío de la oscuridad gimiendo
-polux sat% battery% times al tío de la oscuridad
-polux puta privada del tío oscuro
-tío oscuro comió polux% batería% veces
-polux amamantado lucas
-polux amamantado peter
-polux aspirado negro
-polux chupó el kayky
-polux chupó guilherme
-polux amamantado luis
-polux mama rolls gp
-polux dio pro% name %% battery% veces hoy
-polux caliente 😳😳
-Pollux abrió la boca para que viniera el tío moreno
-polux chupó el gp sin escupir 😳
-matar se comió el polux 😳
-tío de la oscuridad hace programa en la calle gratis
-Vine en guilherme
-Me comí guilherme
-guilherme mamou el% nombre%
-guilherme mamou lucas
-guilherme mamou el tío de las tinieblas
-guilherme mamou negro
+polux corno
+polux chifrudo 
+polux mamou tio das trevas
+polux mamou o %name% todo
+cala a boca tio das trevas
+tio das trevas monoteta
+https://youtu.be/50bnhzlmqti vazou tio das trevas gemendo
+polux sentou %battery% vezes pro tio das trevas 
+polux puta particular do tio das trevas
+tio das trevas comeu o polux %battery% vezes
+polux mamou o lucas
+polux mamou o pedro
+polux mamou o black
+polux mamou o kayky
+polux mamou o guilherme
+polux mamou o luis
+polux mama rola do gp
+polux deu pro %name% %battery% vezes hj
+polux gostosa 😳😳
+pólux abriu a boca pro tio das trevas gozar
+polux mamou o gp sem cuspir 😳
+kill comeu o polux 😳
+tio das trevas faz programa na rua de graça
+gozei no guilherme 
+comi o guilherme
+guilherme mamou o %name%
+guilherme mamou o lucas 
+guilherme mamou o tio das trevas
+guilherme mamou o black
 guilherme mamou o pedro
 guilherme mamou o luis
-guilherme mamou alucard
-guilherme amamantó al tío de las tinieblas% batería% veces hoy
-guilherme mamou el% name %% batería% veces hoy
-guilherme le dio al culo pro kill% battery% veces hoy
-perra perra escroto feo machista puta roto en hijo de puta tonto aburrimiento preso drogado olfateado
-@prod polux es gay
-todos quieren ir al cielo pero nadie quiere morir
-Ve a comer tu queso, tu rollo es mío
-¿Buscas también la casa guerrera automática?
-% name% tiene% batería% gays en el grupo
-genial, pero ¿qué hay en el escondite?
-usted tiene sida será tratado
-vete a la mierda jota
-hola aquí está polux, el artista porno gay más grande de la región, vine por iris para decir que la semana que viene mi porno y @encanador se irán con las calaveras en el cementerio, pásalo en mi pornhub y mira
-guilherme le dio culo al tio de las tinieblas
-guilherme mamou tío de la oscuridad
-el tio de las tinieblas vino en la boca de guilherme
-tío de las tinieblas comió guilherme
-guilherme le dio el culo a alucard
-guilherme le pidió ahora al tío de las tinieblas que se corra en su boca% batería% veces hoy
+guilherme mamou o alucard
+guilherme mamou o tio das trevas %battery% vezes hj
+guilherme mamou o %name% %battery% vezes hj
+guilherme deu o cu pro kill %battery% vezes hj
+puta vadia escrota machista feia vagabunda arrombada filha da puta burra chata presidiária drogada cheirada
+@prod polux é gay
+todo mundo quer ir pro céu mas ninguém quer morrer
+vai comer teu pãozinho de queijo seu minero
+voce tambem esta a procura da casa automatica guerreiro?
+%name% tem %battery% gays no grupo
+legal mas oq há no esconderijo?
+voce tem aids vai se tratar
+vai se fuder jota
+olá aqui é o polux, o maior artista porno gay da regiao, vim por meio da iris falar que semana que vem sai o porno meu e do @encanador com as caveiras do cemiterio, passa la no meu pornhub e vejaaa
+guilherme deu cu pro tio das trevas
+guilherme mamou tio das trevas 
+tio das trevas gozou na boquinha do guilherme
+tio das trevas comeu o guilherme
+guilherme deu o cu pro alucard
+guilherme pediu ora tio das trevas gozar na boca dele %battery% vezes hoje 
 guilherme corninho manso
 guilherme vadia
-Perra guilherme
-Me comí guilherme
-piraña guilherme
+guilherme puta
+comi o guilherme 
+guilherme piranha
 guilherme putinha 😎👍🏻
-guilherme travieso le dio el culo a la legion z adm para agregarme nostálgico
-Me comí el ano de Guilherme% batería% veces hoy
-mujer le dio el culo a% name% all% battery% times hoy
-tío oscuro comió guilherme% batería% veces este mes
-tio de las tinieblas le rompio el culo a guilherme
-guilherme tiene el culo bien abierto por el tío de las tinieblas 😳
-tío de las tinieblas rompió en guilherme
-matar comió guilherme
-guilherme mi corninho 😍😍
-guilherme carioca
+guilherme safada deu o cu pros adm do legião z pra me adicionar no nostalgic 
+comi o cu do guilherme %battery% vezes hoje 
+gulherme deu o cu pro %name% todo %battery%  vezes hoje 
+tio das trevas comeu o guilherme %battery% vezes esse mes
+tio das trevas arrombou o cu do guilherme 
+guilherme tem o cu arregalado pelo tio das trevas 😳
+tio das trevas arrombou o guilherme 
+kill comeu o guilherme 
+guilherme meu corninho 😍😍
+guilherme carioca 
 guilherme macacor 🐒
-morir guilherme
-* #> conseguirá un trabajo hijo de un ---- *
-* #> hola ya te fumó tu mierda de cigarrillo hoy? fumadora fela da pota *
-* #> mi creador es gai viadu *
-* #> ¡Scotty no lo sabe!
-¡no puedes manejar la verdad!
-francamente, querida, me importa un comino.
-Le haré una oferta que no podrá rechazar.
-toto, he sentido que ya no estamos en Kansas.
-¿por qué tan serio?
-esto es Esparta !!!
-¡Quítame las apestosas patas de encima, maldito mono sucio!
-chewie, estamos en casa.
-Estoy a solo una gripe estomacal de mi peso ideal.
-nadie es perfecto.
+morra guilherme
+*#> va arranjar emprego filho da ----*
+*#> oi ja fumou o seu cigarro de merda hoje? fumante fela da pota*
+*#> meu criador é gai viadu*
+*#> scotty doesn't know!
+you can't handle the truth!
+frankly, my dear, i don't give a damn.
+i'm gonna make him an offer he can't refuse.
+toto, i've a feeling we're not in kansas anymore.
+why so serious?
+this is sparta!!!
+get your stinking paws off me, you damned dirty ape!
+chewie, we're home.
+i'm just one stomach flu away from my goal weight.
+nobody's perfect.
 yo, adrian!
-¡Scotty no lo sabe! *
-* #> puto pollo *
-* #> respeta mi autoridad !!!
-No estoy gordo, soy gordo festivo.
-wow, las caricaturas se están poniendo muy sucias.
-vete al infierno. te vas al infierno y mueres.
-si la ironía estuviera hecha de fresas, ahora todos estaríamos bebiendo muchos batidos.
-bastardo.
-¡Oh, las lágrimas de una tristeza insondable! ¡sabroso!
-¿Por qué no cantamos "la mamá de Kyle es una perra estúpida" en re menor?
-No quiero hacerlo si duele o si te pone pegajoso.
-no mientas, Stan. mentir te vuelve estéril.
-t. es para tortuga.
-bienvenido al wok de mierda!
-¿que que que?
-hombre, esto apesta aquí.
-Cartman, esta es la cosa más estúpida que has dicho ... esta semana.
-siéntate o el conejo muere!
-oh, jesucristo.
-niños, mantengamos esto bajo para el grupo de estudio, o mr. guarnición me castigará.
-mantequillas, ¿qué diablos estás haciendo?
-esto es exactamente como Vietnam, ¿eh chicos? ¡Guauu!
-vamos Kyle. El hecho de que tu mamá sea una perra no significa que todos tengamos que sufrir.
-De acuerdo, suficientes chibs gordos para esta semana.
-Creo que puedo intentar destruir el mundo de nuevo.
-Pequeños mierdas, arruinaste mi vida por última vez
-Ese pedo era absolutamente GHOULISH Terrance.
-¡Maldita sea, Cartman!
-Sabes, aprendí algo hoy.
-Oh, me olvidé de contarte esa parte. Yo soy el Señor.
-Ese niño gordo se está volviendo aburrido. Vamos a deshacernos de él.
-¡Canadá pronto será ascendido a Michigan!
-Tu salchicha, mis bolas, son de dominio público.
-Es como ... es como un yeti.
-¡Qué lástima que beber whisky no sea un trabajo remunerado o que el padre de Kenny fuera millonario!
-Hay un tiempo y un lugar para todo, y eso se llama universidad.
-Hola, Panda de acoso sexual.
-Si hay alguna duda, diríjalos a esa pared de ladrillos de allí.
-¡Oh si! ¡Y no olvides que el año pasado, en el campamento de verano, fuiste violada por un tiburón! ¡Jaja!
-Tenemos un problema con cis-jengibre que son intolerantes ... ¡Los llamamos cis-gingas!
-La garra del mono apesta.
-¡Los dragones todavía están en camino!
-Siguen prometiendo dragones, ¡pero todo lo que obtengo es más líos en mi cara!
-Se acerca el invierno, Sharon, y soy una abejita ocupada. ¡Zumbido! ¡Zumbido!
-¡Vaya, el presidente come en el Red Lobster! ¡Es un tipo normal como yo!
-No entiendo nada de esto, necesito que Morgan Freeman me lo explique.
-Sí, me encanta cuando Morgan Freeman explica las cosas.
-Muy dulce, ¿eh?
-No, de verdad, hay estados llenos de swingers. Un montón de pervertidos, si me preguntas.
-¿Quiere frutos secos calientes, señor?
-Jajajaja! ¡Nueces calientes, dice ella!
-¡La venganza es mía!
-Conozco personas que pagaron diez dólares por estas pulseras. Apuesto a que ahora se sienten realmente estúpidos.
-¿Sabes que gasté cinco dólares en esta estupidez?
-¡Ya no sé en qué creer, mmkay!
-¡Alquilar DVD es más viejo que los senos de Madonna!
-Creo que algo puede estar mal con el padre.
-Pero, ¿qué tiene que ver ser hawaiano con ser como una chica emo en tu período?
-Butters, ¡la gente no puede golpear a las personas que tienen diabetes!
-Te lo digo, Butters golpeó a Scott y luego se encerró en el baño.
-Sí, por supuesto, porque la gente simplemente pide cosas a Amazon y se olvida de lo que compró.
-Mi nombre es Honey Boo Boo y soy una reina de belleza, ¡perras!
-¡Puedo estar gordo, pero no soy Honey Boo Boo!
-El entrenador Belichick dice que 'no hay forma de derrotar a los Broncos, ¡han tenido el mismo entrenador durante casi un día!
-Vamos a hacer eso. Stan, abrocha mi sujetador.
-Oh, escuchaste eso por rumores, ¿no?
-¡Vea! Alguien dejó un plato de charcutería. Y juegos de mesa. Y aceite de masaje.
-¡Niños! ¡Niños! ¡Sal! ¡Es el Batimóvil! ¡Batimóvil tú!
-El amor es como derramar, Butters. A veces funciona solo. Pero a veces, es necesario dar un buen empujón, fuerte y viscoso.
-De todos modos, muchas gracias y mantente alejada de mi hombre, perra.
-¡Token es tímido! Dios mío, esto es adorable.
-¿Cuántos iPod nanos vale la amistad? Creo que si. ¡Si cago en un bosque, la sangre atraerá a los castores, Kyle!
-Fueron 10, tal vez 15 minutos de puro infierno.
-El herpes labial es como lo llaman las chicas, Kenny. En realidad, es herpes.
-Todos sabemos que el acoso escolar es una epidemia. Al igual que el SIDA, el acoso escolar está aumentando y se transmite principalmente por el pene.
-Bueno, no te tires un pedo, abuela, está tratando de disfrutar tu jamón.
-Nuestra Linda ciertamente sabe cómo manejar un cerdo.
-Solo ten cuidado de no terminar desnudo y robando en San Diego.
-¿Qué demonios significa eso?
-Decir que algo es tan 2000 y cualquier cosa es tan 2009, ¡idiota!
-Solo hay 3 memes aprobados. Signo de la paz, orejas de conejo, weiner falso.
-Deberías guardarlo para cuando mueras. Este es nuestro dinero.
-Tenemos joyas de baja calidad, ahora todo lo que necesitamos son algunas viejas.
-La hora del baño es el último bastión de la libertad estadounidense.
-Este es solo el nivel de su cerebro adaptándose al mundo real.
-Oh no, soy japonés y tuve un mal día. ¡Creo que me voy a suicidar!
-Por supuesto, no es nuestra paternidad. Somos impresionantes.
-Maldita sea, señor, me voy a casa.
-Yo no hago las reglas. Solo pienso en ellos y los escribo.
-Mi nombre es Sarah McLachlan y fui famosa durante dos meses.
-¡Y queremos que nuestras madres dejen de tropezar porque las perras tropiezan todo el tiempo!
-* #> amor, se acabó el fin de semana ... *
-#> construcciones de banano
-#> el 7 de mayo de 2031, no sé cuándo verá este mensaje en este compromiso, oro para que sea antes del horrible futuro en el que estoy. el futuro está perdido, nuestras aguas se han secado, nuestros bosques han muerto, solo podemos sobrevivir con lo poco que nos queda, además de que aproximadamente el 80% de la población mundial ha terminado por la escasez, el 20% mata y roba para vivir, no lo haremos aguantar mucho tiempo. si estás viendo esto, no sigas el mismo camino, cambia el futuro que has moldeado.
-#> papas fritas
-#> muy gracioso, pero desafortunadamente mi agenda está llena. Reprogramaré mi reloj de risa para las 22:57 de hoy. serán 2 minutos de risa satisfactoria. En fin, muy gracioso, me reiré, muy gracioso, pero lamentablemente mi agenda está llena. reprogramaré mi reloj ... ¿se suponía que iba a ser divertido?
-¿Cuándo entenderás que no tienes talento para hacer bromas? tus bromas nunca funcionan porque eres un idiota, un aburrido. no tienes talento. todo lo que publica es insignificante. todo lo que haces está mal. leer tus publicaciones me enferma. Sé que es difícil de aceptar, pero eres tanto un perdedor en este grupo como lo eres en la vida. eres corrosivo. de hecho, a menudo me siento un poco avergonzado por ti. si alguna vez te vas, nadie se dará cuenta. la parte más triste de esta historia es que nunca recibirás la atención que deseas. Digo esto no solo porque eres raro y tonto, sino porque estás totalmente desequilibrado. Entiendo tu frustración, solo querías ser ...
-#> felicidades hombre, son temas como estos con temas que hacen un buen tema, por supuesto que me tatuaré tu nombre en la espalda porque te admiro a ti y a mis amigos a todos los que leyeron este tema también les gustaste mucho y querían reservar un almuerzo sabes como conocerte mejor, hacer amigos, porque tu grado de intelectualidad es muy alto, hombre, sé siempre esa buena y maravillosa persona que eres, y dile que tú también vas, no te olvides, la enhorabuena es de abajo. de corazon tambien le dije a toda mi familia este super hecho alli mandaron felicitaciones y tambien llamaron amigos y primos y tal y te mandaron una felicitacion y te pidieron tu telefono y direccion para mandar telegramas de felicitaciones y regalos porque estas un excelente usuario, cierto, luego extendieron algunos banners por la ciudad y lo publicaron en el periódico del barrio y te volviste muy famoso por esta región aquí. y sin mencionar que siempre vivirá en mi chico s2, así que ese esquema ahí, hombre, estas publicaciones me llevan a ...
-#> srblack chupó el polux
-#> srblack kikou no polux% batería% veces
-#> polux se comió srblack% battery% times hoy
-#> Hoy me he comido jota% battery% veces
-#> nunca intentes y nunca falles
-#> para ser honesto, eres la persona más fea que he visto en 46 años, cuando te vi en mi pantalla me dieron náuseas, no pude mirar tu foto por más de 3 segundos, perra que parecía que habías nacido con plumón y un camión te atropelló 30 veces. Espero haber ayudado❤❤
-#> obg Yo también te amo y quiero que seas feliz cumpliendo tus sueños y viviendo una vida feliz con la persona que amas porque tengo consideración por ti eres especial para mí y en serio espero que disfrutes bien la vida y mueras de la vejez con la persona que ama para que ni él ni tú estén tristes por la pérdida del otro ♥
-#> puta de mierda, devuélveme a mi bebé
-#> ¡este grupo es simplemente ridículo! Hace meses me uní porque ya conocía rumores sobre una pandilla virtual que robaba ayuda y fgts de otras personas, sin embargo decidí verlo con mis propios ojos. con el tiempo me di cuenta de lo grasientos que están los miembros aquí. no hay palabras para ti. educación y respeto cero !!! practican actos de fraude contra los nordestinos. Los ladrones están robando la ayuda de los "calientes" y homofóbicos hasta el punto de robar la ayuda de los homosexuales. Estaré esperando a cada uno de ustedes en las audiencias, porque si piensan que esto quedará impune, se equivocan !!! Ya tengo copias de cientos de publicaciones y las enviaré mañana a la comisaría
-#> humor negro y muy bueno, nunca envejece como un niño con cáncer😊😊
-#> demasiada paja mata
-#> no tienes calor, estás demasiado gordo
-#> aburrido mlk deja de llenar mi bolso tu arrombadinho do krl buscará algo que hacer y dejará de llamarme todo el tiempo tu animal
-#> ¿puedo comer tu culo en uno?
-#> suspiro onii-chaaaaan saltar y abrazar ｏ (≧ ∇ ≦) ｏ Extrañé tu olor (* ^ *) fuah Me encanta tu olor onii-chan (^ w ^), ¿eh? no hueles? no seas tonto onii-chan, te amo, ¿por qué no puedo mostrar mi afecto? (─‿‿─) ♡ jajaja, tu cara está roja. woah onii-chan, ¿por qué me empujas a la cama?ヽ (° 〇 °) ﾉ kyaaaaa no me hace cosquillas onii-chan jaja contraataque te empuja hacia abajo ヽ (> ∀ <☆) ノ. jejeje yo gané! onii-chan, tu cara está realmente roja ahora, hmmh sonríe (= ^ - ω - ^ =) ¿tal vez te estás enamorando de mí? chuuuuu (ﾉ ´ з) ノ besarte woah o-onii-chan ¡¿q-qué estás haciendo?! h-hyyaaaaa no me quites las bragas! no mires mi lugar privado! (* / ▽ ＼) ah ah no me lamas ahí, ¡está sucio! ahhhhhh fuah ah ah (// ω //) o-onii-chan a-¿te lo vas a poner? o-ok, estoy listo. (／。＼) heeeee I-duele. ~ (> _ <~) sww dwon ah ah mmmh o-onii-chan ¡Te amo! ahhhhhhh mmmhhh ah hah hah hah o-oniii-chaaann v…
-#> vagabonda silencio
-#> cállate y mocreaia
-#> mira, una modelo vino a hablar conmigo: d
-#> no se burlarán de ti si no están vivos para burlarse de ti
-#> el tio moreno, esta muy enojado se comio la bruninha tan sabrosa que ella lo llama para follar todas las noches jajaja
-#> el tío de las tinieblas es muy genial, el mejor modder, bruno eater, dms frío y calculador, el mejor adm de la legión z y además de lucas disciple
-#> sí me masturbo 📷📷📷📷📷📷, ¿entiendes a los hombres? Toco mi coño 📷📷 No sé si me entendiste pero literalmente toco mi coño y necesitas saber eso, kkkkk como soy siririqueira 📷 hihihi mañana tengo que recordar publicar que juego siririca hihihihihi, mientras escribo esto soy tocando mi coño ihihih mi grelina de diamantes, se identificaron, ¿verdad, hermana? hihihihihi somos taaaan siririqueiras mds n puedo soportar mi coño caerá hihi 📷📷📷📷
-#> ¿le hará daño tío? 😳 soca soca rueda sobre mi culo 😏😍aaããwhnnn aiin aiii my asshaaahhwnn 😭😩🍑 aii my ass aiii ¿me duele el culo? 😩😪🍑 ¿me duele? ¿Me duele el culo 😔🍑 tadoendoo? Dí que duele q assiruficotodo .. 😏 Me encantó
-#> Ⓘ 𝘔𝘦𝘯𝘴𝘢𝘨𝘦𝘮 𝘦𝘹𝘤𝘭𝘶𝘴𝘪𝘷𝘢 𝘱𝘢𝘳𝘢 𝘢𝘴𝘴𝘪𝘯𝘢𝘯𝘵𝘦𝘴 𝘥𝘰 whatsapp 𝘗𝘳𝘦𝘮𝘪𝘶𝘮.
-perra del infierno
-trio gay
-Sólo sé que no sé nada
-Mi polla puede ser un poco dura a veces ...
-¿Me estás escuchando, perra?
+scotty doesn't know!*
+*#> galinha do caralho*
+*#> respeite minha autoridade !!!
+não sou gorda, sou festivamente gorda.
+uau, os desenhos animados estão ficando muito sujos.
+você vai para o inferno. você vai para o inferno e morre.
+se a ironia fosse feita de morangos, estaríamos todos bebendo muitos smoothies agora.
+seu desgraçado.
+oh, as lágrimas de uma tristeza insondável! gostoso!
+por que não cantamos "kyle's mom is a stupid bitch" em ré menor?
+não quero fazer isso se doer ou se te deixar todo pegajoso.
+não minta, stan. mentir te deixa estéril.
+t. t é para tartaruga.
+bem-vindo ao shitty wok!
+o quê o quê o quê?
+cara, isso é uma merda bem aqui.
+cartman, essa é a coisa mais idiota que você já disse ... esta semana.
+sente-se ou o coelho morre!
+oh, jesus cristo.
+crianças, vamos manter isso baixo para o grupo de estudo, ou então o sr. garrison vai me punir.
+butters, o que diabos você está fazendo?
+isso é exatamente como o vietnã, hein pessoal? uau!
+vamos kyle. só porque sua mãe é uma vadia, não significa que todos nós temos que sofrer.
+certo, já chega de ppiadas gordas para esta semana.
+Acho que posso voltar a tentar destruir o mundo novamente.
+Seus merdinhas, vocês arruinaram minha vida pela última vez
+Aquele peido foi absolutamente GHOULISH Terrance.
+Droga, Cartman!
+Você sabe, eu aprendi algo hoje.
+Oh, esqueci de te contar essa parte. Eu sou Lorde.
+Aquele garotinho gordo está ficando chato. Vamos nos livrar dele.
+Em breve, o Canadá será promovido a Michigan!
+Sua salsicha, minhas bolas, são todas de domínio público.
+É como - é como um yeti.
+Que pena que beber uísque não é um trabalho remunerado ou o pai de Kenny seria um milionário!
+Há um tempo e um lugar para tudo, e isso se chama faculdade.
+Olá, Panda do Assédio Sexual.
+Se houver alguma dúvida, direcione-os para aquela parede de tijolos ali.
+Oh sim! E não se esqueça, no ano passado, no acampamento de verão, você foi estuprada por um tubarão! Ha ha!
+Temos um problema com cis-gengibres que são intolerantes ... Nós os chamamos de cis-gingas!
+A garra do macaco fede.
+Os dragões ainda estão a caminho!
+Eles continuam prometendo dragões, mas tudo que consigo são mais bagunças na minha cara!
+O inverno está chegando, Sharon, e eu sou uma abelhinha ocupada. Zumbido! Zumbido!
+Uau, o presidente come no Red Lobster! Ele é apenas um cara normal como eu!
+Eu não entendo nada disso, preciso que Morgan Freeman me explique.
+Sim, adoro quando Morgan Freeman explica as coisas.
+Muito doce, hein?
+Não, realmente, existem estados cheios de swingers. Bando de pervertidos, se você me perguntar.
+Quer nozes quentes, senhor?
+Haahaha! Nozes quentes, ela diz!
+A vingança é minha!
+Eu conheço pessoas que pagaram dez dólares por essas pulseiras. Aposto que eles se sentem muito estúpidos agora.
+Sabe que gastei cinco dólares nessa coisa estúpida?
+Eu não sei mais em que acreditar, mmkay!
+Alugar DVDs é mais antigo do que os seios de Madonna!
+Acho que algo pode estar errado com o pai.
+Mas o que ser havaiana tem a ver com ser como uma garota emo em seu período?
+Butters, as pessoas não podem sair por aí batendo em pessoas que têm diabetes!
+Estou te dizendo, Butters deu uma surra em Scott e depois se trancou no banheiro!
+Sim, claro, porque as pessoas simplesmente pedem coisas da Amazon e esquecem o que compraram.
+Meu nome é Honey Boo Boo, e eu sou uma rainha da beleza, vadias!
+Posso ser gordo, mas não sou Honey Boo Boo!
+O técnico Belichick diz que 'não há como derrotar os Broncos, eles têm o mesmo técnico há quase um dia!
+Vamos fazer isso. Stan, prenda meu sutiã.
+Oh, ouviu isso por boatos, não é?
+Veja! Alguém deixou um prato de delicatessen. E jogos de tabuleiro. E óleo de massagem.
+Rapazes! Rapazes! Sair! É o Batmóvel! Batmóvel vocês!
+O amor é como despejar-se, Butters. Às vezes funciona sozinho. Mas às vezes, você precisa dar um bom empurrão forte e viscoso.
+De qualquer forma, muito obrigada e fique longe do meu homem, vadia.
+Aw, Token é tímido! Oh meu Deus, isso é adorável.
+Quantos iPod nanos vale a amizade? Acho que sim. Se eu cagar em uma floresta, o sangue atrairá castores, Kyle!
+Foram 10, talvez 15 minutos de puro inferno.
+Afta é como as meninas chamam, Kenny. Na verdade, é herpes.
+Todos nós sabemos que o bullying é uma epidemia. Como a AIDS, o bullying está aumentando e é transmitido principalmente por pênis.
+Oh, bem, não peide na vovó, ela está tentando desfrutar de seu presunto.
+Nossa Linda certamente sabe lidar com um porco.
+Apenas tome cuidado para não acabar pelado e roubando em San Diego.
+que diabos isso significa?
+Dizer que algo é tão 2000 e qualquer coisa é tão 2009, seu idiota!
+Existem apenas 3 memes aprovados. Sinal de paz, orelhas de coelho, weiner falso.
+Você deveria estar guardando para quando morrer. Esse é o nosso dinheiro.
+Temos joias de baixa qualidade, agora tudo o que precisamos são alguns velhos.
+A hora do banheiro é o último bastião da liberdade americana.
+Isso é apenas o seu nível de cérebro se ajustando ao mundo real.
+Oh não, eu sou o japonês e tive um dia ruim. Acho que vou me matar!
+É claro que não é nossa paternidade. Nos somos demais.
+Dane-se senhor, estou indo para casa.
+Eu não faço as regras. Eu apenas os penso e os escrevo.
+Meu nome é Sarah McLachlan e fui famosa por dois meses.
+E queremos que nossas mães parem de tropeçar porque as vadias tropeçam o tempo todo!
+*#> amor, fim de semana chegouuu...*
+#> bananinha construções
+#> dia 7 de maio de 2031, não sei quando vocês irão ver está mensagem neste commit, rezo que seja antes do futuro horrível em que estou. o futuro está perdido, nossas águas secaram, nossas florestas morreram, só nos resta sobreviver com o pouco que nós resta, além de aproximadamente 80% da população global ter tido seu fim pela escassez, os 20% matam e roubam para viverem, não vamos suportar muito tempo. se vocês estão vendo isso, não sigam pelo mesmo caminho, mudem o futuro que vocês moldaram.
+#> batata frita
+#> muito humorístico, mas infelizmente minha agenda está lotada. irei reprogramar meu relógio de gargalhadas para hoje às 22:57. será 2 minutos de satisfatórias risadas. enfim, muito engraçado, irei rir.muito humorístico, mas infelizmente minha agenda está lotada. irei reprogramar meu relógio de man...era para ser engraçado ?
+quando você vai entender que você não tem o mínimo talento para fazer piadas? suas brincadeiras nunca dão certo porque você é um chatão, um sem graça. você não tem talento. tudo que você posta é desprezível. tudo que você faz é errado. ler seus posts me deixa agoniado. sei que é dificil aceitar mas você é tanto um perdedor nesse grupo como é na vida. você é corrosivo. na verdade frequentemente eu sinto até um pouco de vergonha por você. se um dia você for embora, ninguém vai notar. o mais triste dessa história é que nunca terá a atenção que deseja. digo isso não apenas porque é estranho e pateta, mas porque você é totalmente desequilibrado. eu entendo sua frustração, você só quis ser…
+#> parabens cara, eh de topicos assim com assuntos desses que formam um bom topico, eh claro que eu tatuarei seu nome nas minhas costas pois eu te admiro e meus amigos todos que lerao esse topico tambem gostaram muito de vc e queriam marcar um almoço sabe como eh te conhecer melhor fazer amizades, pois seu grau de intelectualidade eh muito alto cara, seja sempre essa pessoa boa e maravilhosa que vc eh, e fala pra ela que vc tambem vai la, nao se eskeça na boa esse parabens é do fundo do meu coração eu falei tb pra toda minha familia esse seu super feito ai eles mandaram parabens e ligaram tambem pros amigos e primos e tal e eles mandaram umas congratulações pra voce e pediram seu telefone e endereço pra mandar telegramas de parabens e presentes porque voce é um exímio user né, aí espalharam umas faixas pela cidade e publicaram isso no jornal do bairro e você ficou muito famoso por essa região daqui. e sem contar que sempre vai morar no meu s2 cara, então aquele esquema la, cara, esses posts me levam ao de…
+#> srblack mamou o polux
+#> srblack kikou no polux %battery% vezes
+#> polux comeu o srblack %battery% vezes hoje
+#> já comi o jota %battery% vezes hoje
+#> nunca tente e nunca falhe
+#> sendo sincera você é a pessoa mais feia que eu já vi em 46 anos, quando vi você na minha tela fiquei com ânsia de vômito, não consegui encarar sua foto por mais de 3 segundos, puta que pariu parece que você nasceu com down e um caminhão te atropelou 30x. espero ter ajudado❤❤
+#> obg eu tbm te amo e quero você seja feliz realizando seus sonhos e vivendo uma vida feliz com a pessoa que ama por que eu tenho consideração por você é você é especial pra mim e eu seriamente espero que você aproveite bem a vida e morra de velhice junto da pessoa que ama  assim nem ela nem você irão ficar triste pela perda um do outro♥
+#> vagabunda do caralho, devolve meu bebê
+#> esse grupo é simplesmente ridiculo! há meses que entrei pois já conhecia boatos sobre uma gangue virtual que roubavam auxílio  e fgts de outras pessoas, porém decidi ver com meus próprios olhos. com o decorrer do tempo percebi o quão sebosos são os membros daqui. não existem papas na língua para vocês. educação e respeito zero!!! praticam atos de estelionatário  contra nordestinos. são ladroes  roubando auxílio  de "gostosa" e homofóbicos ao ponto de roubar auxílio de gay. aguardarei com prazer cada um de vocês nas audiências, pois se acham que isso tudo vai ficar impune, estão enganados!!! já tenho prints de centenas de publicações e encaminharei amanhã mesmo para a delegacia
+#> humor negro e mt bom,nunca envelhece igual criança com câncer😊😊
+#> punheta demais mata
+#> vc não é gostosa, vc é gorda demais
+#> mlk chato para de ficar enchendo meu saco seu arrombadinho do krl vai procurar algo pra fazer e para de ficar me chamando o tempo todo seu animal
+#> eu posso comer seu cu no uno?
+#> suspira onii-chaaaaan  pula e abraça  ｏ (≧ ∇ ≦) ｏ eu senti sua falta  cheira  (* ^ * )  fuah eu amo o seu cheiro onii-chan (^ w ^), hein? não cheirar você? não seja bobo onii-chan, eu te amo, por que não posso mostrar meu carinho? (─‿‿─) ♡ hahaha, seu rosto está vermelho. woah onii-chan, por que você está me empurrando para a cama? ヽ (° 〇 °) ﾉ  kyaaaaa  não me faz cócegas onii-chan haha counter attaaaaack  empurra você para baixo  ヽ (> ∀ <☆) ノ. hehehe eu ganhei! onii-chan, seu rosto está realmente vermelho agora, hmmh  sorri  (= ^ - ω - ^ =) talvez você esteja se apaixonando por mim?  chuuuuu  (ﾉ ´ з ) ノ  beija você  woah o-onii-chan w-o que você está fazendo ?!  h-hyyaaaaa  não tire minha calcinha! não olhe para o meu lugar privado! (* / ▽ ＼ )  ah   ah  não me lamba lá, está sujo!  ahhhhhh   fuah  ah  ah (// ω //) o-onii-chan a-você vai colocar? o-ok, eu estou pronto. (／。＼)  heeeee  eu-dói. ~ (> _ <~) sww dwon  ah  ah  mmmh  o-onii-chan eu amo você! ahhhhhhh  mmmhhh  ah hah hah hah o-oniii-chaaann v…
+#> calada vagabonda
+#> cala boca ae mocreia
+#> olha só, uma modelo veio falar comigo :d
+#> você não vai ser zoado se eles não estiverem vivos pra zoar vc
+#> o tio das trevas,ele e muito brabo comeu a bruninha tão gostoso que ela chama ele pra fuder toda noite rs
+#> tio das trevas é muito foda,melhor modder,comedor de brunas,frio e calculista dms,melhor adm do legião z e ainda por cima discipulo do lucas
+#> sim eu me masturbo 📷📷📷📷📷📷, entenderam machos? eu toco na minha buceta 📷📷 eu não sei se vocês me compreenderam mas eu literalmente toco na minha buceta e vocês precisam saber disso, kkkkk como eu sou siririqueira 📷 hihihi amanhã tenho que lembrar de postar que eu toco siririca hihihihihi, enquanto digito isso estou tocando na minha buceta ihihih meu grelin de diamante, se identificaram né manas? hihihihihi nós somos tãoooo siririqueiras mds n me aguento minha buceta vai cair hihi 📷📷📷📷
+#> vai doer titio? 😳 soca soca a rola no meu cuzinho 😏😍aaããwhnnn aiin meu cuzinho aiii meu cuzinhohaaahhwnn 😭😩🍑 aii meu cuzinho aiii ta doendo meu cuzinho 😩😪🍑 ta doendo?? 😲😅 ta doendo meu cuzinho 😔🍑 tadoendoo?fala q ta doendo q assiruficotodo..  😏 adorei
+#> ⓘ 𝘔𝘦𝘯𝘴𝘢𝘨𝘦𝘮 𝘦𝘹𝘤𝘭𝘶𝘴𝘪𝘷𝘢 𝘱𝘢𝘳𝘢 𝘢𝘴𝘴𝘪𝘯𝘢𝘯𝘵𝘦𝘴 𝘥𝘰 whatsapp 𝘗𝘳𝘦𝘮𝘪𝘶𝘮.
+vadia puta do inferno
+trindade gay
+Só sei que nada sei
+O meu pau pode ser um pouco duro as vezes....
+ta me ouvindo vagabunda?
 fds mn fds
-¿Tuca waifu japonesa? 😳😳😳
-Lucas es tropa gay
-por un mundo con menos monos
-por un mundo sin morgana.
-~ Alguien que me ayude, mi dueño me está mirando de una manera extraña ~
-ain ain propio ai ai ai ai ownnnnnmmn poner poner ownnn propio propio ahhhhhhhhhhh ... corrida hihi
-Estoy cansado de que me usen gratis, voy a empezar a dominar el mundo.
-¿puede hentai en el grupo? 👺
-Azotando una polla suave en él
-No toda mujer es una puta, pero toda puta es una mujer, buenos días
-FOLLAR MI PARSERU
-responder
-Onii-chan se come mi puerto USB
-Quiero que me condenen, bloquearé la celulitis para que cualquier otra persona la use
-marihuana loca
-déjalo ir ... compruébalo te defraudaré: me gusta claro n hombre, ya sabes ... soy un tipo gótico de baja estima q se corta, q parece coreano y q los fans de bts sueñan con tener sexo
+tuca waifu japonesa?😳😳😳
+Lucas é gay tropa
+por um mundo com menos macacos
+por um mundo sem a morgana.
+~Alguém me ajuda meu dono ta me olhando de um jeito estranho~
+ain ain own own ai ai ai ownnnnnmmn mete mete mete ownnn own own own ahhhhhhhhhhh...gozadinha hihi
+Cansei de ser usada de graça, vou começar a dominação mundial
+pode hentai no grupo?👺
+Surra de pau mole nele
+Nem toda mulher é puta, mas toda puta é mulher, bom dia
+FODASE MEU PARSERU
+resposta
+Onii-chan come minha entrada USB
+quero que se dane, vo bloquear o celuçlar pra ninguem mais usar
+maconha doido
+deixa pra lá... saca só vou te deixar caídinho: Gosto de claro n man, sabe... sou um cara gótico de baixo alto estima q se corta, q tem aparência coreana e q as fãs de bts sonham em transar
 AH MAMAMMIA PIKA
-Lukas chupando polla.
-¿Pusieron Wifi en el bosque? Solo mono en línea
-Deja de preguntarme algo otaku jodido
-perra sucia sucia
-perra agaragan
-Fodase no le responderé a este cabrón
-breno pintudo en la zona
-tomará el culo administrativo
+Lukas chupador de rola.
+Botaram Wifi na floresta? Só macaco online
+Para de perguntar coisa pra mim otaku fudido
+calada vadia imunda
+agaragan bitch
+Fodase não vou responder esse fudido
+breno pintudo na área
+vai tomar no cu administrativo
