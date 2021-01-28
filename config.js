@@ -548,11 +548,11 @@ if (isMedia) {
             break
 			
 			
-		case 'setimage':
+	case 'setimage':
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             if (!isGroupAdmins) return kill.reply(from, mess.error.Ga, id)
             if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
-			if (isMedia && type == 'imagen' || isQuotedImage) {
+			if (isMedia && type == 'image' || isQuotedImage) {
 				const dataMedia = isQuotedImage ? quotedMsg : message
 				const _mimetype = dataMedia.mimetype
 				const mediaData = await decryptMedia(dataMedia, uaOverride)
@@ -578,7 +578,7 @@ if (isMedia) {
 				? kill.reply(from, 'Eso es lo que pensé, no hay fotos en este enlace o el enlace contiene demasiadas fotos.', id)
 				: kill.reply(from, '¡Eso! Ahora el grupo tiene una nueva cara jaja!', id))
 			} else {
-				kill.reply(from, `Creo que lo estás usando mal!`)
+				kill.reply(from, `Acho que você esta usando errado em!`)
 			}
 			break			
 
@@ -769,14 +769,30 @@ if (isMedia) {
 					})
 			break
 			
-			
-        case 'insta':
-            if (args.length == 0) return kill.reply(from, 'El nombre de usuario?', id)
-            const ig = await axios.get(`https://docs-jojo.herokuapp.com/api/ighighlight?username=${body.slice(7)}`)
-			var insta = ig.data.Biodata
-            await kill.sendFileFromUrl(from, `${ig.data.Profile_pic}`, ``, `Username: ${ig.data.Username}\n\nNombre: ${ig.data.Name}\n\nbio: ${insta}\n\nSeguidores: ${ig.data.Jumlah_Followers}\n\nSigiendo: ${ig.data.Jumlah_Following}\n\npublicaciones: ${ig.data.Jumlah_Post}`, id)
+	case 'stalkig':
+            if (args.length == 0) return kill.reply(from, 'Nombre de usuario?', id)
+            const ig = await axios.get(`http://arugaz.my.id/api/media/stalkig?user=${body.slice(9)}`)
+			var insta = ig.data.result.biography
+            await kill.sendFileFromUrl(from, `${ig.data.result.profile_picture}`, ``, `Username: ${ig.data.result.username}\n\nNombre: ${ig.data.result.fullname}\n\nbio: ${insta}\n\nSeguidores: ${ig.data.result.followers}\n\nSigiendo: ${ig.data.followings}`, id)
             break
+			
 
+        case 'stalktw':
+            if (args.length == 0) return kill.reply(from, 'Nombre de usuario?', id)
+            const tw = await axios.get(`http://arugaz.my.id/api/media/stalktwitt?user=${body.slice(9)}`)
+			var insta = tw.data.result.biography
+            await kill.sendFileFromUrl(from, `${tw.data.result.profile_picture}`, ``, `Username: ${tw.data.result.username}\n\nNombre: ${tw.data.result.fullname}\n\nbio: ${insta}\n\nSeguidores: ${tw.data.result.followers}\n\nSigiendo: ${tw.data.followings}`, id)
+            break
+		
+
+	case 'twit':
+            if (args.length == 0) return kill.reply(from, 'Enlace caido?', id)
+            const twi = await axios.get(`http://arugaz.my.id/api/media/twvid?url=${body.slice(4)}`)
+			await kill.sendFileFromUrl(from, twi.data.result.videos, ``, 'É um otimo video haha!\n~Mas o que diabos foi isso...~', id)
+			.catch(() => {
+						kill.reply(from, 'Ess no, impidieron my acceso!\nLo siento!', id)
+					})
+            break
 
        case 'ig':
             if (args.length == 0) return kill.reply(from, 'El enlace no es valido?', id)
@@ -801,13 +817,9 @@ if (isMedia) {
 
          case 'mp3': // eu censurei o acesso pois as apis estão offlines, e fazer isso evita que usem o comando e te de problemas
              if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
-            axios.get(`https://arugaz.my.id/api/media/ytaudio?url=${body.slice(5)}`)
+            axios.get(`http://arugaz.my.id/api/media/ytaudio?url=${body.slice(5)}`)
             .then(async(rest) => {
-					var m3pa = rest.data.result
-					var m3ti = rest.data.title
-					var m3tu = rest.data.thumb
-					var m3fo = rest.data.ext
-					await kill.sendFileFromUrl(from, m3tu, '', `Titulo: ${m3ti}\nFormato:${m3fo}\n\nEspero averlo echo bien, ahora espere a que el video se envie, NO LO UTILIZE OTRA VEZ!!`, id)
+					var m3pa = rest.data.infourl
 					await kill.sendFileFromUrl(from, m3pa, '', '', id)
                 })
 			break
@@ -817,46 +829,41 @@ if (isMedia) {
            if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
             axios.get(`http://arugaz.my.id/api/media/ytvideo?url=${body.slice(5)}`)
             .then(async(rest) => {
-					var mp4 = rest.data.result
-					var tmp4 = rest.data.title
-					var m4tu = rest.data.thumb
-					var m4fo = rest.data.ext
-					await kill.sendFileFromUrl(from, m4tu, '', `Titulo: ${tmp4}\nFormato:${m4fo}\n\nEspero averlo echo bien, ahora espere a que el video se envie, NO LO UTILIZE OTRA VEZ!!`, id)
+					var mp4 = rest.data.infourl
 					await kill.sendFileFromUrl(from, mp4, `video.mp4`, tmp4, id)
                 })
 			break
 			
         case 'video':
-            if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamente.', id)
-            axios.get(`http://arugaytdl.herokuapp.com/search?q=${body.slice(7)}`)
+            if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
+            axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(7)}`)
             .then(async (res) => {
-                if (res.data[0].uploadDate.endsWith('years ago')) {
-                    var videore = res.data[0].uploadDate.replace('years ago', 'Años atrás')
-				} else if (res.data[0].uploadDate.endsWith('hours ago')) {
-                    var videore = res.data[0].uploadDate.replace('hours ago', 'Horas atrás')
-				} else if (res.data[0].uploadDate.endsWith('minutes ago')) {
-                    var videore = res.data[0].uploadDate.replace('minutes ago', 'Minutos atrás')
-				} else if (res.data[0].uploadDate.endsWith('day ago')) {
-                    var videore = res.data[0].uploadDate.replace('day ago', 'Dia atrás')
-				} else if (res.data[0].uploadDate.endsWith('months ago')) {
-                    var videore = res.data[0].uploadDate.replace('months ago', 'Meses atrás')
-				} else if (res.data[0].uploadDate.endsWith('seconds ago')) {
-                    var videore = res.data[0].uploadDate.replace('seconds ago', 'Segundos atrás')
-				} else if (res.data[0].uploadDate.endsWith('undefined')) {
-                    var videore = res.data[0].uploadDate.replace('undefined', 'Indefinido')
-				} else if (res.data[0].uploadDate.endsWith('null')) {
-                    var videore = res.data[0].uploadDate.replace('null', 'Indefinido')
+				const vyre = res.data.result[0].uploadDate
+				if (vyre == '' || vyre == 'null' || vyre == null || vyre == undefined || vyre == 'undefined') {
+					var videore = 'Indefinido'
+				} else if (vyre.endsWith('years ago')) {
+                    var videore = vyre.replace('years ago', 'Anos atrás')
+				} else if (vyre.endsWith('hours ago')) {
+                    var videore = vyre.replace('hours ago', 'Horas atrás')
+				} else if (vyre.endsWith('minutes ago')) {
+                    var videore = vyre.replace('minutes ago', 'Minutos atrás')
+				} else if (vyre.endsWith('day ago')) {
+                    var videore = vyre.replace('day ago', 'Dia atrás')
+				} else if (vyre.endsWith('months ago')) {
+                    var videore = vyre.replace('months ago', 'Meses atrás')
+				} else if (vyre.endsWith('seconds ago')) {
+                    var videore = vyre.replace('seconds ago', 'Segundos atrás')
 				}
-				const size = await axios.get(`http://st4rz.herokuapp.com/api/ytv?url=http://youtu.be/${res.data[0].id}`)
+				const size = await axios.get(`http://st4rz.herokuapp.com/api/ytv?url=http://youtu.be/${res.data.result[0].id}`)
 				const fsize = size.data.filesize.replace(' MB', '').replace('Download  ', 'Imposible calcular')
 				console.log(fsize)
-				const impo = size.data.filesize.replace('Download  ', 'un peso mucho mayor que no puedo calcular')
+				const impo = size.data.filesize.replace('Download  ', 'un peso que no puedo calcular')
 				if (fsize >= 16.0 || size.data.filesize.endsWith('Download  ') || size.data.filesize.endsWith('GB')) {
-					kill.reply(from, `Lo sentimos, para evitar prohibiciones de WhatsApp, el límite de carga de videos es de 16 MB, y este tiene ${impo.replace('    ', ' ')}.`, id)
+					kill.reply(from, `Desculpe, para evitar banimentos do WhatsApp, o limite de envio de videos é de 16MB, e esse possui ${impo.replace('    ', ' ')}.`, id)
 				} else {
-				await kill.sendFileFromUrl(from, `${res.data[0].thumbnail}`, ``, `Titulo: ${res.data[0].title}\n\nDuracion: ${res.data[0].duration} segundos\n\nEstá hecho: ${videore}\n\nVisualizaciones: ${res.data[0].viewCount}\n\nPeso: ${size.data.filesize}\n\nEspero haberlo hecho bien y ... ¡ahora solo espera! Pero evita usarlo de nuevo hasta que termine eh!`, id)
-					console.log(res.data[0].title)
-					axios.get(`http://st4rz.herokuapp.com/api/ytv2?url=https://youtu.be/${res.data[0].id}`)
+					await kill.sendFileFromUrl(from, `${res.data.result[0].thumbnail}`, ``, `Titulo: ${res.data.result[0].title}\n\nDuracion: ${res.data.result[0].duration} segundos\n\nHace: ${videore}\n\nVisualizaciones: ${res.data.result[0].viewCount}\n\nPeso: ${size.data.filesize}\n\nEspero averlo echo bien, ahora solo espera que tu video se envie, NO UTILIZES ESTE COMANDO HASTA QUE EL PROCESO TERMINE!!`, id)
+					console.log(res.data.result[0].title)
+					axios.get(`http://st4rz.herokuapp.com/api/ytv2?url=https://youtu.be/${res.data.result[0].id}`)
 					.then(async(rest) => {
 						var mp4 = rest.data.result
 						var tmp4 = rest.data.title
@@ -868,35 +875,34 @@ if (isMedia) {
 			
 
         case 'play':
-            if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamentee.', id)
-            axios.get(`http://arugaytdl.herokuapp.com/search?q=${body.slice(6)}`)
+            if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
+            axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(6)}`)
             .then(async (res) => {
-                if (res.data[0].uploadDate.endsWith('years ago')) {
-                    var playre = res.data[0].uploadDate.replace('years ago', 'Años atrás')
-				} else if (res.data[0].uploadDate.endsWith('hours ago')) {
-                    var playre = res.data[0].uploadDate.replace('hours ago', 'Horas atrás')
-				} else if (res.data[0].uploadDate.endsWith('minutes ago')) {
-                    var playre = res.data[0].uploadDate.replace('minutes ago', 'Minutos atrás')
-				} else if (res.data[0].uploadDate.endsWith('day ago')) {
-                    var playre = res.data[0].uploadDate.replace('day ago', 'Dia atrás')
-				} else if (res.data[0].uploadDate.endsWith('months ago')) {
-                    var playre = res.data[0].uploadDate.replace('months ago', 'Meses atrás')
-				} else if (res.data[0].uploadDate.endsWith('seconds ago')) {
-                    var playre = res.data[0].uploadDate.replace('seconds ago', 'Segundos atrás')
-				} else if (res.data[0].uploadDate.endsWith('undefined')) {
-                    var videore = res.data[0].uploadDate.replace('undefined', 'Indefinido')
-				} else if (res.data[0].uploadDate.endsWith('null')) {
-                    var videore = res.data[0].uploadDate.replace('null', 'Indefinido')
+				const pyre = res.data.result[0].uploadDate
+				if (pyre == '' || pyre == 'null' || pyre == null || pyre == undefined || pyre == 'undefined') {
+					var playre = 'Indefinido'
+				} else if (pyre.endsWith('years ago')) {
+                    var playre = pyre.replace('years ago', 'Anos atrás')
+				} else if (pyre.endsWith('hours ago')) {
+                    var playre = pyre.replace('hours ago', 'Horas atrás')
+				} else if (pyre.endsWith('minutes ago')) {
+                    var playre = pyre.replace('minutes ago', 'Minutos atrás')
+				} else if (pyre.endsWith('day ago')) {
+                    var playre = pyre.replace('day ago', 'Dia atrás')
+				} else if (pyre.endsWith('months ago')) {
+                    var playre = pyre.replace('months ago', 'Meses atrás')
+				} else if (pyre.endsWith('seconds ago')) {
+                    var playre = pyre.replace('seconds ago', 'Segundos atrás')
 				}
-				const asize = await axios.get(`http://st4rz.herokuapp.com/api/yta?url=http://youtu.be/${res.data[0].id}`)
+				const asize = await axios.get(`http://st4rz.herokuapp.com/api/yta?url=http://youtu.be/${res.data.result[0].id}`)
 				const afsize = asize.data.filesize.replace(' MB', '')
 				console.log(afsize)
 				if (afsize >= 16.0 || asize.data.filesize.endsWith('GB')) {
 					kill.reply(from, `Lo sentimos, para evitar prohibiciones de WhatsApp, el límite de envío de audio es de 16 MB, y esto tiene ${asize.data.filesize}.`, id)
 				} else {
-					await kill.sendFileFromUrl(from, `${res.data[0].thumbnail}`, ``, `Titulo: ${res.data[0].title}\n\nDuracion: ${res.data[0].duration} segundos\n\nEsta echo: ${playre}\n\nVisualizaciones: ${res.data[0].viewCount}\n\nEspero haberlo hecho bien y ... ¡ahora solo espera! Pero evita usarlo de nuevo hasta que termine eh!`, id)
-					console.log(res.data[0].title)
-					axios.get(`http://st4rz.herokuapp.com/api/yta2?url=http://youtu.be/${res.data[0].id}`)
+					await kill.sendFileFromUrl(from, `${res.data.result[0].thumbnail}`, ``, `Titulo: ${res.data.result[0].title}\n\nDuracion: ${res.data.result[0].duration} segundos\n\nHace: ${playre}\n\nVisualizaciones: ${res.data.result[0].viewCount}\n\nEspero averlo echo bien, ahora solo espera que tu video se envie, NO UTILIZES ESTE COMANDO HASTA QUE EL PROCESO TERMINE!!`, id)
+					console.log(res.data.result[0].title)
+					axios.get(`http://st4rz.herokuapp.com/api/yta2?url=http://youtu.be/${res.data.result[0].id}`)
 					.then(async(rest) => {
 						var m3pa = rest.data.result
 						var m3ti = rest.data.title
@@ -994,7 +1000,7 @@ if (isMedia) {
 				const spiris = await axios.get(`http://simsumi.herokuapp.com/api?text=${body.slice(7)}&lang=pt`)
 				const a = spiris.data.success
 				if (a == '') {
-					console.log('Request falhou, usando respostas locais...')
+					console.log('Request falhou, fallo usando respuestas locales...')
 					let rfua = fs.readFileSync('./lib/reply.txt').toString().split('\n')
 					let repy = rfua[Math.floor(Math.random() * rfua.length)]
 					let resfl = repy.replace('%name$', '${name}').replace('%battery%', '${lvpc}')
@@ -1004,7 +1010,7 @@ if (isMedia) {
 					})		
 				} else {
 					sppt.save('./lib/media/tts/resPtm.mp3', a, function () {
-						client.sendPtt(from, './lib/media/tts/resPtm.mp3', id)
+						kill.sendPtt(from, './lib/media/tts/resPtm.mp3', id)
 					})
 				}
 			} catch (error) {
@@ -1270,6 +1276,32 @@ if (isMedia) {
 			break
 
 
+	case 'mod':
+            if (args.length == 0) return kill.reply(from, 'Ingrese un nombre para buscar!', id)
+            try {
+                const moddroid = await axios.get('https://tobz-api.herokuapp.com/api/moddroid?q=' + body.slice(10)  + '&apikey=BotWeA')
+                if (moddroid.data.error) return kill.reply(from, moddroid.data.error, id)
+                const modo = moddroid.data.result[0]
+                const resmod = `• *Titulo* : ${modo.title}\n\n• *Quien lo creo* : ${modo.publisher}\n\n• *Peso* : ${modo.size}\n\n• *MOD* : ${modo.mod_info}\n\n• *Version* : ${modo.latest_version}\n\n• *Genero* : ${modo.genre}\n\n• *Link* : ${modo.link}\n\n• *Download* : ${modo.download}`
+                kill.sendFileFromUrl(from, modo.image, 'MODDROID.jpg', resmod, id)
+            } catch (err) {
+                console.log(err)
+            }
+            break
+			
+	case 'happymod':
+            if (args.length == 0) return kill.reply(from, 'Ingrese un nombre para buscar!', id)
+            try {
+                const happymod = await axios.get('https://tobz-api.herokuapp.com/api/happymod?q=' + body.slice(10)  + '&apikey=BotWeA')
+                if (happymod.data.error) return kill.reply(from, happymod.data.error, id)
+                const modo = happymod.data.result[0]
+                const resmod = `• *Titulo* : ${modo.title}\n\n• *Compra* : ${modo.purchase}\n\n• *Peso* : ${modo.size}\n\n• *Root* : ${modo.root}\n\n• *Version* : ${modo.version}\n\n• *Precio* : ${modo.price}\n\n• *Link* : ${modo.link}\n\n• *Download* : ${modo.download}`
+                kill.sendFileFromUrl(from, modo.image, 'HAPPYMOD.jpg', resmod, id)
+            } catch (err) {
+                console.log(err)
+            }
+            break
+			
         case 'anime':
 		    if (args.length == 0) return kill.reply(from, 'Especifica un nombre de anime!', id)
             const keyword = message.body.replace('/anime', '')
@@ -1470,6 +1502,21 @@ if (isMedia) {
             	kill.reply(from, 'Vaya, este es solo un comando de grupo.', id)
             }
             break
+			
+	case 'maps':
+            if (args.length == 0) return kill.reply(from, `Pon un nombre de lugar ahí`, id)
+            const mapz = body.slice(6)
+            try {
+				const mapz2 = await axios.get('https://mnazria.herokuapp.com/api/maps?search=' + mapz)
+				const { gambar } = mapz2.data
+				const pictk = await bent("buffer")(gambar)
+				const base64 = `data:image/jpg;base64,${pictk.toString("base64")}`
+				kill.sendImage(from, base64, 'maps.jpg', `*Foto do mapa de ${mapz}*`)
+            } catch (err) {
+				console.error(err.message)
+				await kill.reply(from, 'Algo salió mal aquí, lo siento.', id)
+			}
+			break
 
 
         case 'broad':
@@ -1549,7 +1596,7 @@ if (isMedia) {
         case 'everyone':
 			if (isGroupMsg && isGroupAdmins) {
 				const groupMem = await kill.getGroupMembers(groupId)
-				let hehe = `🛑╔══✪〘 HOLA TODOS MARCADOS 〙✪══\n⚠╠✪〘 Asunto: ${body.slice(10)} 〙✪═\n\n`
+				let hehe = `🛑╔══✪〘 HOLA TODOS MARCADOS 〙✪══\n⚠╠✪〘 Asunto: ${body.slice(10)} 〙✪═\n`
 				for (let i = 0; i < groupMem.length; i++) {
 					hehe += '🔥╠➥ '
 					hehe += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
@@ -1559,7 +1606,7 @@ if (isMedia) {
 				await kill.sendTextWithMentions(from, hehe, id)
 			} else if (isGroupMsg && isOwner) {
 				const groupMem = await kill.getGroupMembers(groupId)
-				let hehe = `🛑╔══✪〘 HOLA TODOS MARCADOS 〙✪══\n⚠╠✪〘 Assunto: ${body.slice(10)} 〙✪═\n\n`
+				let hehe = `🛑╔══✪〘 HOLA TODOS MARCADOS 〙✪══\n⚠╠✪〘 Assunto: ${body.slice(10)} 〙✪═\n`
 				for (let i = 0; i < groupMem.length; i++) {
 					hehe += '🔥╠➥ '
 					hehe += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
@@ -1615,7 +1662,7 @@ if (isMedia) {
 
 
         case 'clearall':
-            if (!isGroupAdmins && !isOwner) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
+            if (!isGroupAdmins && !isOwner && !isBotGroupAdmins) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
             const allChatz = await kill.getAllChats()
             for (let dchat of allChatz) {
                 await kill.deleteChat(dchat.id)
@@ -1696,6 +1743,27 @@ if (isMedia) {
             break
 			
 
+	case 'porn':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            const porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
+            kill.sendFileFromUrl(from, porn.data.url, '', porn.data.title, id)
+            } else {
+				const porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
+				kill.sendFileFromUrl(from, porn.data.url, '', porn.data.title, id)
+			}
+            break
+			
+	case 'lesbian':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            const lesb = await axios.get('https://meme-api.herokuapp.com/gimme/lesbians')
+            kill.sendFileFromUrl(from, lesb.data.url, '', lesb.data.title, id)
+			} else {
+				const lesb = await axios.get('https://meme-api.herokuapp.com/gimme/lesbians')
+				kill.sendFileFromUrl(from, lesb.data.url, '', lesb.data.title, id)
+			}
+            break
 
         case 'meme':
             ark = body.trim().substring(body.indexOf(' ') + 1)
@@ -1845,7 +1913,6 @@ if (isMedia) {
 			
 			
         case 'encerrar':
-            
 			kill.reply(from, 'Solicitud recibida!\nMe apagaré en 5 segundos.', id)
 		    await sleep(5000)
 			await kill.kill()
@@ -1864,6 +1931,195 @@ if (isMedia) {
             break
 			
 
+	case 'tits':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+			if (octo == 1) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/tits')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 2) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/BestTits')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 3) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/boobs')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 4) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/BiggerThanYouThought')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 5) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/smallboobs')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 6) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/TinyTits')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 7) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/SmallTitsHugeLoad')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			} else if (octo == 8) {
+				const tits = await axios.get('https://meme-api.herokuapp.com/gimme/amazingtits')
+				kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+			}
+            } else {
+				if (octo == 1) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/tits')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 2) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/BestTits')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 3) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/boobs')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 4) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/BiggerThanYouThought')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 5) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/smallboobs')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 6) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/TinyTits')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 7) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/SmallTitsHugeLoad')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				} else if (octo == 8) {
+					const tits = await axios.get('https://meme-api.herokuapp.com/gimme/amazingtits')
+					kill.sendFileFromUrl(from, tits.data.url, '', tits.data.title, id)
+				}
+			}
+            break
+			
+	case 'milf':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            	if (triple == 1) {
+            		const milf1 = await axios.get('https://meme-api.herokuapp.com/gimme/milf');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, '', `${title}`, id)
+            	}else if (triple == 2) {
+            		const milf1 = await axios.get('https://meme-api.herokuapp.com/gimme/milf_pictures');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const tits1 = await axios.get('https://meme-api.herokuapp.com/gimme/best_nsfw_milf');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            } else {
+            	if (triple == 1) {
+            		const milf1 = await axios.get('https://meme-api.herokuapp.com/gimme/milf');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 2) {
+            		const milf1 = await axios.get('https://meme-api.herokuapp.com/gimme/milf_pictures');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const milf1 = await axios.get('https://meme-api.herokuapp.com/gimme/best_nsfw_milf');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = milf1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            }
+			break
+			
+	case 'bdsm':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            	if (triple == 1) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/BDSMPics');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, '', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/bdsm');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/TeenBDSM');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            } else {
+            	if (triple == 1) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/BDSMPics');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/bdsm');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bdsm1 = await axios.get('https://meme-api.herokuapp.com/gimme/TeenBDSM');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bdsm1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            }
+			break
+			
+	case 'ass':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            	if (triple == 1) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/LegalTeens');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, '', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/ass');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/bigasses');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+             } else {
+            	if (triple == 1) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/LegalTeens');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/ass');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/bigasses');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            }
+            break
+			
+	case 'pussy':
+            if (isGroupMsg) {
+                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+            	if (triple == 1) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/pussy');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, '', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/ass');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/LegalTeens');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+             } else {
+            	if (triple == 1) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/pussy');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 2) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/ass');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}else if (triple == 3) {
+            		const bows1 = await axios.get('https://meme-api.herokuapp.com/gimme/LegalTeens');
+            		let { postlink, title, subreddit, url, nsfw, spoiler } = bows1.data
+            		await kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
+            	}	
+            }
+            break
+			
         case 'hug':
             if (double == 1) {
             const hug1 = await axios.get(`https://nekos.life/api/v2/img/hug`)
