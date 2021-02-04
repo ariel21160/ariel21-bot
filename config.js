@@ -1,7 +1,3 @@
-/*
-* Recodado por Lucas R. e construido em homenagem ao Legião Z.
-* Evite remover coisas como o Link do legião, obrigado!
-*/
 const { decryptMedia } = require('@open-wa/wa-decrypt')
 const fs = require('fs-extra')
 const axios = require('axios')
@@ -69,11 +65,11 @@ module.exports = kconfig = async (kill, message) => {
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
 	const chats = (type === 'chat') ? body : (type === 'image' || type === 'video') ? caption : ''
-        const ownerNumber = '529984****@c.us' // MUDE ISSO PARA O SEU NUMERO
+        const ownerNumber = '529984907794' // MUDE ISSO PARA O SEU NUMERO
         const isOwner = sender.id === ownerNumber
         global.pollfile = 'poll_Config_'+chat.id+'.json'
         global.voterslistfile = 'poll_voters_Config_'+chat.id+'.json'
-		global.client = kill
+	global.client = kill
         const isBlocked = blockNumber.includes(sender.id)
 		const isLeg = exsv.includes(chatId)
         const isNsfw = isGroupMsg ? nsfw_.includes(chat.id) : false
@@ -314,76 +310,8 @@ module.exports = kconfig = async (kill, message) => {
                 kill.reply(from, mess.error.Ga, id)
             }
             break
-			
-			
-        case 'blacklist':
-            if (isGroupMsg && isGroupAdmins) {
-				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
-				if (args[0] == 'on') {
-					bklist.push(chatId)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números accionado.\nUse /bklist (Número) para adicionar números.', id)
-				} else if (args[0] == 'off') {
-					let exclu = bklist.indexOf(chatId)
-					bklist.splice(exclu, 1)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números offline.', id)
-				}
-			} else if (isGroupMsg && isOwner) {
-				if (args.length !== 1) return kill.reply(from, 'Defina entre on y off!', id)
-				if (args[0] == 'on') {
-					bklist.push(chatId)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números acionado.\nUse /bklist (Número) para adicionar números.', id)
-				} else if (args[0] == 'off') {
-					let exclu = bklist.indexOf(chatId)
-					bklist.splice(exclu, 1)
-					fs.writeFileSync('./lib/blacklist.json', JSON.stringify(bklist))
-					kill.reply(from, 'Anti números offline.', id)
-				}
-            } else {
-                kill.reply(from, mess.error.Ga, id)
-            }
-            break	
-		
-			
-        case 'bklist':
-            if (isGroupMsg && isGroupAdmins) {
-				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
-				const bkls = body.slice(8) + '@c.us'
-				atbk.push(bkls)
-				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
-				await client.reply(from, 'Número adicionado a black-list', id)
-			} else if (isGroupMsg && isOwner) {
-				if (args.length == 0) return kill.reply(from, 'Defina un número.', id)
-				const bkls = body.slice(8) + '@c.us'
-				atbk.push(bkls)
-				fs.writeFileSync('./lib/anti.json', JSON.stringify(atbk))
-				await client.reply(from, 'Número adicionado a black-list', id)
-            } else {
-                kill.reply(from, mess.error.Ga, id)
-            }
-            break
-		
-			
-        case 'stickernobg':
-		 if (isMedia) {
-                try {
-                    var mediaData = await decryptMedia(message, uaOverride)
-                    var imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
-                    var base64img = imageBase64
-                    var outFile = './lib/media/img/noBg.png'
-                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'https://www.remove.bg/upload', size: 'auto', type: 'auto', outFile }) // bota sua propria api ai, cuidado no limite mensal
-                    await fs.writeFile(outFile, result.base64img)
-                    await kill.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
-					await kill.reply(from, 'Trate de no usar esto cuando no lo nececite,', id)
-                } catch(err) {
-                    console.log(err)
-		    await kill.reply(from, 'Ups! Algo esta mal en este comando!', id)
-                }
-            }
-            break
-
+				
+        
         case 'stickergif':
         case 'stikergif':
         case 'gif':
@@ -424,7 +352,7 @@ if (isMedia) {
             }
             break
 			
-		case 'upimg':
+	case 'upimg':
             if (isMedia && type === 'image') {
                 const mediaData = await decryptMedia(message, uaOverride)
                 var uplimg = './lib/media/img/imageupl.jpg'
@@ -459,16 +387,7 @@ if (isMedia) {
 			break			
 			
 			
-	    case 'oculto':
-            if (!isGroupMsg) return kill.reply(from, 'Solo grupos!', id)
-            const eur = await kill.getGroupMembers(groupId)
-            const surpresa = eur[Math.floor(Math.random() * eur.length)]
-			console.log(surpresa.id)
-    	    var xvid = ["Negoes branquelos e feministas", `${pushname} afeitarse en la bañera`, `${pushname} comiendo mi culo`, `${pushname} quieres comerme que hacer?`, "lolis nuas e safadas", "Ursinhos Mansos Peludos e excitados", "mae do adm cozida na pressao", "Buceta de 500 cm inflavel da boneca chinesa lolita company", "corno manso batendo uma pra mim com meu rosto na webcam", "tigresa vip da buceta de mel", "belle delphine dando o cuzinho no barzinho da esquina", "fazendo anal no negao", "africanos nus e chupando pau", "anal africano", "comendo a minha tia", "lgbts fazendo ahegao", "adm gostoso tirando a roupa", "gays puxando o intestino pra fora", "Gore de porno de cachorro", "anoes baixinhos do pau grandao", "Anões Gays Dotados Peludos", "anões gays dotados penetradores de botas", "Ursinhos Mansos Peludos", "Jailson Mendes", "Vendo meu Amigo Comer a Esposa", "Golden Shower"]
-            const surpresa2 = xvid[Math.floor(Math.random() * xvid.length)]
-            await kill.sendTextWithMentions(from, `*EQUIPO ❌VIDEOS*\n\n_Querido usuario @${surpresa.id.replace(/@c.us/g, '')} ..._\n\n_Soy de la administración de Xvideos y notamos que no ha iniciado sesión en su cuenta durante más de 2 semanas y decidimos verificar si todo está bien con nuestro usuario más activo.._ \n\n_Desde la última vez que visitó nuestro sitio, ha buscado cientos de veces_ *"${surpresa2}"* _(creemos que es tu favorito), venimos a decir que se agregaron y estamos seguros que te gustará mucho._ \n_Te esperamos allí!_\n\n_Para nuestro usuario favorito, con cariño, Equipo Xvideos._`)
-            await sleep(2000)
-            break
+	    
 			
 			
 		case 'gender':
@@ -479,18 +398,7 @@ if (isMedia) {
 			await kill.reply(from, `O nombre "${seanl.data.name}" mas usado por ${gender}.`, id)
 			break
 			
-			
-        case 'detector' :
-            if (!isGroupMsg) return kill.reply(from, 'Solo grupos grupos!', id)
-			await kill.reply(from, 'Calculando foto de los participantes del grupo...', id)
-            await sleep(3000)
-            const eu = await kill.getGroupMembers(groupId)
-            const gostosa = eu[Math.floor(Math.random() * eu.length)]
-			console.log(gostosa.id)
-            await kill.sendTextWithMentions(from, `*ＤＥＴＥＣＴＯＲ   ＤＥ  GROCERIAS👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostosa.id.replace(/@c.us/g, '')} *ALTO HAÍ🖐*\n\n*A SIDO MULTADO!!*\n\n*1 por no decir buenos días, buenas tardes, buenas noches y otro por ser muy*\n\n*grocero(o)*\n\n*valor de la multa:*\n*FOTO DESNUD@ AL PRIV kkkkk*`)
-            await sleep(2000)
-            break			
-
+		
 			
 			
 		case 'math':
@@ -585,13 +493,7 @@ if (isMedia) {
             if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
 			await kill.revokeGroupInviteLink(groupId).then(() => kill.reply(from, 'Allí se cumplió tu orden! e.e', id))
 			break
-			
-			
-        case 'slogan':
-            if (args.length == 0) return kill.reply(from, 'Donde esta la frase?', id)
-            const slog = await axios.get(`http://api.haipbis.xyz/randomcooltext?text=${body.slice(8)}`)
-			await kill.sendFileFromUrl(from, slog.data.image, slog.data.text, 'Elegante no es?', id)
-            break
+		
 			
 			
 	case 'setimage':
@@ -815,20 +717,6 @@ if (isMedia) {
 					})
 			break
 			
-	case 'stalkig':
-            if (args.length == 0) return kill.reply(from, 'Nombre de usuario?', id)
-            const ig = await axios.get(`http://arugaz.my.id/api/media/stalkig?user=${body.slice(9)}`)
-			var insta = ig.data.result.biography
-            await kill.sendFileFromUrl(from, `${ig.data.result.profile_picture}`, ``, `Username: ${ig.data.result.username}\n\nNombre: ${ig.data.result.fullname}\n\nbio: ${insta}\n\nSeguidores: ${ig.data.result.followers}\n\nSigiendo: ${ig.data.followings}`, id)
-            break
-			
-
-        case 'stalktw':
-            if (args.length == 0) return kill.reply(from, 'Nombre de usuario?', id)
-            const tw = await axios.get(`http://arugaz.my.id/api/media/stalktwitt?user=${body.slice(9)}`)
-			var insta = tw.data.result.biography
-            await kill.sendFileFromUrl(from, `${tw.data.result.profile_picture}`, ``, `Username: ${tw.data.result.username}\n\nNombre: ${tw.data.result.fullname}\n\nbio: ${insta}\n\nSeguidores: ${tw.data.result.followers}\n\nSigiendo: ${tw.data.followings}`, id)
-            break
 		
 
 	case 'twit':
@@ -856,8 +744,8 @@ if (isMedia) {
             await kill.sendFileFromUrl(from, fbdw, 'video.mp4', 'Excelente video!\n~Pero que diablos paso?...~', id)
 			.catch(() => {
 						kill.reply(from, 'Dios mío, algún tipo de fuerza maligna me impidió terminar el comando!', id)
-					})
-            break
+						})
+					break
 
 			
 
@@ -871,8 +759,8 @@ if (isMedia) {
 					var m3fo = rest.data.ext
 					await kill.sendFileFromUrl(from, m3tu, '', `Titulo: ${m3ti}\nFormato:${m3fo}\n\nEspero averlo echo bien, ahora solo espera a que el audio se envie!`, id)
 					await kill.sendFileFromUrl(from, m3pa, '', '', id)
-                })
-			break
+                			})
+				break
 
 
         case 'mp4':
@@ -885,8 +773,8 @@ if (isMedia) {
 					var m4fo = rest.data.ext
 					await kill.sendFileFromUrl(from, m4tu, '', `Titulo: ${tmp4}\nFormato:${m4fo}\n\nEspero averlo echo bien, ahora solo espera que se envie el video!`, id)
 					await kill.sendFileFromUrl(from, mp4, `video.mp4`, tmp4, id)
-                })
-			break
+                			})
+				break
 			
         case 'video':
             if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
@@ -926,18 +814,6 @@ if (isMedia) {
 				}
 			})
             break
-
-			
-	case 'ytsearch':
-					if (args.length < 1) return kill.reply('Yang mau di cari apaan? titit?')
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/ytsearch?q=${body.slice(6)}&apiKey=${apiKey}`, {method: 'get'})
-					if (anu.error) return kill.reply(anu.error)
-					teks = '=================\n'
-					for (let i of anu.result) {
-						teks += `*Title* : ${i.title}\n*Id* : ${i.id}\n*Published* : ${i.publishTime}\n*Duration* : ${i.duration}\n*Views* : ${h2k(i.views)}\n=================\n`
-					}
-					kill.reply(teks.trim())
-					break
 			
 
         case 'play':
@@ -1262,11 +1138,6 @@ if (isMedia) {
 			}
             break
 			
-			
-	case 'lirik':
-            const lirik = await axios.get(`https://arugaz.herokuapp.com/api/lirik?judul=${body.slice(5)}`)
-			await kill.sendFileFromUrl(from, lirik.data.link, ``, 'xd', id)
-			break
 	
 
         case 'welcome':
@@ -1365,7 +1236,7 @@ if (isMedia) {
             google({ 'query': googleQuery }).then(results => {
             let vars = `_*Resultados de búsqueda de Google para: ${googleQuery}*_\n`
             for (let i = 0; i < results.length; i++) {
-                vars +=  `\n═════════════════\n*Titulo >* ${results[i].title}\n\n*Descripcion >* ${results[i].snippet}\n\n*Link >* ${results[i].link}`
+                vars +=  `\n––––•(-••-)•––––\n*Titulo >* ${results[i].title}\n\n*Descripcion >* ${results[i].snippet}\n\n*Link >* ${results[i].link}`
             }
                 kill.reply(from, vars, id)
             }).catch(e => {
@@ -1808,12 +1679,6 @@ if (isMedia) {
             }
             break
 			
-		
-	case 'neon':
-		if (args.length == 0) kill.reply(from, 'Pon un mensaje ahí!', id)
-		kill.reply(from, mess.wait, id)
-		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/neontext?text=${body.slice(4)}`, '', '', id)
-		break 
 			
 	case '3d':
 		if (args.length == 0) kill.reply(from, 'Pon un mensaje ahí!', id)
@@ -1828,17 +1693,7 @@ if (isMedia) {
 		await kill.sendFileFromUrl(from, `https://docs-jojo.herokuapp.com/api/gaming?text=${body.slice(8)}`, '', '', id)
 		break
 		
-	case 'lava':
-		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
-		kill.reply(from, mess.wait, id)
-		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/lavatext?text=${body.slice(8)}`, '', '', id)
-		break
-			
-	case 'toxic':
-		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
-		kill.reply(from, mess.wait, id)
-		await kill.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/toxictext?text=${body.slice(8)}`, '', '', id)
-		break
+
 		
 	case 'fogareu':
 		if (args.length == 0) kill.reply(from, 'Pon un nombre ahí!', id)
