@@ -6,11 +6,16 @@ const math = require('mathjs')
 const search = require("simple-play-store-search")
 const google = require('google-it')
 const isPorn = require('is-porn')
+const { Aki } = require('aki-api')
 const imgsearch = require('node-reverse-image-search')
 const imgbbUploader = require('imgbb-uploader')
 const moment = require('moment-timezone')
-moment.tz.setDefault('America/Sao_Paulo').locale('pt_BR')
+moment.tz.setDefault('America/Cancun').locale('mx_QR')
 const get = require('got')
+const sinesp = require('sinesp-api')
+const { coins } = require('./lib/coins')
+const { stdout } = require('process')
+const bent = require('bent')
 const request = require('request')
 const color = require('./lib/color')
 const { spawn, exec, execFile } = require('child_process')
@@ -18,7 +23,6 @@ const nhentai = require('nhentai-js')
 const { API } = require('nhentai-api')
 const { randomNimek, sleep, wall, tulis, ss } = require('./lib/functions')
 const { owner, donate, down, help, admins, adult, readme, lang } = require('./lib/help')
-const { stdout } = require('process')
 const bent = require('bent')
 const { doing } = require('./lib/translate.js')
 const { meme, msgFilter, translate, kill } = require('./lib')
@@ -27,13 +31,12 @@ const feature = require('./lib/poll')
 const { sobre } = require('./lib/sobre')
 const { belle } = require('./lib/belle')
 const { termux } = require('./lib/termux')
-const bklist = JSON.parse(fs.readFileSync('./lib/blacklist.json'))
-const faki = JSON.parse(fs.readFileSync('./lib/fake.json'))
 const atbk = JSON.parse(fs.readFileSync('./lib/anti.json'))
 const BrainlySearch = require('./lib/brainly')
 const { removeBackgroundFromImageBase64 } = require('remove.bg')
 const fetch = require('node-fetch');
 const nsfw_ = JSON.parse(fs.readFileSync('./lib/NSFW.json'))
+const slce = JSON.parse(fs.readFileSync('./lib/silence.json'))
 const welkom = JSON.parse(fs.readFileSync('./lib/welcome.json'))
 const exsv = JSON.parse(fs.readFileSync('./lib/exclusive.json'))
 const errorurl = 'https://steamuserimages-a.akamaihd.net/ugc/954087817129084207/5B7E46EE484181A676C02DFCAD48ECB1C74BC423/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'
@@ -65,13 +68,14 @@ module.exports = kconfig = async (kill, message) => {
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
 	const chats = (type === 'chat') ? body : (type === 'image' || type === 'video') ? caption : ''
-        const ownerNumber = '529984907794' // MUDE ISSO PARA O SEU NUMERO
+        const ownerNumber = '52998****@c.us' // MUDE ISSO PARA O SEU NUMERO
         const isOwner = sender.id === ownerNumber
         global.pollfile = 'poll_Config_'+chat.id+'.json'
         global.voterslistfile = 'poll_voters_Config_'+chat.id+'.json'
 	global.client = kill
         const isBlocked = blockNumber.includes(sender.id)
 		const isLeg = exsv.includes(chatId)
+		const mute = slce.includes(chatId)
         const isNsfw = isGroupMsg ? nsfw_.includes(chat.id) : false
         const isUrl = new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/gi)
 	
@@ -167,6 +171,7 @@ module.exports = kconfig = async (kill, message) => {
            
         case 'sticker':
         case 'stiker':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isMedia && type === 'image') {
                 const mediaData = await decryptMedia(message, uaOverride)
 				sharp(mediaData)
@@ -206,6 +211,7 @@ module.exports = kconfig = async (kill, message) => {
 			
 
 		case 'ttp':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (args.length == 0) return kill.reply(from, '¿Dónde está la frase?', id)
 			axios.get(`https://st4rz.herokuapp.com/api/ttp?kata=${body.slice(5)}`)
 			.then(res => {
@@ -213,16 +219,12 @@ module.exports = kconfig = async (kill, message) => {
 			})
 			break
 			
-		case 'attp':
-			if (args.length == 0) return kill.reply(from, '¿Dónde está la frase?', id)
-			axios.get(`https://api.xteam.xyz/attp?file&text=${body.slice(5)}`)
-			.then(res => {
-				kill.sendImageAsSticker(from, res.data.result)
-			})
-			break
+
 			
 		case 'sporn':
+			if (mute) return console.log('Ignorando comando [Silence]')
             try {
+		    
 				if (isGroupMsg) {
 					if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 					if (args.length == 0) return kill.reply(from, 'Ingrese un término de búsqueda!', id)
@@ -242,6 +244,7 @@ module.exports = kconfig = async (kill, message) => {
 			
 			
 		case 'xvideos':
+			if (mute) return console.log('Ignorando comando [Silence]')
             try {
 				if (isGroupMsg) {
 					if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -262,59 +265,36 @@ module.exports = kconfig = async (kill, message) => {
 			
 			
 		case 'anonymod':
+			if (mute) return console.log('Ignorando comando [Silence]')
     await kill.reply(from, 'Algunos videos del canal de mi bro DEIVID\n\nWhatsApp ANONYMOUS V.06 oFc 100% inmune\n\nhttps://youtu.be/tOE_ywldS_Q\n\nComo modificar un WA prt-1\n\nhttps://youtu.be/WdWsvY3xGPc\n\nWhAtsApp BusSines Golden/13\n\nhttps://youtu.be/JqSHAWlGhDY\n\nNumero virtual +48 método efectivo\n\nhttps://youtu.be/7GOss7AaJ88\n\nNumero virtual +1 EE.Uu (ANONYMOUS DEIVID)\n\nhttps://youtu.be/D1G6hI1mLs4\n\nCreando con pixelLab (ANONYMOUS DEIVID)\n\nhttps://youtu.be/so1y1g-MPZ4\n\nSu video mas reciente:\n\nhttps://youtu.be/hy4od9BT-tA\n\nEspero y lo apoyes🤗', id)
     break
 	
 	    case 'samu330':
+			if (mute) return console.log('Ignorando comando [Silence]')
     await kill.reply(from, '｡☆✼★━━━━━━━━━━━━★✼☆｡\n\nHola!😀\n\nTe gustaria apoyarme?\n\nSolo unete a mi grupo de WhatsApp: https://chat.whatsapp.com/ELeHAmX3P6j1xy1qNRjEXR\n\n* ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ►*\n\nO puedes suscribirte a mi canal para saber como instalar un Bot: https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg\n\n✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩\n\nO seamos amigos en facebook: https://facebook.com/tupapi.samu330', id)
     break	
 			
 		case 'about':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			await kill.sendFile(from, './lib/media/img/iris.png', 'iris.png', sobre, id)
 			break
 			
 		case 'belle':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			await kill.sendFile(from, './lib/media/img/belle.png', 'belle.png', belle, id)
 			break
 
 		case 'termux':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			await kill.sendFile(from, './lib/media/img/termux.png', 'termux.png', termux, id)
 			break
 			
-		case 'fake':
-			if (isGroupMsg && isGroupAdmins) {
-				if (args.length !== 1) return kill.reply(from, 'Olvidaste establecer entre activado [on], y desactivado [off].', id)
-				if (args[0] == 'on') {
-					faki.push(chatId)
-					fs.writeFileSync('./lib/fake.json', JSON.stringify(faki))
-					kill.reply(from, 'Anti-Fakes habilitado.', id)
-				} else if (args[0] == 'off') {
-					let yath = faki.indexOf(chatId)
-					faki.splice(yath, 1)
-					fs.writeFileSync('./lib/fake.json', JSON.stringify(faki))
-					kill.reply(from, 'Anti-fakes desabilitado.', id)
-				}
-			} else if (isGroupMsg && isGroupAdmins) {
-				if (args.length !== 1) return kill.reply(from, 'Olvidaste establecer entre activado [on], y desactivado [off].', id)
-				if (args[0] == 'on') {
-					faki.push(chatId)
-					fs.writeFileSync('./lib/fake.json', JSON.stringify(faki))
-					kill.reply(from, 'Anti-Fakes habilitado.', id)
-				} else if (args[0] == 'off') {
-					let yath = faki.indexOf(chatId)
-					faki.splice(yath, 1)
-					fs.writeFileSync('./lib/fake.json', JSON.stringify(faki))
-					kill.reply(from, 'Anti-fakes desabilitado.', id)
-				}
-            } else {
-                kill.reply(from, mess.error.Ga, id)
-            }
-            break
 				
         
         case 'stickergif':
         case 'stikergif':
         case 'gif':
+			if (mute) return console.log('Ignorando comando [Silence]')
 if (isMedia) {
                 if (mimetype === 'video/mp4' && message.duration < 15 || mimetype === 'image/gif' && message.duration < 15) {
                     var mediaData = await decryptMedia(message, uaOverride)
@@ -353,6 +333,7 @@ if (isMedia) {
             break
 			
 	case 'upimg':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isMedia && type === 'image') {
                 const mediaData = await decryptMedia(message, uaOverride)
                 var uplimg = './lib/media/img/imageupl.jpg'
@@ -367,6 +348,7 @@ if (isMedia) {
 			
 			
         case 'makesticker':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Faltaba algo para usar como referencia!', id)
             const stkm = await fetch(`http://api.fdci.se/rep.php?gambar=${body.slice(7)}`)
 			const stimg = await stkm.json()
@@ -381,6 +363,7 @@ if (isMedia) {
 			
 		case 'morte':
 		case 'death':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Ponga un nombre, solo uno, sin apellido ni nombres completos, especialmente por su seguridad!', id)
 			const predea = await axios.get(`https://api.agify.io/?name=${args[0]}`)
 			await kill.reply(from, `Personas con este nombre "${predea.data.name}" tienden a morir en ${predea.data.age} años de edad.`, id)
@@ -402,6 +385,7 @@ if (isMedia) {
 			
 			
 		case 'math':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'No especificaste una cuenta de matemáticas.', id)
             const mtk = body.slice(6)
             if (typeof math.evaluate(mtk) !== "number") {
@@ -413,6 +397,7 @@ if (isMedia) {
 			
 			
 		case 'inverter':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'No especificó una frase para invertir.', id)
 			const inver = body.slice(10).split('').reverse().join('')
 			await kill.reply(from, inver, id)
@@ -420,6 +405,7 @@ if (isMedia) {
 			
 			
 		case 'contar':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Esto tiene 0 letras, después de todo, no hay texto.', id)
 			const count = body.slice(8).length
 			await kill.reply(from, `El texto tiene ${count} letras.`, id)
@@ -427,6 +413,7 @@ if (isMedia) {
 			
 			
         case 'giphy':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			gark = body.trim().split(/ +/).slice(1)
 			const link = gark.length !== 0 ? gark[0] : ''
             if (gark.length !== 1) return kill.reply(from, `Ownn, olvidó insertar el enlace?`, id)
@@ -466,6 +453,7 @@ if (isMedia) {
 			
 			
 		case 'onlyadms':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			onar = body.trim().split(/ +/).slice(1)
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             if (!isGroupAdmins) return kill.reply(from, mess.error.Ga, id)
@@ -532,6 +520,7 @@ if (isMedia) {
 
 			
 		case 'img':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (quotedMsg && quotedMsg.type == 'sticker') {
                 const mediaData = await decryptMedia(quotedMsg)
                 kill.reply(from, `Podrias esperar porfavor? esto lleva un poco de tiempo👑`, id)
@@ -542,6 +531,7 @@ if (isMedia) {
 
 
         case 'randomanime':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const matn = Math.floor(Math.random() * 3) + 1
             if (matn == 1) {
             const nime = await axios.get(`http://api.i-tech.id/anim/anime?key=${techapi}`)
@@ -634,6 +624,7 @@ if (isMedia) {
 
 
         case 'image':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Falta un nombre!', id)
             const linp = await fetch(`http://api.fdci.se/rep.php?gambar=${body.slice(7)}`)
 			const pint = await linp.json()
@@ -750,6 +741,7 @@ if (isMedia) {
 			
 
          case 'mp3':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Lo usaste incorretamente.', id)
             axios.get(`http://st4rz.herokuapp.com/api/yta2?url=${body.slice(5)}`)
             .then(async(rest) => {
@@ -764,6 +756,7 @@ if (isMedia) {
 
 
         case 'mp4':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Lo usaste incorretamente.', id)
             axios.get(`http://st4rz.herokuapp.com/api/ytv2?url=${body.slice(5)}`)
             .then(async(rest) => {
@@ -777,6 +770,7 @@ if (isMedia) {
 				break
 			
         case 'video':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
             axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(7)}`)
             .then(async (res) => {
@@ -817,6 +811,7 @@ if (isMedia) {
 			
 
         case 'play':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
             axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(6)}`)
             .then(async (res) => {
@@ -858,6 +853,7 @@ if (isMedia) {
 			
 
 		case 'qr':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const qrco = body.slice(4)
 			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Su mensaje fue insertado en este QRCode, disfrute.\n\nBy SAMU330 - Íris.', id)
 			break
@@ -913,6 +909,7 @@ if (isMedia) {
             break
 			
         case 'tts':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, `Texto a voz */tts* (idioma) (texto), para ver los diomas usa */idiomas*`)
             const ttsGB = require('node-gtts')(args[0])
             const dataText = body.slice(8)
@@ -927,6 +924,7 @@ if (isMedia) {
             break
 
         case 'idiomas':
+			if (mute) return console.log('Ignorando comando [Silence]')
             kill.sendText(from, lang, id)
             break
 			
@@ -971,6 +969,7 @@ if (isMedia) {
 			
 			
 	case 'clima':
+			if (mute) return console.log('Ignorando comando [Silence]')
        		if (args.length == 0) return kill.reply(from, 'Ingrese el nombre de su ciudad.', id)
             try {
 				const clima = await axios.get(`https://pt.wttr.in/${body.slice(7)}?format=Cidade%20=%20%l+\n\nEstado%20=%20%C+%c+\n\nTemperatura%20=%20%t+\n\nUmidade%20=%20%h\n\nVento%20=%20%w\n\nLua agora%20=%20%m\n\nNascer%20do%20Sol%20=%20%S\n\nPor%20do%20Sol%20=%20%s`)
@@ -981,7 +980,26 @@ if (isMedia) {
             break
 			
 
+	case 'akinator':
+			if (mute) return console.log('Ignorando comando [Silence]')
+			const region = 'mx';
+			if (args[0] == '-r') {
+				let akinm = args[1].match(/^[0-9]+$/)
+				if (!akinm) return kill.reply(from, 'Responda solo con 0 o 1!\n0 = Si\n1 = No', id)
+				const aki = new Aki(region);
+				await aki.start();
+				const myAnswer = `${args[1]}`
+				await aki.step(myAnswer);
+				await kill.reply(from, `Pregunta: ${aki.question}\n\nProgresso: ${aki.progress}\n\nResponde co /akinator -r [0 o 1], 0 = si, 1 = No.`, id)
+			} else {
+				const aki = new Aki(region);
+				await aki.start()
+				await kill.reply(from, `Pregunta: ${aki.question}\n\nResponda con /akinator -r [0 o 1], 0 = si, 1 = no.`, id)
+			}
+			break
+			
         case 'iris':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			try {
 				const iris = await axios.get(`http://simsumi.herokuapp.com/api?text=${body.slice(6)}&lang=pt`)
 				if (iris.data.success == '') {
@@ -1006,6 +1024,7 @@ if (isMedia) {
 
 			
 	case 'ptt':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (quotedMsgObj) {
                 let encryptMedia
                 let replyOnReply = await kill.getMessageById(quotedMsgObj.id)
@@ -1051,13 +1070,14 @@ if (isMedia) {
 
 
         case 'ping':
+			if (mute) return console.log('Ignorando comando [Silence]')
             kill.sendText(from, `Pong! xd\n_Mi velocidad de respuesta es de ${processTime(t, moment())} segundos._`)
             break
 
 
         case 'criador':
-            kill.sendContact(from, 'wa.me/+529984907794')
-			kill.reply(from, 'Si no responde, solo espera, es raro que deje Internet ~Smitten guy sabe~, pero si sucedió, fue algo importante..', id)
+            kill.sendContact(from, '529984907794***@c.us')
+			kill.reply(from, 'Si no responde, es por que no le importas:v _OK NO_, puede estar ocupado, tu tranqui..', id)
             break
 
 
@@ -1066,6 +1086,13 @@ if (isMedia) {
             kill.sendText(from, donate, id)
             kill.sendContact(from, 'wa.me/+529984907794')
             break
+			
+	case 'valor':
+			if (mute) return console.log('Ignorando comando [Silence]')
+			if (args.length == 0) return kill.reply(from, 'Para usar digite el comando, segido del valor y tipo.\n\nEjemplo: /valor 1USD (Junto.)\n\nDigite /coins para ver la lista de monedas que pueden ser usadas [Es una lista enooooooormeeeeee].', id)
+			const money = await axios.get(`https://brl.rate.sx/${args[0]}`)
+			await kill.reply(from, `*${args[0]}* _vale en México_ *${money.data}* _Pesos._`, id)
+			break
 
 
         case 'roll':
@@ -1105,6 +1132,7 @@ if (isMedia) {
 
 
         case 'nsfw':
+			if (mute) return console.log('Ignorando comando [Silence]')
        	    const isGroupOwner = sender.id === chat.groupMetadata.owner
             if (args.length !== 1) return kill.reply(from, 'Establecer habilitar o deshabilitar', id)
 			if (isGroupMsg) {
@@ -1141,6 +1169,8 @@ if (isMedia) {
 	
 
         case 'welcome':
+			
+		if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             if (args.length !== 1) return kill.reply(from, 'Olvidaste ponerlo (ON) o quitarlo [off].', id)
 			if (args[0] == 'on') {
@@ -1231,6 +1261,7 @@ if (isMedia) {
 			
 
         case 'google':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, `Digite algo para buscar.`, id)
 		    const googleQuery = body.slice(8)
             google({ 'query': googleQuery }).then(results => {
@@ -1259,6 +1290,7 @@ if (isMedia) {
 			
 
         case 'girl':
+			if (mute) return console.log('Ignorando comando [Silence]')
     	    var items = ["garota adolescente", "saycay", "alina nikitina", "belle delphine", "teen girl", "teen cute", "japanese girl", "garota bonita oriental", "oriental girl", "korean girl", "chinese girl", "e-girl", "teen egirl", "brazilian teen girl", "pretty teen girl", "korean teen girl", "garota adolescente bonita", "menina adolescente bonita", "egirl", "cute girl"];
     	    var cewe = items[Math.floor(Math.random() * items.length)];
 			console.log(cewe)
@@ -1273,6 +1305,7 @@ if (isMedia) {
 
 
 	case 'mod':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Ingrese un nombre para buscar!', id)
             try {
                 const moddroid = await axios.get('https://tobz-api.herokuapp.com/api/moddroid?q=' + body.slice(10)  + '&apikey=BotWeA')
@@ -1286,6 +1319,7 @@ if (isMedia) {
             break
 			
 	case 'happymod':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Ingrese un nombre para buscar!', id)
             try {
                 const happymod = await axios.get('https://tobz-api.herokuapp.com/api/happymod?q=' + body.slice(10)  + '&apikey=BotWeA')
@@ -1299,6 +1333,7 @@ if (isMedia) {
             break
 			
         case 'anime':
+			if (mute) return console.log('Ignorando comando [Silence]')
 		    if (args.length == 0) return kill.reply(from, 'Especifica un nombre de anime!', id)
             const keyword = message.body.replace('/anime', '')
             try {
@@ -1438,6 +1473,7 @@ if (isMedia) {
 
 
 		case 'store':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (args.length == 0) return kill.reply(from, 'Especifique el nombre de la aplicación que desea buscar.', id)
 			kill.reply(from, mess.wait, id)
 			await sleep(5000)
@@ -1448,6 +1484,7 @@ if (isMedia) {
 
 
         case 'search':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isMedia && type === 'image' || quotedMsg && quotedMsg.type === 'image') {
                 if (isMedia) {
                     var mediaData = await decryptMedia(message, uaOverride)
@@ -1490,6 +1527,7 @@ if (isMedia) {
             break
 
         case 'link':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isBotGroupAdmins) return kill.reply(from, mess.error.Ba, id)
             if (isGroupMsg) {
                 const inviteLink = await kill.getGroupInviteLink(groupId);
@@ -1500,6 +1538,7 @@ if (isMedia) {
             break
 			
 	case 'maps':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, `Pon un nombre de lugar ahí`, id)
             const mapz = body.slice(6)
             try {
@@ -1528,6 +1567,7 @@ if (isMedia) {
 
 
         case 'adms':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             let mimin = ''
             for (let admon of groupAdmins) {
@@ -1539,6 +1579,7 @@ if (isMedia) {
 
 
         case 'groupinfo' :
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             var totalMem = chat.groupMetadata.participants.length
             var desc = chat.groupMetadata.desc
@@ -1563,6 +1604,7 @@ if (isMedia) {
 			
 			
         case 'ownergroup':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupMsg) return kill.reply(from, 'Solo grupos', id)
             const Owner_ = chat.groupMetadata.owner
             await kill.sendTextWithMentions(from, `El wey que creó el grupo fue @${Owner_}`)
@@ -1590,6 +1632,7 @@ if (isMedia) {
 
 
         case 'everyone':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (isGroupMsg && isGroupAdmins) {
 				const groupMem = await kill.getGroupMembers(groupId)
 				let hehe = `🛑╔══✪〘 HOLA TODOS MARCADOS 〙✪══\n⚠╠✪〘 Asunto: ${body.slice(10)} 〙✪═\n`
@@ -1619,6 +1662,7 @@ if (isMedia) {
 
 
         case 'random':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             const memran = await kill.getGroupMembers(groupId)
             const randme = memran[Math.floor(Math.random() * memran.length)]
@@ -1629,6 +1673,7 @@ if (isMedia) {
 
 
         case 'kickall':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const isdonogroup = sender.id === chat.groupMetadata.owner
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             if (!isdonogroup) return kill.reply(from, 'Solo el propietario del grupo puede usar esto.', id)
@@ -1646,6 +1691,7 @@ if (isMedia) {
 
 
         case 'leaveall':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isOwner) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
             const allChats = await kill.getAllChatIds()
             const allGroups = await kill.getAllGroups()
@@ -1658,6 +1704,7 @@ if (isMedia) {
 
 
         case 'clearall':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupAdmins && !isOwner && !isBotGroupAdmins) return kill.reply(from, 'Solo mi creador tiene acceso a este comando.', id)
             const allChatz = await kill.getAllChats()
             for (let dchat of allChatz) {
@@ -1668,6 +1715,7 @@ if (isMedia) {
 
 
 	case 'add':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupMsg) return kill.reply(from, 'Esta función solo se puede utilizar en grupos', id)
             if (args.length === 0) return kill.reply(from, 'Para utilizar esta función, envíe el comando */Add* +52xxxxx', id)
             if (!isGroupAdmins) return kill.reply(from, 'Este comando solo puede ser utilizado por administradores de grupo', id)
@@ -1724,6 +1772,7 @@ if (isMedia) {
 			
 
 	case 'porn':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             const porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
@@ -1735,6 +1784,7 @@ if (isMedia) {
             break
 			
 	case 'lesbian':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             const lesb = await axios.get('https://meme-api.herokuapp.com/gimme/lesbians')
@@ -1746,6 +1796,7 @@ if (isMedia) {
             break
 
         case 'meme':
+			if (mute) return console.log('Ignorando comando [Silence]')
             ark = body.trim().substring(body.indexOf(' ') + 1)
             if ((isMedia || isQuotedImage) && args.length >= 2) {
                 const top = ark.split('|')[0]
@@ -1764,6 +1815,7 @@ if (isMedia) {
 
 
         case 'kick':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (isGroupMsg && isGroupAdmins) {
 				if (!isBotGroupAdmins) return kill.reply(from, 'Para eso necesito ser parte de los Administradores.', id)
 				if (mentionedJidList.length === 0) return kill.reply(from, 'Escribiste el comando muy mal, arréglalo y envíalo bien.', id)
@@ -1789,6 +1841,7 @@ if (isMedia) {
 
 
         case 'leave':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (isGroupMsg && isGroupAdmins) {
 				await kill.sendText(from,'Tendré que irme pero nos eremos pronto! <3').then(() => kill.leaveGroup(groupId))
 			} else if (isGroupMsg && isOwner) {
@@ -1802,6 +1855,7 @@ if (isMedia) {
 
 
         case 'promote':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupMsg) return client.reply(from, 'Esta función solo se puede utilizar en grupos', id)
             if (!isGroupAdmins) return client.reply(from, 'Esta función solo puede ser utilizada por administradores de grupo', id)
             if (!isBotGroupAdmins) return client.reply(from, 'Esta función solo se puede utilizar cuando el bot es un administrador', id)
@@ -1812,6 +1866,7 @@ if (isMedia) {
             await client.sendTextWithMentions(from, `Perfecto XD Ahora @${mentionedJidList[0]} Es Admin.`)
             break
         case 'demote':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupMsg) return client.reply(from, 'Esta función solo se puede utilizar en grupos', id)
             if (!isGroupAdmins) return client.reply(from, 'Esta función solo puede ser utilizada por administradores de grupo', id)
             if (!isBotGroupAdmins) return client.reply(from, 'Esta función solo se puede utilizar cuando el bot es un administrador', id)
@@ -1824,6 +1879,7 @@ if (isMedia) {
 
 
         case 'botstat':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const loadedMsg = await kill.getAmountOfLoadedMessages()
             const chatIds = await kill.getAllChatIds()
             const groups = await kill.getAllGroups()
@@ -1832,6 +1888,7 @@ if (isMedia) {
 
 
         case 'join':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (args.length == 0) return kill.reply(from, 'Ay algo mal en esto!', id)
             const gplk = body.slice(6)
             const tGr = await kill.getAllGroups()
@@ -1850,6 +1907,7 @@ if (isMedia) {
 
         case 'delete':
         case 'del':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return client.reply(from, 'Esta función solo se puede utilizar en grupos', id)
             if (!isGroupAdmins) return client.reply(from, 'Esta función solo puede ser utilizada por administradores de grupo', id)
             if (!quotedMsg) return client.reply(from, '¡¡Incorrecto !!, enviar comando */del [tagmsgbot]*', id)
@@ -1859,7 +1917,7 @@ if (isMedia) {
 
 
         case 'tela':
-           
+           if (mute) return console.log('Ignorando comando [Silence]')
             const sesPic = await kill.getSnapshot()
             kill.sendFile(from, sesPic, 'session.png', 'Neh...', id)
             break
@@ -1890,12 +1948,14 @@ if (isMedia) {
 
 			
 	case 'date':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const timeda = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			await kill.reply(from, 'Ahora son exactamente\n"' + timeda + '"', id)
 			break
 			
 
         case 'blocks':
+			if (mute) return console.log('Ignorando comando [Silence]')
             
             let hih = `Lista de bloqueados\nTotal : ${blockNumber.length}\n`
             for (let i of blockNumber) {
@@ -1906,6 +1966,7 @@ if (isMedia) {
 			
 			
         case 'encerrar':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			kill.reply(from, 'Solicitud recibida!\nMe apagaré en 5 segundos.', id)
 		    await sleep(5000)
 			await kill.kill()
@@ -1925,6 +1986,7 @@ if (isMedia) {
 			
 
 	case 'tits':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 			if (octo == 1) {
@@ -1982,6 +2044,7 @@ if (isMedia) {
             break
 			
 	case 'milf':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             	if (triple == 1) {
@@ -2015,6 +2078,7 @@ if (isMedia) {
 			break
 			
 	case 'bdsm':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             	if (triple == 1) {
@@ -2048,6 +2112,7 @@ if (isMedia) {
 			break
 			
 	case 'ass':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             	if (triple == 1) {
@@ -2081,6 +2146,7 @@ if (isMedia) {
             break
 			
 	case 'pussy':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             	if (triple == 1) {
@@ -2114,6 +2180,7 @@ if (isMedia) {
             break
 			
         case 'hug':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (double == 1) {
             const hug1 = await axios.get(`https://nekos.life/api/v2/img/hug`)
             await kill.sendFileFromUrl(from, hug1.data.url, ``, `Abraço fofinho...`, id)
@@ -2125,6 +2192,7 @@ if (isMedia) {
 			
 			
         case 'exclusive':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (!isGroupMsg) return kill.reply(from, 'Solo grupos!', id)
 			
             if (args.length !== 1) return kill.reply(from, 'Establecer entre encendido y apagado!', id)
@@ -2144,6 +2212,7 @@ if (isMedia) {
 
 
         case 'baguette':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (double == 1) {
             const bag = await axios.get(`http://api.i-tech.id/anim/baguette?key=${techapi}`)
 			console.log(bag.data)
@@ -2156,6 +2225,7 @@ if (isMedia) {
 
 
         case 'dva':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (double == 1) {
             const dva = await axios.get(`http://api.i-tech.id/anim/dva?key=${techapi}`)
 			console.log(dva.data)
@@ -2168,6 +2238,7 @@ if (isMedia) {
 
 
         case 'waifu':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (triple == 1) {
 				const total = fs.readFileSync('./lib/waifu.json')
 				const parsew = JSON.parse(total)
@@ -2185,6 +2256,7 @@ if (isMedia) {
 
 
         case 'husb':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const diti = fs.readFileSync('./lib/husbu.json')
             const ditiJsin = JSON.parse(diti)
             const rindIndix = Math.floor(Math.random() * ditiJsin.length)
@@ -2194,6 +2266,7 @@ if (isMedia) {
 			
 			
         case 'iecchi':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (triple == 1) {
@@ -2223,6 +2296,7 @@ if (isMedia) {
 
         case 'blowjob':
         case 'boquete':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (double == 1) {
@@ -2262,6 +2336,7 @@ if (isMedia) {
 			
 			
         case 'hard':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				const hard = await axios.get('https://nekos.life/api/v2/img/spank')
@@ -2274,6 +2349,7 @@ if (isMedia) {
 			
 			
         case 'boobs':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (double == 1) {
@@ -2386,6 +2462,7 @@ if (isMedia) {
 			
 			
         case 'anal':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (double == 1) {
@@ -2408,6 +2485,7 @@ if (isMedia) {
 			
 			
 		case 'randomloli':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				const loliz = await axios.get('https://nekos.life/api/v2/img/keta')
@@ -2420,6 +2498,7 @@ if (isMedia) {
 			
 			
         case 'nsfwicon':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				const icon = await axios.get('https://nekos.life/api/v2/img/nsfw_avatar')
@@ -2432,24 +2511,28 @@ if (isMedia) {
 			
 			
 		case 'truth':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const memean = await axios.get('https://nekos.life/api/v2/img/gecg')
 			await kill.sendFileFromUrl(from, memean.data.url, '', '', id)
 			break
 			
 
 		case 'icon':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const avatarz = await axios.get('https://nekos.life/api/v2/img/avatar')
 			await kill.sendFileFromUrl(from, avatarz.data.url, '', '', id)
 			break
 			
 			
 		case 'face':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const gasm = await axios.get('https://nekos.life/api/v2/img/gasm')
 			await kill.sendFileFromUrl(from, gasm.data.url, '', '', id)
 			break
 			
 
 		case 'pezinho':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				const pezin = await axios.get('https://nekos.life/api/v2/img/feet')
@@ -2462,6 +2545,7 @@ if (isMedia) {
 
 
         case 'ihentai':
+			if (mute) return console.log('Ignorando comando [Silence]')
 		    const selnum = Math.floor(Math.random() * 7) + 1 
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2515,6 +2599,7 @@ if (isMedia) {
 
 
         case 'yuri':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (double == 1) {
             const yuri = await axios.get(`https://api.i-tech.id/anim/yuri?key=${techapi}`)
 			console.log(yuri.data)
@@ -2528,6 +2613,7 @@ if (isMedia) {
 
 
         case 'randomneko':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (octo == 1) {
@@ -2586,6 +2672,7 @@ if (isMedia) {
 
 
         case 'trap':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             if (double == 1) {
@@ -2607,12 +2694,14 @@ if (isMedia) {
 
 
         case 'randomwall' :
+			if (mute) return console.log('Ignorando comando [Silence]')
             const walnime = await axios.get('https://nekos.life/api/v2/img/wallpaper')
             await kill.sendFileFromUrl(from, walnime.data.url, '', '', id)
             break
 			
 			
         case 'dog': 
+			if (mute) return console.log('Ignorando comando [Silence]')
 		    if (double == 1) {
 				const list = await axios.get('http://shibe.online/api/shibes')
 				const doguin = list.data[0]
@@ -2625,18 +2714,21 @@ if (isMedia) {
 			
 			
         case 'look' :
+			if (mute) return console.log('Ignorando comando [Silence]')
             const smug = await axios.get('https://nekos.life/api/v2/img/smug')
             await kill.sendFileFromUrl(from, smug.data.url, '', '', id)
             break
 			
 			
         case 'holo' :
+			if (mute) return console.log('Ignorando comando [Silence]')
             const holo = await axios.get('https://nekos.life/api/v2/img/holo')
             await kill.sendFileFromUrl(from, holo.data.url, '', '', id)
             break
 
 
 		case 'rolette':
+			if (mute) return console.log('Ignorando comando [Silence]')
             if (double == 1) {
             await kill.reply(from, 'Bang, ella disparó y tú moriste, se acabó el juego.', id)
             } else if (double == 2) {
@@ -2646,12 +2738,14 @@ if (isMedia) {
 			
 			
 		case 'kisu':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const kisu = await axios.get('https://nekos.life/api/v2/img/kiss')
 			await kill.sendFileFromUrl(from, kisu.data.url, '', '', id)
 			break
 			
 			
 		case 'tapa':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const tapi = await axios.get('https://nekos.life/api/v2/img/slap')
 			await kill.sendFileFromUrl(from, tapi.data.url, '', '', id)
 			break
@@ -2659,6 +2753,7 @@ if (isMedia) {
 
         case 'gato':
         case 'cat':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (double == 1) {
 				q2 = Math.floor(Math.random() * 900) + 300;
 				q3 = Math.floor(Math.random() * 900) + 300;
@@ -2671,12 +2766,14 @@ if (isMedia) {
 
 
         case 'pokemon':
+			if (mute) return console.log('Ignorando comando [Silence]')
             q7 = Math.floor(Math.random() * 890) + 1;
             await kill.sendFileFromUrl(from, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/' + q7 + '.png', 'Pokemon.png', '', id)
             break		
 
 
         case 'screenshot':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const _query = body.slice(12)
             if (!_query.match(isUrl)) return kill.reply(from, mess.error.Iv, id)
             if (args.length == 0) return kill.reply(from, 'Huelo ortografía incorrecta:v!', id)
@@ -2688,6 +2785,7 @@ if (isMedia) {
 			
 			
 		case 'ship':
+			if (mute) return console.log('Ignorando comando [Silence]')
             lvak = body.trim().split(' ')
 			if (args.length == 2) {
 				await kill.sendTextWithMentions(from, '❤️ ' + lvak[1] + ' tiene la oportunidad del ' + lvpc + '% de estar con ' + lvak[2] + '. 👩‍❤️‍👨❣️\n*CASAMIENTO...*\n---------------------------------\n\n*mmmm, suerte😎*\n---------------------------------')
@@ -2710,12 +2808,14 @@ if (isMedia) {
 			
 
 		case 'chance':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (args.length == 0) return kill.reply(from, 'Defina algo para analisar.', id)
 			await kill.reply(from, `_De acuerdo con mis cálculos súper avanzados de ~dios~ robot "cuie" la oportunidad de..._ \n\n*"${body.slice(8)}"*\n\n_...ser realidad es_ *${lvpc}%.*`, id)
 			break
 
 
         case 'kiss':
+			if (mute) return console.log('Ignorando comando [Silence]')
             arqa = body.trim().split(' ')
 			if (args.length == 1) {
 				const persona = author.replace('@c.us', '')
@@ -2732,6 +2832,7 @@ if (isMedia) {
 
 
         case 'slap':
+			if (mute) return console.log('Ignorando comando [Silence]')
             arq = body.trim().split(' ')
             const person = author.replace('@c.us', '')
             await kill.sendGiphyAsSticker(from, 'https://media.giphy.com/media/hjcEjN4vfTv9aMHwWY/giphy.gif')
@@ -2740,6 +2841,7 @@ if (isMedia) {
 
 
         case 'getmeme':
+			if (mute) return console.log('Ignorando comando [Silence]')
             const response = await axios.get('https://meme-api.herokuapp.com/gimme/memesmexico');
             const { postlink, title, subreddit, url, nsfw, spoiler } = response.data
             kill.sendFileFromUrl(from, `${url}`, 'meme.jpg', `${title}`, id)
@@ -2748,6 +2850,7 @@ if (isMedia) {
 		
 
         case 'menu':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			const allin = `Hola usuario "@${sender.id}"!\n\nMe lleve ${processTime(t, moment())} segundos para responder.\n\nAhora son exactamente "${timed}".\nAqui abajito estan todas mis funciones.\n`
             kill.sendTextWithMentions(from, allin + help, id)
@@ -2756,6 +2859,7 @@ if (isMedia) {
 
 
         case 'admins':
+			if (mute) return console.log('Ignorando comando [Silence]')
 			if (!isGroupMsg) return kill.reply(from, mess.error.Gp, id)
             if (!isGroupAdmins) return kill.reply(from, mess.error.Ga, id)
             await kill.sendText(from, admins, id)
@@ -2763,27 +2867,31 @@ if (isMedia) {
 
 
         case 'adult':
+			if (mute) return console.log('Ignorando comando [Silence]')
             kill.sendText(from, adult, id)
             break
 			
 
         case 'kill':
-            
+            if (mute) return console.log('Ignorando comando [Silence]')
             kill.sendText(from, owner, id)
             break
 
 
         case 'down':
+			if (mute) return console.log('Ignorando comando [Silence]')
             kill.sendText(from, down, id)
             break
 
 
         case 'readme':
+			if (mute) return console.log('Ignorando comando [Silence]')
             kill.reply(from, readme, id)
             break
 
 		
 		case 'bomb':
+			if (mute) return console.log('Ignorando comando [Silence]')
 		    const bleg = JSON.parse(fs.readFileSync('./lib/exclusive.json'))
 			const biao = bleg.includes(chat.id)
 			if (biao) {
@@ -2801,7 +2909,78 @@ if (isMedia) {
 				kill.reply(from, 'El ataque no está permitido aquí!', id)
 			}
 			break
+			
+			
+	case 'converter':
+		case 'conv':
+			if (mute) return console.log('Ignorando comando [Silence]')
+			if (args == 0) return kill.reply(from, 'Ingrese el modo de conversión y luego la temperatura, para más detalles ingrese */conv -h*.', id)
+			if (args[0] == '-help' || args[0] == '-h') return kill.reply(from, convh, id)
+			try {
+				if (args[0] == '-f') {
+					let regmh = args[1].match(/^[0-9]+$/)
+					if (!regmh) return kill.reply(from, 'Ingrese números solo después del acrónimo!', id)
+					const cels = args[1] / 5 * 9 + 32
+					await kill.reply(from, `*${args[1]}* grados C° - Celsius equivale a ${cels} grados F° - Fahrenheit.`, id)
+				} else if (args[0] == '-c') {
+					let regmh = args[1].match(/^[0-9]+$/)
+					if (!regmh) return kill.reply(from, 'Ingrese números solo después del acrónimo!', id)
+					const fahf = 5 * (args[1] - 32) / 9
+					await kill.reply(from, `*${args[1]}* _grados F° - Fahrenheit equivale a_ *${fahf}* _grados C° - Celsius._`, id)
+				} else if (args[0] == '-m') {
+					let regmh = args[1].match(/^[0-9]+$/)
+					if (!regmh) return kill.reply(from, 'Ingrese números solo después del acrónimo!', id)
+					const ktom = args[1] * 0.62137
+					await kill.reply(from, `*${args[1]}* _Kilometros equivalen a_ *${ktom}* _Millas._`, id)
+				} else if (args[0] == '-q') {
+					let regmh = args[1].match(/^[0-9]+$/)
+					if (!regmh) return kill.reply(from, 'Ingrese números solo después del acrónimo!', id)
+					const mtok = args[1] / 0.62137
+					await kill.reply(from, `*${args[1]}* _Millas equivalen a_ *${mtok}* _Kilometros._`, id)
+				} else {
+					await kill.reply(from, convh, id)
+				}
+			} catch (error) {
+				await kill.reply(from, convh + '\n\nAsegúrese de poner el valor de conversión.', id)
+			}
+			break
 
+			
+        case 'mute':
+        case 'silence':
+			if (isGroupMsg && isGroupAdmins) {
+				if (args.length !== 1) return kill.reply(from, 'Olvidaste poner [on], o [off].', id)
+				if (args[0] == 'on') {
+					slce.push(chat.id)
+					fs.writeFileSync('./lib/silence.json', JSON.stringify(slce))
+					kill.reply(from, 'Este grupo ya no podrá usar los comandos.', id)
+				} else if (args[0] == 'off') {
+					let ince = slce.indexOf(chatId)
+					slce.splice(ince, 1)
+					fs.writeFileSync('./lib/silence.json', JSON.stringify(slce))
+					kill.reply(from, 'Este grupo puede usar los comandos nuevamente.', id)
+				}
+			} else if (isGroupMsg && isOwner) {
+				if (args.length !== 1) return kill.reply(from, 'Olvidaste poner [on], o [off].', id)
+				if (args[0] == 'on') {
+					slce.push(chat.id)
+					fs.writeFileSync('./lib/silence.json', JSON.stringify(slce))
+					kill.reply(from, 'Este grupo ya no podrá usar los comandos.', id)
+				} else if (args[0] == 'off') {
+					let ince = slce.indexOf(chatId)
+					slce.splice(ince, 1)
+					fs.writeFileSync('./lib/silence.json', JSON.stringify(slce))
+					kill.reply(from, 'Este grupo puede usar los comandos nuevamente.', id)
+				}
+            } else {
+                kill.reply(from, mess.error.Ga, id)
+            }
+            break
+			
+	case 'coins':
+			await kill.reply(from, coins, id)
+			break
+			
 			
 		case 'mac':
 			if (args.length == 0) return kill.reply(from, 'Lo siento, pero debe especificar qué MAC desea extraer.', id)
