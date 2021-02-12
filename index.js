@@ -39,7 +39,7 @@ const start = (kill = new Client()) => {
             if (totalMem < 20) { 
             	kill.sendText(chat.id, `Un nuevo grupo, uwu! 😃\nLástima que no tenga el requisito, que es tener al menos [20] miembros. Tienes ${totalMem}, reune más gente! 😉`).then(() => kill.leaveGroup(chat.id))
             } else {
-                kill.sendText(chat.groupMetadata.id, `Oi! 🌟\nMe solicitaron como BOT para este grupo, ¡y estaré a su disposición! 🤖\nSi quieres ver mis funciones usa /menu!`)
+                kill.sendText(chat.groupMetadata.id, `Hola! 🌟\nMe solicitaron como BOT para este grupo, ¡y estaré a su disposición! 🤖\nSi quieres ver mis funciones usa /menu!`)
             }
         }))
 		

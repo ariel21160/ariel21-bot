@@ -15,7 +15,6 @@ const get = require('got')
 const sinesp = require('sinesp-api')
 const { coins } = require('./lib/coins')
 const { stdout } = require('process')
-const bent = require('bent')
 const request = require('request')
 const color = require('./lib/color')
 const { spawn, exec, execFile } = require('child_process')
@@ -23,7 +22,6 @@ const nhentai = require('nhentai-js')
 const { API } = require('nhentai-api')
 const { randomNimek, sleep, wall, tulis, ss } = require('./lib/functions')
 const { owner, donate, down, help, admins, adult, readme, lang } = require('./lib/help')
-const bent = require('bent')
 const { doing } = require('./lib/translate.js')
 const { meme, msgFilter, translate, kill } = require('./lib')
 const { uploadImages } = require('./lib/fether')
@@ -31,9 +29,12 @@ const feature = require('./lib/poll')
 const { sobre } = require('./lib/sobre')
 const { belle } = require('./lib/belle')
 const { termux } = require('./lib/termux')
+const bent = require('bent')
 const atbk = JSON.parse(fs.readFileSync('./lib/anti.json'))
 const BrainlySearch = require('./lib/brainly')
 const { removeBackgroundFromImageBase64 } = require('remove.bg')
+const ffmpeg = require('fluent-ffmpeg')
+const { removeBackgroundFromImageFile } = require('remove.bg')
 const fetch = require('node-fetch');
 const nsfw_ = JSON.parse(fs.readFileSync('./lib/NSFW.json'))
 const slce = JSON.parse(fs.readFileSync('./lib/silence.json'))
@@ -66,7 +67,7 @@ module.exports = kconfig = async (kill, message) => {
         const groupId = isGroupMsg ? chat.groupMetadata.id : ''
         const groupAdmins = isGroupMsg ? await kill.getGroupAdmins(groupId) : ''
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
-        const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
+        const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : true
 	const chats = (type === 'chat') ? body : (type === 'image' || type === 'video') ? caption : ''
         const ownerNumber = '52998****@c.us' // MUDE ISSO PARA O SEU NUMERO
         const isOwner = sender.id === ownerNumber
@@ -76,6 +77,7 @@ module.exports = kconfig = async (kill, message) => {
         const isBlocked = blockNumber.includes(sender.id)
 		const isLeg = exsv.includes(chatId)
 		const mute = slce.includes(chatId)
+		const pvmte = slce.includes(sender.id)
         const isNsfw = isGroupMsg ? nsfw_.includes(chat.id) : false
         const isUrl = new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/gi)
 	
@@ -208,6 +210,67 @@ module.exports = kconfig = async (kill, message) => {
                     kill.reply(from, mess.error.St, id)
             }
             break
+			
+			
+			case 'stiker': 
+				case 'sticker':
+				case 'gif':
+				case 's':
+					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const media = await client.downloadAndSaveMediaMessage(encmedia)
+						ran = getRandom('.webp')
+						await ffmpeg(`./${media}`)
+							.input(media)
+							.on('start', function (cmd) {
+								console.log(`Started : ${cmd}`)
+							})
+							.on('error', function (err) {
+								console.log(`Error : ${err}`)
+								fs.unlinkSync(media)
+								reply(mess.error.stick)
+							})
+							.on('end', function () {
+								console.log('Finish')
+								buff = fs.readFileSync(ran)
+								client.sendMessage(from, buff, sticker, {quoted: mek})
+								fs.unlinkSync(media)
+								fs.unlinkSync(ran)
+							})
+							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
+							.toFormat('webp')
+							.save(ran)
+					} else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
+						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const media = await client.downloadAndSaveMediaMessage(encmedia)
+						ran = getRandom('.webp')
+						reply(mess.wait)
+						await ffmpeg(`./${media}`)
+							.inputFormat(media.split('.')[1])
+							.on('start', function (cmd) {
+								console.log(`Started : ${cmd}`)
+							})
+							.on('error', function (err) {
+								console.log(`Error : ${err}`)
+								fs.unlinkSync(media)
+								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
+								reply(`A Fallado ;(, intenta de nuevo ^_^`)
+							})
+							.on('end', function () {
+								console.log('Finish')
+								buff = fs.readFileSync(ran)
+								client.sendMessage(from, buff, sticker, {quoted: mek})
+								fs.unlinkSync(media)
+								fs.unlinkSync(ran)
+							})
+							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
+							.toFormat('webp')
+							.save(ran)
+							} else {
+						reply(`Enviar fotos con subtítulos ${prefix}sticker reply/tag imagen`)
+					}
+					break
+			
 			
 
 		case 'ttp':
@@ -721,7 +784,7 @@ if (isMedia) {
 
        case 'ig':
             if (args.length == 0) return kill.reply(from, 'El enlace no es valido?', id)
-            const iga = await axios.get(`http://api.i-tech.id/dl/igdl?key=${techapi}&link=${body.slice(11)}`)
+            const iga = await axios.get(`https://arugaz.my.id/api/media/ig?url=${body.slice(4)}`)
 			await kill.sendFileFromUrl(from, iga.data.result, ``, 'Es un gran video jaja!\n~Pero que diablos fue eso...~', id)
 			.catch(() => {
 						kill.reply(from, '¡Esa no! Impidieron mi acceso!!', id)
@@ -729,14 +792,15 @@ if (isMedia) {
             break
 			
 		case 'fb':
-			if (args.length == 0) return kill.reply(from, 'Olvidaste insertar un enlace de facebook?', id)
-            const fb = await axios.get(`http://arugaz.herokuapp.com/api/fb?url=${body.slice(4)}`)
-			const fbdw = fb.data.result.sd
-            await kill.sendFileFromUrl(from, fbdw, 'video.mp4', 'Excelente video!\n~Pero que diablos paso?...~', id)
-			.catch(() => {
-						kill.reply(from, 'Dios mío, algún tipo de fuerza maligna me impidió terminar el comando!', id)
-						})
-					break
+			if (mute || pvmte) return console.log('Ignorando comando [Silence]')
+			if (args.length == 0) return kill.reply(from, 'Nececitas el lik de facebook?', id)
+            const fb = await axios.get(`https://mnazria.herokuapp.com/api/fbdownloadervideo?url=${body.slice(4)}`)
+			const fbdw = fb.data.resultSD
+            await kill.sendFileFromUrl(from, fbdw, 'video.mp4', 'Excelente video!\n~Pero que diablos fue eso:v?...~', id)
+			.catch((error) => {
+				kill.reply(from, 'Auuuuu, no pude terminar el proceso:(!', id)
+			})
+            break
 
 			
 
@@ -769,53 +833,13 @@ if (isMedia) {
                 			})
 				break
 			
-        case 'video':
-			if (mute) return console.log('Ignorando comando [Silence]')
-            if (args.length == 0) return kill.reply(from, 'Lo uso incorrectamente.', id)
-            axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(7)}`)
+        
+			case 'play':
+			if (mute || pvmte) return console.log('Comando ignorado.')
+            if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamente.', id)
+            axios.get(`https://docs-jojo.herokuapp.com/api/yt-search?q=${body.slice(6)}`)
             .then(async (res) => {
-				const vyre = res.data.result[0].uploadDate
-				if (vyre == '' || vyre == 'null' || vyre == null || vyre == undefined || vyre == 'undefined') {
-					var videore = 'Indefinido'
-				} else if (vyre.endsWith('years ago')) {
-                    var videore = vyre.replace('years ago', 'Anos atrás')
-				} else if (vyre.endsWith('hours ago')) {
-                    var videore = vyre.replace('hours ago', 'Horas atrás')
-				} else if (vyre.endsWith('minutes ago')) {
-                    var videore = vyre.replace('minutes ago', 'Minutos atrás')
-				} else if (vyre.endsWith('day ago')) {
-                    var videore = vyre.replace('day ago', 'Dia atrás')
-				} else if (vyre.endsWith('months ago')) {
-                    var videore = vyre.replace('months ago', 'Meses atrás')
-				} else if (vyre.endsWith('seconds ago')) {
-                    var videore = vyre.replace('seconds ago', 'Segundos atrás')
-				}
-				const size = await axios.get(`http://st4rz.herokuapp.com/api/ytv?url=http://youtu.be/${res.data.result[0].id}`)
-				const fsize = size.data.filesize.replace(' MB', '').replace('Download  ', 'Imposible calcular')
-				console.log(fsize)
-				const impo = size.data.filesize.replace('Download  ', 'un peso que no puedo calcular')
-				if (fsize >= 16.0 || size.data.filesize.endsWith('Download  ') || size.data.filesize.endsWith('GB')) {
-					kill.reply(from, `Desculpe, para evitar banimentos do WhatsApp, o limite de envio de videos é de 16MB, e esse possui ${impo.replace('    ', ' ')}.`, id)
-				} else {
-					await kill.sendFileFromUrl(from, `${res.data.result[0].thumbnail}`, ``, `Titulo: ${res.data.result[0].title}\n\nDuracion: ${res.data.result[0].duration} segundos\n\nHace: ${videore}\n\nVisualizaciones: ${res.data.result[0].viewCount}\n\nPeso: ${size.data.filesize}\n\nEspero averlo echo bien, ahora solo espera que tu video se envie, NO UTILIZES ESTE COMANDO HASTA QUE EL PROCESO TERMINE!!`, id)
-					console.log(res.data.result[0].title)
-					axios.get(`http://st4rz.herokuapp.com/api/ytv2?url=https://youtu.be/${res.data.result[0].id}`)
-					.then(async(rest) => {
-						var mp4 = rest.data.result
-						var tmp4 = rest.data.title
-						await kill.sendFileFromUrl(from, mp4, `video.mp4`, tmp4, id)
-					})
-				}
-			})
-            break
-			
-
-        case 'play':
-			if (mute) return console.log('Ignorando comando [Silence]')
-            if (args.length == 0) return kill.reply(from, 'Lo uso incorretamente.', id)
-            axios.get(`https://arugaz.my.id/api/media/ytsearch?query=${body.slice(6)}`)
-            .then(async (res) => {
-				const pyre = res.data.result[0].uploadDate
+				const pyre = res.data.result.result[0].publishedTime
 				if (pyre == '' || pyre == 'null' || pyre == null || pyre == undefined || pyre == 'undefined') {
 					var playre = 'Indefinido'
 				} else if (pyre.endsWith('years ago')) {
@@ -831,21 +855,56 @@ if (isMedia) {
 				} else if (pyre.endsWith('seconds ago')) {
                     var playre = pyre.replace('seconds ago', 'Segundos atrás')
 				}
-				const asize = await axios.get(`http://st4rz.herokuapp.com/api/yta?url=http://youtu.be/${res.data.result[0].id}`)
+				const asize = await axios.get(`http://st4rz.herokuapp.com/api/yta?url=http://youtu.be/${res.data.result.result[0].id}`)
 				const afsize = asize.data.filesize.replace(' MB', '')
 				console.log(afsize)
 				if (afsize >= 16.0 || asize.data.filesize.endsWith('GB')) {
 					kill.reply(from, `Lo sentimos, para evitar prohibiciones de WhatsApp, el límite de envío de audio es de 16 MB, y esto tiene ${asize.data.filesize}.`, id)
 				} else {
-					await kill.sendFileFromUrl(from, `${res.data.result[0].thumbnail}`, ``, `Titulo: ${res.data.result[0].title}\n\nDuracion: ${res.data.result[0].duration} segundos\n\nHace: ${playre}\n\nVisualizaciones: ${res.data.result[0].viewCount}\n\nEspero averlo echo bien, ahora solo espera que tu video se envie, NO UTILIZES ESTE COMANDO HASTA QUE EL PROCESO TERMINE!!`, id)
-					
-					console.log(res.data.result[0].title)
-					
-					axios.get(`http://st4rz.herokuapp.com/api/yta2?url=http://youtu.be/${res.data.result[0].id}`)
+					await kill.sendFileFromUrl(from, `${res.data.result.result[0].thumbnails[0].url}`, ``, `Titulo: ${res.data.result.result[0].title}\n\nLink: https://youtu.be/${res.data.result.result[0].id}\n\nDuracion: ${res.data.result.result[0].duration} minutos\n\nCreado hace: ${playre}\n\nVisualizaciones: ${res.data.result.result[0].viewCount.text}\n\nEspero haberlo hecho bien y ... ahora solo espera, ¡no lo uses de nuevo hasta que termine este!`, id)
+					axios.get(`http://st4rz.herokuapp.com/api/yta2?url=http://youtu.be/${res.data.result.result[0].id}`)
 					.then(async(rest) => {
 						var m3pa = rest.data.result
 						var m3ti = rest.data.title
 						await kill.sendFileFromUrl(from, m3pa, '', '', id)
+					})
+				}
+			})
+            break
+			
+			
+        case 'video':
+			if (mute || pvmte) return console.log('Comando ignorado.')
+            if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamente.', id)
+            axios.get(`https://docs-jojo.herokuapp.com/api/yt-search?q=${body.slice(6)}`)
+            .then(async (res) => {
+				const vyre = res.data.result.result[0].publishedTime
+				if (vyre == '' || vyre == 'null' || vyre == null || vyre == undefined || vyre == 'undefined') {
+					var videore = 'Indefinido'
+				} else if (vyre.endsWith('years ago')) {
+                    var videore = vyre.replace('years ago', 'Anos atrás')
+				} else if (vyre.endsWith('hours ago')) {
+                    var videore = vyre.replace('hours ago', 'Horas atrás')
+				} else if (vyre.endsWith('minutes ago')) {
+                    var videore = vyre.replace('minutes ago', 'Minutos atrás')
+				} else if (vyre.endsWith('day ago')) {
+                    var videore = vyre.replace('day ago', 'Dia atrás')
+				} else if (vyre.endsWith('months ago')) {
+                    var videore = vyre.replace('months ago', 'Meses atrás')
+				} else if (vyre.endsWith('seconds ago')) {
+                    var videore = vyre.replace('seconds ago', 'Segundos atrás')
+				}
+				const size = await axios.get(`http://st4rz.herokuapp.com/api/ytv?url=http://youtu.be/${res.data.result.result[0].id}}`)
+				const fsize = size.data.filesize.replace(' MB', '').replace('Download  ', 'Impossivel calcular')
+				console.log(fsize)
+				const impo = size.data.filesize.replace('Download  ', 'un peso mucho mayor que no puedo calcular')
+				if (fsize >= 16.0 || size.data.filesize.endsWith('Download  ') || size.data.filesize.endsWith('GB')) {
+					kill.reply(from, `Lo sentimos, para evitar prohibiciones de WhatsApp, el límite de envío de audio es de 16 MB, y esto tiene ${impo.replace('    ', ' ')}.`, id)
+				} else {
+					await kill.sendFileFromUrl(from, `${res.data.result.result[0].thumbnails[0].url}`, ``, `Titulo: ${res.data.result.result[0].title}\n\nLink: https://youtu.be/${res.data.result.result[0].id}\n\nDuracion: ${res.data.result.result[0].duration} minutos\n\nCreado hace: ${videore}\n\nVisualizações: ${res.data.result.result[0].viewCount.text}\n\nEspero haberlo hecho bien y ... ahora solo espera, ¡no lo uses de nuevo hasta que termine este!`, id)
+					axios.get(`http://st4rz.herokuapp.com/api/ytv2?url=https://youtu.be/${res.data.result.result[0].id}`)
+					.then(async(rest) => {
+						await kill.sendFileFromUrl(from, `${rest.data.result}`, ``, ``, id)
 					})
 				}
 			})
@@ -980,9 +1039,9 @@ if (isMedia) {
             break
 			
 
-	case 'akinator':
+	case 'aki':
 			if (mute) return console.log('Ignorando comando [Silence]')
-			const region = 'mx';
+			const region = 'es';
 			if (args[0] == '-r') {
 				let akinm = args[1].match(/^[0-9]+$/)
 				if (!akinm) return kill.reply(from, 'Responda solo con 0 o 1!\n0 = Si\n1 = No', id)
@@ -990,11 +1049,11 @@ if (isMedia) {
 				await aki.start();
 				const myAnswer = `${args[1]}`
 				await aki.step(myAnswer);
-				await kill.reply(from, `Pregunta: ${aki.question}\n\nProgresso: ${aki.progress}\n\nResponde co /akinator -r [0 o 1], 0 = si, 1 = No.`, id)
+				await kill.reply(from, `Pregunta: ${aki.question}\n\nProgresso: ${aki.progress}\n\nResponde con /aki -r [0 o 1], 0 = si, 1 = No.`, id)
 			} else {
 				const aki = new Aki(region);
 				await aki.start()
-				await kill.reply(from, `Pregunta: ${aki.question}\n\nResponda con /akinator -r [0 o 1], 0 = si, 1 = no.`, id)
+				await kill.reply(from, `Pregunta: ${aki.question}\n\nResponda con /aki -r [0 o 1], 0 = si, 1 = no.`, id)
 			}
 			break
 			
@@ -1076,7 +1135,7 @@ if (isMedia) {
 
 
         case 'criador':
-            kill.sendContact(from, '529984907794***@c.us')
+            kill.sendContact(from, '529984907794')
 			kill.reply(from, 'Si no responde, es por que no le importas:v _OK NO_, puede estar ocupado, tu tranqui..', id)
             break
 
@@ -2850,6 +2909,7 @@ if (isMedia) {
 		
 
         case 'menu':
+        case '?':
 			if (mute) return console.log('Ignorando comando [Silence]')
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
 			const allin = `Hola usuario "@${sender.id}"!\n\nMe lleve ${processTime(t, moment())} segundos para responder.\n\nAhora son exactamente "${timed}".\nAqui abajito estan todas mis funciones.\n`
