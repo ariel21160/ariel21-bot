@@ -69,7 +69,7 @@ module.exports = kconfig = async (kill, message) => {
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : true
 	const chats = (type === 'chat') ? body : (type === 'image' || type === 'video') ? caption : ''
-        const ownerNumber = '52998****@c.us' // MUDE ISSO PARA O SEU NUMERO
+        const ownerNumber = '595986460945@c.us' // MUDE ISSO PARA O SEU NUMERO
         const isOwner = sender.id === ownerNumber
         global.pollfile = 'poll_Config_'+chat.id+'.json'
         global.voterslistfile = 'poll_voters_Config_'+chat.id+'.json'
@@ -290,6 +290,7 @@ module.exports = kconfig = async (kill, message) => {
 		    
 				if (isGroupMsg) {
 					if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+					if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 					if (args.length == 0) return kill.reply(from, 'Ingrese un término de búsqueda!', id)
 					const xvide = await axios.get(`https://mnazria.herokuapp.com/api/porn?search=${body.slice(7)}`)
 					const rexvi = xvide.data.result[0]
@@ -308,6 +309,7 @@ module.exports = kconfig = async (kill, message) => {
 			
 		case 'xvideos':
 			if (mute) return console.log('Ignorando comando [Silence]')
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             try {
 				if (isGroupMsg) {
 					if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -332,9 +334,9 @@ module.exports = kconfig = async (kill, message) => {
     await kill.reply(from, 'Algunos videos del canal de mi bro DEIVID\n\nWhatsApp ANONYMOUS V.06 oFc 100% inmune\n\nhttps://youtu.be/tOE_ywldS_Q\n\nComo modificar un WA prt-1\n\nhttps://youtu.be/WdWsvY3xGPc\n\nWhAtsApp BusSines Golden/13\n\nhttps://youtu.be/JqSHAWlGhDY\n\nNumero virtual +48 método efectivo\n\nhttps://youtu.be/7GOss7AaJ88\n\nNumero virtual +1 EE.Uu (ANONYMOUS DEIVID)\n\nhttps://youtu.be/D1G6hI1mLs4\n\nCreando con pixelLab (ANONYMOUS DEIVID)\n\nhttps://youtu.be/so1y1g-MPZ4\n\nSu video mas reciente:\n\nhttps://youtu.be/hy4od9BT-tA\n\nEspero y lo apoyes🤗', id)
     break
 	
-	    case 'samu330':
+	    case 'Aiden':
 			if (mute) return console.log('Ignorando comando [Silence]')
-    await kill.reply(from, '｡☆✼★━━━━━━━━━━━━★✼☆｡\n\nHola!😀\n\nTe gustaria apoyarme?\n\nSolo unete a mi grupo de WhatsApp: https://chat.whatsapp.com/ELeHAmX3P6j1xy1qNRjEXR\n\n* ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ►*\n\nO puedes suscribirte a mi canal para saber como instalar un Bot: https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg\n\n✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩\n\nO seamos amigos en facebook: https://facebook.com/tupapi.samu330', id)
+    await kill.reply(from, '｡☆✼★━━━━━━━━━━━━★✼☆｡\n\nHola!😀\n\nTe gustaria apoyarme?\n\nSolo unete a mi grupo de WhatsApp: https://chat.whatsapp.com/ELeHAmX3P6j1xy1qNRjEXR\n\n* ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ► ◄ ◊ ►*\n\nO puedes suscribirte a mi canal para saber como instalar un Bot: https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg\n\n✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩\n\nO seamos amigos en facebook: https://facebook.com/tupapi.Aiden', id)
     break	
 			
 		case 'about':
@@ -837,7 +839,7 @@ if (isMedia) {
 			case 'play':
 			if (mute || pvmte) return console.log('Comando ignorado.')
             if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamente.', id)
-            axios.get(`https://docs-jojo.herokuapp.com/api/yt-search?q=${body.slice(6)}`)
+            axios.get(`http://st4rz.herokuapp.com/api/yta?url=${body.slice(6)}`)
             .then(async (res) => {
 				const pyre = res.data.result.result[0].publishedTime
 				if (pyre == '' || pyre == 'null' || pyre == null || pyre == undefined || pyre == 'undefined') {
@@ -876,7 +878,7 @@ if (isMedia) {
         case 'video':
 			if (mute || pvmte) return console.log('Comando ignorado.')
             if (args.length == 0) return kill.reply(from, 'Lo usaste incorrectamente.', id)
-            axios.get(`https://docs-jojo.herokuapp.com/api/yt-search?q=${body.slice(6)}`)
+            axios.get(`http://st4rz.herokuapp.com/api/yta?url=${body.slice(6)}`)
             .then(async (res) => {
 				const vyre = res.data.result.result[0].publishedTime
 				if (vyre == '' || vyre == 'null' || vyre == null || vyre == undefined || vyre == 'undefined') {
@@ -914,7 +916,7 @@ if (isMedia) {
 		case 'qr':
 			if (mute) return console.log('Ignorando comando [Silence]')
 			const qrco = body.slice(4)
-			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Su mensaje fue insertado en este QRCode, disfrute.\n\nBy SAMU330 - Íris.', id)
+			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Su mensaje fue insertado en este QRCode, disfrute.\n\nBy Aiden - Íris.', id)
 			break
 
 
@@ -1424,7 +1426,8 @@ if (isMedia) {
 
         case 'nh':
             if (isGroupMsg) {
-                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+				if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 				if (args.length == 1) {
 					const nuklir = body.split(' ')[1]
 					kill.reply(from, mess.wait, id)
@@ -1673,7 +1676,7 @@ if (isMedia) {
 		case 'sip':
 			if (args.length == 1) {
 				const ip = await axios.get(`http://ipwhois.app/json/${body.slice(5)}`)
-				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Region: ${ip.data.region}\n\n✪ Ciudad: ${ip.data.city}\n\n✪ Latitud: ${ip.data.latitude}\n\n✪ Longitud: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla del continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla del País: ${ip.data.country_code}\n\n✪ Capital do País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vesinos: ${ip.data.country_neighbours}\n\n✪ Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moneda: ${ip.data.currency}\n\n✪ Sigla de Moneda: ${ip.data.currency_code}\n\nBusca de IP realizada por Íris - Samu330!`, id)
+				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Region: ${ip.data.region}\n\n✪ Ciudad: ${ip.data.city}\n\n✪ Latitud: ${ip.data.latitude}\n\n✪ Longitud: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla del continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla del País: ${ip.data.country_code}\n\n✪ Capital do País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vesinos: ${ip.data.country_neighbours}\n\n✪ Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moneda: ${ip.data.currency}\n\n✪ Sigla de Moneda: ${ip.data.currency_code}\n\nBusca de IP realizada por Íris - Aiden!`, id)
             } else {
 				await kill.reply(from, 'Especifique una IP de tipo IPV4.', id)
             }
@@ -1683,7 +1686,7 @@ if (isMedia) {
 		case 'scep':
 			if (args.length == 1) {
 				const cep = await axios.get(`https://viacep.com.br/ws/${body.slice(6)}/json/`)
-				await kill.reply(from, `✪ CEP: ${cep.data.cep}\n\n✪ Lugar públicoro: ${cep.data.logradouro}\n\n✪ Complemento: ${cep.data.complemento}\n\n✪ Barrio: ${cep.data.bairro}\n\n✪ Estado: ${cep.data.localidade}\n\n✪ DDD: ${cep.data.ddd}\n\n✪ Sigla del Estado: ${cep.data.uf}\n\n✪ Código IBGE: ${cep.data.ibge}\n\n✪ Código GIA: ${cep.data.gia}\n\n✪ Código Siafi: ${cep.data.siafi}\n\nBusca de CEP echa por Íris - Samu330.`, id)
+				await kill.reply(from, `✪ CEP: ${cep.data.cep}\n\n✪ Lugar públicoro: ${cep.data.logradouro}\n\n✪ Complemento: ${cep.data.complemento}\n\n✪ Barrio: ${cep.data.bairro}\n\n✪ Estado: ${cep.data.localidade}\n\n✪ DDD: ${cep.data.ddd}\n\n✪ Sigla del Estado: ${cep.data.uf}\n\n✪ Código IBGE: ${cep.data.ibge}\n\n✪ Código GIA: ${cep.data.gia}\n\n✪ Código Siafi: ${cep.data.siafi}\n\nBusca de CEP echa por Íris - Aiden.`, id)
             } else {
 				await kill.reply(from, 'Especifique un CEP.', id)
             }
@@ -1831,9 +1834,10 @@ if (isMedia) {
 			
 
 	case 'porn':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
-                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
             const porn = await axios.get('https://meme-api.herokuapp.com/gimme/porn')
             kill.sendFileFromUrl(from, porn.data.url, '', porn.data.title, id)
             } else {
@@ -1845,7 +1849,8 @@ if (isMedia) {
 	case 'lesbian':
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
-                if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
+				if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             const lesb = await axios.get('https://meme-api.herokuapp.com/gimme/lesbians')
             kill.sendFileFromUrl(from, lesb.data.url, '', lesb.data.title, id)
 			} else {
@@ -2045,6 +2050,7 @@ if (isMedia) {
 			
 
 	case 'tits':
+		if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2103,6 +2109,7 @@ if (isMedia) {
             break
 			
 	case 'milf':
+		if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2137,6 +2144,7 @@ if (isMedia) {
 			break
 			
 	case 'bdsm':
+		if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2171,6 +2179,7 @@ if (isMedia) {
 			break
 			
 	case 'ass':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2205,6 +2214,7 @@ if (isMedia) {
             break
 			
 	case 'pussy':
+		if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2325,6 +2335,7 @@ if (isMedia) {
 			
 			
         case 'iecchi':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2355,6 +2366,7 @@ if (isMedia) {
 
         case 'blowjob':
         case 'boquete':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2373,6 +2385,7 @@ if (isMedia) {
 
 			
         case 'feet':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (double == 1) {
@@ -2395,6 +2408,7 @@ if (isMedia) {
 			
 			
         case 'hard':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2408,6 +2422,7 @@ if (isMedia) {
 			
 			
         case 'boobs':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2431,6 +2446,7 @@ if (isMedia) {
 			
 
         case 'lick':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (double == 1) {
@@ -2453,6 +2469,7 @@ if (isMedia) {
 			
 			
         case 'femdom':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (triple == 1) {
@@ -2481,6 +2498,7 @@ if (isMedia) {
 
 
         case 'futanari':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				const futanari = await axios.get('https://nekos.life/api/v2/img/futanari')
@@ -2493,6 +2511,7 @@ if (isMedia) {
 			
 			
         case 'masturb':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
 				if (triple == 1) {
@@ -2521,6 +2540,7 @@ if (isMedia) {
 			
 			
         case 'anal':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2544,6 +2564,7 @@ if (isMedia) {
 			
 			
 		case 'randomloli':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2557,6 +2578,7 @@ if (isMedia) {
 			
 			
         case 'nsfwicon':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
 				if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2591,6 +2613,7 @@ if (isMedia) {
 			
 
 		case 'pezinho':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2604,6 +2627,7 @@ if (isMedia) {
 
 
         case 'ihentai':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
 		    const selnum = Math.floor(Math.random() * 7) + 1 
             if (isGroupMsg) {
@@ -2672,6 +2696,7 @@ if (isMedia) {
 
 
         case 'randomneko':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
@@ -2731,6 +2756,7 @@ if (isMedia) {
 
 
         case 'trap':
+			if (!isGroupMsg) return kill.reply(from, 'Lo sentimos, para evitar baneamiento de whatsapp, estos comandos no estan disponibles', id)
 			if (mute) return console.log('Ignorando comando [Silence]')
             if (isGroupMsg) {
                 if (!isNsfw) return kill.reply(from, mess.error.Ac, id)
