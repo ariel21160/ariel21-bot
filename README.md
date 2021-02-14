@@ -2,7 +2,7 @@
 Un bot en portugués (PERO TRADUCIDO POR TU PAPI Aiden) hecho todo el mundo, con cientos de comandos que sigue creciendo.
 Pido disculpas por cualquier error que pueda aparecer, los corregiré lo antes posible, y lo siento si hay sesiones sin editar que deban editarse, lo subí sobre la marcha.
 
-## <img src="https://i.pinimg.com/originals/d2/14/1b/d2141b114b14198ede9b3ee4f4100520.gif" width="60px"> I'm Aiden
+## <img src="https://i.pinimg.com/originals/d2/14/1b/d2141b114b14198ede9b3ee4f4100520.gif" width="60px"> I'm potito
 <p align="center">
     
 ## Me encantan los gatitos, a ti igual? suscribete a mi canal entonces:) dando click [aqui](https://www.youtube.com/channel/UCqPXxG2ZdDe_ugOqMHDRMqg)
